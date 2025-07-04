@@ -15,6 +15,7 @@ public class heart extends javax.swing.JFrame {
      */
     public heart() {
         initComponents();
+        System.out.println("holiiis");
     }
 
     /**
