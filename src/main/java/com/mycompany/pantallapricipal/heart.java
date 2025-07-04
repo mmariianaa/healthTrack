@@ -38,11 +38,13 @@ public class heart extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         panel6 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
+        panel12 = new javax.swing.JPanel();
         panel7 = new javax.swing.JPanel();
-        BOTONTEGRESAR = new javax.swing.JButton();
         panel8 = new javax.swing.JPanel();
         panel9 = new javax.swing.JPanel();
         panel10 = new javax.swing.JPanel();
+        panel11 = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -50,6 +52,7 @@ public class heart extends javax.swing.JFrame {
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panel2.setBackground(new java.awt.Color(213, 222, 239));
+        panel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setFont(new java.awt.Font("Bernard MT Condensed", 3, 36)); // NOI18N
         jLabel1.setText("HEALTH TRACK ");
@@ -61,7 +64,7 @@ public class heart extends javax.swing.JFrame {
             .addGroup(panel2Layout.createSequentialGroup()
                 .addGap(209, 209, 209)
                 .addComponent(jLabel1)
-                .addContainerGap(269, Short.MAX_VALUE))
+                .addContainerGap(267, Short.MAX_VALUE))
         );
         panel2Layout.setVerticalGroup(
             panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -74,6 +77,7 @@ public class heart extends javax.swing.JFrame {
         panel1.add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 60));
 
         panel3.setBackground(new java.awt.Color(138, 174, 224));
+        panel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 panel3MouseClicked(evt);
@@ -95,7 +99,7 @@ public class heart extends javax.swing.JFrame {
         panel3Layout.setVerticalGroup(
             panel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel3Layout.createSequentialGroup()
-                .addContainerGap(15, Short.MAX_VALUE)
+                .addContainerGap(13, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addContainerGap())
         );
@@ -119,8 +123,8 @@ public class heart extends javax.swing.JFrame {
             panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel4Layout.createSequentialGroup()
                 .addGap(59, 59, 59)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 184, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(17, Short.MAX_VALUE))
         );
         panel4Layout.setVerticalGroup(
             panel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -130,7 +134,7 @@ public class heart extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        panel1.add(panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 240, 60));
+        panel1.add(panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 260, 60));
 
         panel5.setBackground(new java.awt.Color(57, 88, 134));
         panel5.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -148,8 +152,8 @@ public class heart extends javax.swing.JFrame {
         panel5Layout.setHorizontalGroup(
             panel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel5Layout.createSequentialGroup()
-                .addContainerGap(30, Short.MAX_VALUE)
-                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(24, Short.MAX_VALUE)
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         panel5Layout.setVerticalGroup(
@@ -160,9 +164,10 @@ public class heart extends javax.swing.JFrame {
                 .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        panel1.add(panel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 60, 230, 50));
+        panel1.add(panel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, 210, 50));
 
         panel6.setBackground(new java.awt.Color(177, 201, 239));
+        panel6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel5.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel5.setText("PACEMARKER");
@@ -174,7 +179,7 @@ public class heart extends javax.swing.JFrame {
             .addGroup(panel6Layout.createSequentialGroup()
                 .addGap(31, 31, 31)
                 .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(494, Short.MAX_VALUE))
+                .addContainerGap(492, Short.MAX_VALUE))
         );
         panel6Layout.setVerticalGroup(
             panel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -186,32 +191,40 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 700, -1));
 
+        panel12.setBackground(new java.awt.Color(204, 204, 255));
+        panel12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        javax.swing.GroupLayout panel12Layout = new javax.swing.GroupLayout(panel12);
+        panel12.setLayout(panel12Layout);
+        panel12Layout.setHorizontalGroup(
+            panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 346, Short.MAX_VALUE)
+        );
+        panel12Layout.setVerticalGroup(
+            panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 306, Short.MAX_VALUE)
+        );
+
+        panel1.add(panel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 350, 310));
+
         panel7.setBackground(new java.awt.Color(99, 142, 203));
-        panel7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout panel7Layout = new javax.swing.GroupLayout(panel7);
         panel7.setLayout(panel7Layout);
         panel7Layout.setHorizontalGroup(
             panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 358, Short.MAX_VALUE)
+            .addGap(0, 356, Short.MAX_VALUE)
         );
         panel7Layout.setVerticalGroup(
             panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 78, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
 
         panel1.add(panel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 360, 80));
 
-        BOTONTEGRESAR.setText("BACK");
-        BOTONTEGRESAR.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                BOTONTEGRESARMouseClicked(evt);
-            }
-        });
-        panel1.add(BOTONTEGRESAR, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, -1, -1));
-
         panel8.setBackground(new java.awt.Color(153, 153, 255));
-        panel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        panel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout panel8Layout = new javax.swing.GroupLayout(panel8);
         panel8.setLayout(panel8Layout);
@@ -227,34 +240,65 @@ public class heart extends javax.swing.JFrame {
         panel1.add(panel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 360, 80));
 
         panel9.setBackground(new java.awt.Color(51, 51, 255));
+        panel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout panel9Layout = new javax.swing.GroupLayout(panel9);
         panel9.setLayout(panel9Layout);
         panel9Layout.setHorizontalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 360, Short.MAX_VALUE)
+            .addGap(0, 356, Short.MAX_VALUE)
         );
         panel9Layout.setVerticalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 80, Short.MAX_VALUE)
+            .addGap(0, 76, Short.MAX_VALUE)
         );
 
         panel1.add(panel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 360, 80));
 
         panel10.setBackground(new java.awt.Color(0, 102, 153));
+        panel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout panel10Layout = new javax.swing.GroupLayout(panel10);
         panel10.setLayout(panel10Layout);
         panel10Layout.setHorizontalGroup(
             panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 360, Short.MAX_VALUE)
+            .addGap(0, 356, Short.MAX_VALUE)
         );
         panel10Layout.setVerticalGroup(
             panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 90, Short.MAX_VALUE)
+            .addGap(0, 66, Short.MAX_VALUE)
         );
 
-        panel1.add(panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 400, 360, 90));
+        panel1.add(panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 400, 360, 70));
+
+        panel11.setBackground(new java.awt.Color(0, 153, 255));
+        panel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panel11MouseClicked(evt);
+            }
+        });
+
+        jLabel6.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        jLabel6.setText("BACK");
+
+        javax.swing.GroupLayout panel11Layout = new javax.swing.GroupLayout(panel11);
+        panel11.setLayout(panel11Layout);
+        panel11Layout.setHorizontalGroup(
+            panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panel11Layout.createSequentialGroup()
+                .addGap(316, 316, 316)
+                .addComponent(jLabel6)
+                .addContainerGap(319, Short.MAX_VALUE))
+        );
+        panel11Layout.setVerticalGroup(
+            panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
+                .addContainerGap(17, Short.MAX_VALUE)
+                .addComponent(jLabel6)
+                .addGap(14, 14, 14))
+        );
+
+        panel1.add(panel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 700, 60));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -287,10 +331,13 @@ public class heart extends javax.swing.JFrame {
         //ESTE APARTADO ES PARA EL TERCER EVENTO 
     }//GEN-LAST:event_panel5MouseClicked
 
-    private void BOTONTEGRESARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_BOTONTEGRESARMouseClicked
+    private void panel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel11MouseClicked
         // TODO add your handling code here:
-        //ESTE EVENTO ES PARA REGRESAR A LA PANTALLA PRINCIPAL 
-    }//GEN-LAST:event_BOTONTEGRESARMouseClicked
+        // ESTE ESPACIO ES PARA CAMBIAR A LA PAGINA DEL LOGUIN 
+        Login_deux vueltaloguin=new Login_deux();//se crea un nuevo 
+        vueltaloguin.setVisible(true);//se crea desde arriba para que sea visible//
+        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+    }//GEN-LAST:event_panel11MouseClicked
 
     /**
      * @param args the command line arguments
@@ -320,22 +367,20 @@ public class heart extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new heart().setVisible(true);
-            }
-        });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton BOTONTEGRESAR;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel10;
+    private javax.swing.JPanel panel11;
+    private javax.swing.JPanel panel12;
     private javax.swing.JPanel panel2;
     private javax.swing.JPanel panel3;
     private javax.swing.JPanel panel4;
