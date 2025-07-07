@@ -16,5 +16,6 @@ public class Pantallapricipal {
                 new Login_deux().setVisible(true);
             }
         });
+     
     }
 }
