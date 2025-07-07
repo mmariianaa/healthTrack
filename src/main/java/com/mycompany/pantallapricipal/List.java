@@ -246,7 +246,9 @@ public class List extends javax.swing.JFrame {
 
     private void backbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backbuttonMouseClicked
         // TODO add your handling code here:
-        
+        heart regresarHeart = new heart ();
+        regresarHeart.setVisible(true);
+        dispose();
         //regreso del boton
     }//GEN-LAST:event_backbuttonMouseClicked
 
