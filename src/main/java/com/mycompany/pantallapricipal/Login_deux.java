@@ -35,7 +35,6 @@ public class Login_deux extends javax.swing.JFrame {
 
         jScrollPane1.setViewportView(jTextPane1);
 
-        user3.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\tercer cuatri\\POO\\3.jpeg")); // NOI18N
         user3.setText("jLabel1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -48,7 +47,6 @@ public class Login_deux extends javax.swing.JFrame {
 
         nombre.setEditable(false);
         nombre.setBackground(new java.awt.Color(222, 255, 255));
-        nombre.setForeground(new java.awt.Color(0, 0, 0));
         nombre.setText("Ingrese su nombre");
         nombre.setToolTipText("");
         nombre.setBorder(null);
@@ -67,7 +65,6 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.add(contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 296, 90, 20));
 
         jPasswordField1.setBackground(new java.awt.Color(222, 255, 255));
-        jPasswordField1.setForeground(new java.awt.Color(0, 0, 0));
         jPasswordField1.setText("jPasswordField1");
         jPasswordField1.setBorder(null);
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
@@ -137,11 +134,8 @@ public class Login_deux extends javax.swing.JFrame {
 
         jPanel1.add(barraSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 40));
 
-        Night_City.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\tercer cuatri\\POO\\blue heart (2).jpeg")); // NOI18N
         Night_City.setText("jLabel7");
         jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 320, 590));
-
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\tercer cuatri\\POO\\prueba800.png")); // NOI18N
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 180, 180));
 
         jButton1.setBackground(new java.awt.Color(110, 161, 182));
@@ -196,8 +190,10 @@ public class Login_deux extends javax.swing.JFrame {
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         // TODO add your handling code here:
-        System.out.println("cargando");
-        
+        heart principal=new heart();//se crea un nuevo 
+        principal.setVisible(true);//se crea desde arriba para que sea visible//
+        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+                                         
     }//GEN-LAST:event_jButton1MouseClicked
 
     private void XbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XbuttonMouseClicked
