@@ -136,7 +136,9 @@ public class Login_deux extends javax.swing.JFrame {
 
         Night_City.setText("jLabel7");
         jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 320, 590));
-        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 40, 180, 180));
+
+        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\holan\\Downloads\\img-resized.png")); // NOI18N
+        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 260, 230));
 
         jButton1.setBackground(new java.awt.Color(110, 161, 182));
         jButton1.setText("Start");

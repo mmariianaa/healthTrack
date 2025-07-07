@@ -245,9 +245,14 @@
           </Constraints>
         </Component>
         <Component class="javax.swing.JLabel" name="logo">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="2" name="C:\Users\holan\Downloads\img-resized.png"/>
+            </Property>
+          </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="0" y="40" width="180" height="180"/>
+              <AbsoluteConstraints x="50" y="30" width="260" height="230"/>
             </Constraint>
           </Constraints>
         </Component>
