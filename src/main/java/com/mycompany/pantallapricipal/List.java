@@ -26,11 +26,13 @@ public class List extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        back = new javax.swing.JButton();
         underground = new javax.swing.JPanel();
         izquierdo1 = new javax.swing.JPanel();
         izquierdo2 = new javax.swing.JPanel();
         derecho1 = new javax.swing.JPanel();
         derecho2 = new javax.swing.JPanel();
+        backbutton = new javax.swing.JButton();
         logo = new javax.swing.JLabel();
         E1 = new javax.swing.JPanel();
         e2 = new javax.swing.JLabel();
@@ -40,6 +42,8 @@ public class List extends javax.swing.JFrame {
         n1 = new javax.swing.JLabel();
         man = new javax.swing.JLabel();
         gym = new javax.swing.JLabel();
+
+        back.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -83,35 +87,54 @@ public class List extends javax.swing.JFrame {
         derecho2.setLayout(derecho2Layout);
         derecho2Layout.setHorizontalGroup(
             derecho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 51, Short.MAX_VALUE)
+            .addGap(0, 53, Short.MAX_VALUE)
         );
         derecho2Layout.setVerticalGroup(
             derecho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+            .addGap(0, 461, Short.MAX_VALUE)
         );
+
+        backbutton.setBackground(new java.awt.Color(204, 204, 255));
+        backbutton.setText("back");
+        backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backbuttonMouseClicked(evt);
+            }
+        });
+        backbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backbuttonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout derecho1Layout = new javax.swing.GroupLayout(derecho1);
         derecho1.setLayout(derecho1Layout);
         derecho1Layout.setHorizontalGroup(
             derecho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, derecho1Layout.createSequentialGroup()
-                .addGap(0, 49, Short.MAX_VALUE)
-                .addComponent(derecho2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(derecho1Layout.createSequentialGroup()
+                .addGap(0, 24, Short.MAX_VALUE)
+                .addGroup(derecho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(derecho2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backbutton, javax.swing.GroupLayout.Alignment.TRAILING)))
         );
         derecho1Layout.setVerticalGroup(
             derecho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(derecho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(derecho1Layout.createSequentialGroup()
+                .addComponent(derecho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(backbutton)
+                .addContainerGap())
         );
 
         underground.add(derecho1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 100, 500));
 
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\tercer cuatri\\POO\\prueba800.png")); // NOI18N
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
         logo.setText("jLabel1");
         underground.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 170, 140));
 
         E1.setBackground(new java.awt.Color(71, 153, 239));
 
-        e2.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\DESIGN\\bicicleta.png")); // NOI18N
+        e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/cuerda.png"))); // NOI18N
         e2.setText("jLabel1");
         e2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -139,7 +162,7 @@ public class List extends javax.swing.JFrame {
 
         C1.setBackground(new java.awt.Color(71, 153, 239));
 
-        c1.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\DESIGN\\cuerda.png")); // NOI18N
+        c1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/bicicleta.png"))); // NOI18N
         c1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 c1MouseClicked(evt);
@@ -154,14 +177,14 @@ public class List extends javax.swing.JFrame {
         );
         C1Layout.setVerticalGroup(
             C1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(c1, javax.swing.GroupLayout.DEFAULT_SIZE, 100, Short.MAX_VALUE)
+            .addComponent(c1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         underground.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, -1, -1));
 
         N1.setBackground(new java.awt.Color(71, 153, 239));
 
-        n1.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\DESIGN\\natacion.png")); // NOI18N
+        n1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/natacion.png"))); // NOI18N
         n1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 n1MouseClicked(evt);
@@ -183,11 +206,11 @@ public class List extends javax.swing.JFrame {
 
         underground.add(N1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 110, -1));
 
-        man.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\DESIGN\\man.png")); // NOI18N
+        man.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/man.png"))); // NOI18N
         man.setText("jLabel1");
         underground.add(man, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 440, 500));
 
-        gym.setIcon(new javax.swing.ImageIcon("C:\\Users\\usuario\\Desktop\\DESIGN\\WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg")); // NOI18N
+        gym.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg"))); // NOI18N
         gym.setText("jLabel1");
         underground.add(gym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 540, 500));
 
@@ -216,6 +239,16 @@ public class List extends javax.swing.JFrame {
     private void e2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_e2MouseClicked
         // TODO add your handling code here:
     }//GEN-LAST:event_e2MouseClicked
+
+    private void backbuttonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backbuttonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_backbuttonActionPerformed
+
+    private void backbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backbuttonMouseClicked
+        // TODO add your handling code here:
+        
+        //regreso del boton
+    }//GEN-LAST:event_backbuttonMouseClicked
 
     /**
      * @param args the command line arguments
@@ -256,6 +289,8 @@ public class List extends javax.swing.JFrame {
     private javax.swing.JPanel C1;
     private javax.swing.JPanel E1;
     private javax.swing.JPanel N1;
+    private javax.swing.JButton back;
+    private javax.swing.JButton backbutton;
     private javax.swing.JLabel c1;
     private javax.swing.JPanel derecho1;
     private javax.swing.JPanel derecho2;
