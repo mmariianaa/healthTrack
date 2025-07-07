@@ -32,6 +32,7 @@ public class Login_deux extends javax.swing.JFrame {
         Night_City = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jScrollPane1.setViewportView(jTextPane1);
 
@@ -134,10 +135,9 @@ public class Login_deux extends javax.swing.JFrame {
 
         jPanel1.add(barraSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 40));
 
+        Night_City.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/blue heart (2).jpeg"))); // NOI18N
         Night_City.setText("jLabel7");
         jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 320, 590));
-
-        logo.setIcon(new javax.swing.ImageIcon("C:\\Users\\holan\\Downloads\\img-resized.png")); // NOI18N
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 260, 230));
 
         jButton1.setBackground(new java.awt.Color(110, 161, 182));
@@ -153,6 +153,10 @@ public class Login_deux extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, 110, 50));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 180, 160));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -215,6 +219,7 @@ public class Login_deux extends javax.swing.JFrame {
     private javax.swing.JPanel barraSuperior;
     private javax.swing.JLabel contrasena;
     private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPasswordField jPasswordField1;

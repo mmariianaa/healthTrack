@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <NonVisualComponents>
+    <Component class="javax.swing.JButton" name="back">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="jButton1"/>
+      </Properties>
+    </Component>
+  </NonVisualComponents>
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -104,15 +111,23 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="0" pref="49" max="32767" attributes="0"/>
-                      <Component id="derecho2" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="24" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="derecho2" alignment="1" min="-2" max="-2" attributes="0"/>
+                          <Component id="backbutton" alignment="1" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="derecho2" alignment="0" max="32767" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="derecho2" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="backbutton" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -127,22 +142,34 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="51" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
                 <DimensionLayout dim="1">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <EmptySpace min="0" pref="500" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="461" max="32767" attributes="0"/>
                   </Group>
                 </DimensionLayout>
               </Layout>
             </Container>
+            <Component class="javax.swing.JButton" name="backbutton">
+              <Properties>
+                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                  <Color blue="ff" green="cc" red="cc" type="rgb"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="back"/>
+              </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="backbuttonMouseClicked"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="backbuttonActionPerformed"/>
+              </Events>
+            </Component>
           </SubComponents>
         </Container>
         <Component class="javax.swing.JLabel" name="logo">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\usuario\Desktop\tercer cuatri\POO\prueba800.png"/>
+              <Image iconType="3" name="/com/image/logosinfondo.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
@@ -187,7 +214,7 @@
             <Component class="javax.swing.JLabel" name="e2">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\usuario\Desktop\DESIGN\bicicleta.png"/>
+                  <Image iconType="3" name="/com/image/cuerda.png"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="jLabel1"/>
               </Properties>
@@ -217,7 +244,7 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="c1" alignment="0" pref="100" max="32767" attributes="0"/>
+                  <Component id="c1" alignment="0" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
@@ -225,7 +252,7 @@
             <Component class="javax.swing.JLabel" name="c1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\usuario\Desktop\DESIGN\cuerda.png"/>
+                  <Image iconType="3" name="/com/image/bicicleta.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -265,7 +292,7 @@
             <Component class="javax.swing.JLabel" name="n1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\usuario\Desktop\DESIGN\natacion.png"/>
+                  <Image iconType="3" name="/com/image/natacion.png"/>
                 </Property>
               </Properties>
               <Events>
@@ -277,7 +304,7 @@
         <Component class="javax.swing.JLabel" name="man">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\usuario\Desktop\DESIGN\man.png"/>
+              <Image iconType="3" name="/com/image/man.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
@@ -290,7 +317,7 @@
         <Component class="javax.swing.JLabel" name="gym">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\usuario\Desktop\DESIGN\WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg"/>
+              <Image iconType="3" name="/com/image/WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="jLabel1"/>
           </Properties>
