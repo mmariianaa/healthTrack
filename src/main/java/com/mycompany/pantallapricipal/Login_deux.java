@@ -33,6 +33,7 @@ public class Login_deux extends javax.swing.JFrame {
         logo = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
+        registro = new javax.swing.JButton();
 
         jScrollPane1.setViewportView(jTextPane1);
 
@@ -158,6 +159,20 @@ public class Login_deux extends javax.swing.JFrame {
         jLabel1.setText("jLabel1");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 180, 160));
 
+        registro.setBackground(new java.awt.Color(222, 255, 255));
+        registro.setText("Register");
+        registro.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                registroMouseClicked(evt);
+            }
+        });
+        registro.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registroActionPerformed(evt);
+            }
+        });
+        jPanel1.add(registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 130, -1));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -207,6 +222,20 @@ public class Login_deux extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_XbuttonMouseClicked
 
+    private void registroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registroActionPerformed
+        // TODO add your handling code here:
+        
+        //REGISTRO
+    }//GEN-LAST:event_registroActionPerformed
+
+    private void registroMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registroMouseClicked
+        // TODO add your handling code here:
+        registro deu = new registro();
+        deu.setVisible(true);
+        dispose();
+        //REGISTRARSE 
+    }//GEN-LAST:event_registroMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -229,6 +258,7 @@ public class Login_deux extends javax.swing.JFrame {
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel logo;
     private javax.swing.JTextField nombre;
+    private javax.swing.JButton registro;
     private javax.swing.JLabel user3;
     private javax.swing.JLabel usuario;
     // End of variables declaration//GEN-END:variables

@@ -173,14 +173,16 @@ public class List extends javax.swing.JFrame {
         C1.setLayout(C1Layout);
         C1Layout.setHorizontalGroup(
             C1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(c1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(C1Layout.createSequentialGroup()
+                .addComponent(c1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(190, 190, 190))
         );
         C1Layout.setVerticalGroup(
             C1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(c1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
-        underground.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, -1, -1));
+        underground.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 110, -1));
 
         N1.setBackground(new java.awt.Color(71, 153, 239));
 
@@ -197,7 +199,7 @@ public class List extends javax.swing.JFrame {
             N1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(N1Layout.createSequentialGroup()
                 .addComponent(n1, javax.swing.GroupLayout.PREFERRED_SIZE, 105, Short.MAX_VALUE)
-                .addContainerGap())
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         N1Layout.setVerticalGroup(
             N1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

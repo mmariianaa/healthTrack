@@ -27,6 +27,7 @@ public class heart extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jSpinner1 = new javax.swing.JSpinner();
         panel1 = new javax.swing.JPanel();
         panel2 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -40,8 +41,11 @@ public class heart extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         panel12 = new javax.swing.JPanel();
         panel7 = new javax.swing.JPanel();
+        EJERCICIOS = new javax.swing.JLabel();
         panel8 = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
         panel9 = new javax.swing.JPanel();
+        jLabel8 = new javax.swing.JLabel();
         panel10 = new javax.swing.JPanel();
         panel11 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
@@ -207,50 +211,80 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 350, 310));
 
-        panel7.setBackground(new java.awt.Color(99, 142, 203));
+        panel7.setBackground(new java.awt.Color(45, 165, 243));
         panel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        EJERCICIOS.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        EJERCICIOS.setText("EXERCISES");
+        EJERCICIOS.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                EJERCICIOSMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel7Layout = new javax.swing.GroupLayout(panel7);
         panel7.setLayout(panel7Layout);
         panel7Layout.setHorizontalGroup(
             panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 356, Short.MAX_VALUE)
+            .addGroup(panel7Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addComponent(EJERCICIOS, javax.swing.GroupLayout.PREFERRED_SIZE, 222, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(117, Short.MAX_VALUE))
         );
         panel7Layout.setVerticalGroup(
             panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 76, Short.MAX_VALUE)
+            .addGroup(panel7Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(EJERCICIOS, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panel1.add(panel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 360, 80));
 
-        panel8.setBackground(new java.awt.Color(153, 153, 255));
+        panel8.setBackground(new java.awt.Color(45, 165, 243));
         panel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        jLabel7.setText("HEART RATE ");
 
         javax.swing.GroupLayout panel8Layout = new javax.swing.GroupLayout(panel8);
         panel8.setLayout(panel8Layout);
         panel8Layout.setHorizontalGroup(
             panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 356, Short.MAX_VALUE)
+            .addGroup(panel8Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(108, Short.MAX_VALUE))
         );
         panel8Layout.setVerticalGroup(
             panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 76, Short.MAX_VALUE)
+            .addGroup(panel8Layout.createSequentialGroup()
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panel1.add(panel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 360, 80));
 
-        panel9.setBackground(new java.awt.Color(51, 51, 255));
+        panel9.setBackground(new java.awt.Color(45, 165, 243));
         panel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        jLabel8.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        jLabel8.setText("RHYTM");
 
         javax.swing.GroupLayout panel9Layout = new javax.swing.GroupLayout(panel9);
         panel9.setLayout(panel9Layout);
         panel9Layout.setHorizontalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 356, Short.MAX_VALUE)
+            .addGroup(panel9Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(86, Short.MAX_VALUE))
         );
         panel9Layout.setVerticalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 76, Short.MAX_VALUE)
+            .addGroup(panel9Layout.createSequentialGroup()
+                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panel1.add(panel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 360, 80));
@@ -339,6 +373,14 @@ public class heart extends javax.swing.JFrame {
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
     }//GEN-LAST:event_panel11MouseClicked
 
+    private void EJERCICIOSMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_EJERCICIOSMouseClicked
+        // TODO add your handling code here:
+        
+        List regreso = new List();
+        regreso.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_EJERCICIOSMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -371,12 +413,16 @@ public class heart extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel EJERCICIOS;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JSpinner jSpinner1;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel10;
     private javax.swing.JPanel panel11;
