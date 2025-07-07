@@ -43,12 +43,12 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(222, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        usuario.setText("USUARIO");
+        usuario.setText("USER");
         jPanel1.add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 50, -1));
 
         nombre.setEditable(false);
         nombre.setBackground(new java.awt.Color(222, 255, 255));
-        nombre.setText("Ingrese su nombre");
+        nombre.setText("NAME\n");
         nombre.setToolTipText("");
         nombre.setBorder(null);
         nombre.addActionListener(new java.awt.event.ActionListener() {
@@ -62,7 +62,7 @@ public class Login_deux extends javax.swing.JFrame {
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 290, -1));
 
-        contrasena.setText("CONTRASEÑA");
+        contrasena.setText("PASSWORD");
         jPanel1.add(contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 296, 90, 20));
 
         jPasswordField1.setBackground(new java.awt.Color(222, 255, 255));
