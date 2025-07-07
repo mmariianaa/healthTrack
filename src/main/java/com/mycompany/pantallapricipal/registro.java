@@ -56,7 +56,6 @@ public class registro extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
 
         nombre.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        nombre.setText("NAME");
         nombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 nombreActionPerformed(evt);
@@ -64,7 +63,6 @@ public class registro extends javax.swing.JFrame {
         });
 
         edad.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        edad.setText("AGE");
         edad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 edadActionPerformed(evt);
@@ -108,10 +106,8 @@ public class registro extends javax.swing.JFrame {
         });
 
         peso.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        peso.setText("WEIGHT");
 
         altura.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        altura.setText("HEIGHT");
         altura.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 alturaActionPerformed(evt);
@@ -119,24 +115,27 @@ public class registro extends javax.swing.JFrame {
         });
 
         correo.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        correo.setText("EMAIL");
 
         contrasena.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        contrasena.setText("PASSWORD");
 
         jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\holan\\Downloads\\img-resized.png")); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel3.setText("NAME");
 
+        jLabel4.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel4.setText("EMAIL");
 
+        jLabel5.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel5.setText("PASSWORD");
 
+        jLabel6.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel6.setText("AGE");
 
+        jLabel7.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel7.setText("WEIGHT");
 
+        jLabel8.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel8.setText("HEIGHT");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
