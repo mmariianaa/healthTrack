@@ -17,4 +17,11 @@
         <maven.compiler.release>24</maven.compiler.release>
         <exec.mainClass>com.mycompany.pantallapricipal.Pantallapricipal</exec.mainClass>
     </properties>
+    <build>
+    <resources>
+        <resource>
+            <directory>src/main/java</directory>
+        </resource>
+     </resources>
+    </build>
 </project>
