@@ -46,7 +46,8 @@ public class heart extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         panel9 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
-        panel10 = new javax.swing.JPanel();
+        panelrecomendacion = new javax.swing.JPanel();
+        recomndacion = new javax.swing.JLabel();
         panel11 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -289,21 +290,35 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 360, 80));
 
-        panel10.setBackground(new java.awt.Color(0, 102, 153));
-        panel10.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        panelrecomendacion.setBackground(new java.awt.Color(0, 102, 153));
+        panelrecomendacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        panelrecomendacion.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panelrecomendacionMouseClicked(evt);
+            }
+        });
 
-        javax.swing.GroupLayout panel10Layout = new javax.swing.GroupLayout(panel10);
-        panel10.setLayout(panel10Layout);
-        panel10Layout.setHorizontalGroup(
-            panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 356, Short.MAX_VALUE)
+        recomndacion.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        recomndacion.setText("RECOMMENDATION");
+
+        javax.swing.GroupLayout panelrecomendacionLayout = new javax.swing.GroupLayout(panelrecomendacion);
+        panelrecomendacion.setLayout(panelrecomendacionLayout);
+        panelrecomendacionLayout.setHorizontalGroup(
+            panelrecomendacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelrecomendacionLayout.createSequentialGroup()
+                .addGap(16, 16, 16)
+                .addComponent(recomndacion, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(81, Short.MAX_VALUE))
         );
-        panel10Layout.setVerticalGroup(
-            panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 66, Short.MAX_VALUE)
+        panelrecomendacionLayout.setVerticalGroup(
+            panelrecomendacionLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelrecomendacionLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(recomndacion)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
 
-        panel1.add(panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 400, 360, 70));
+        panel1.add(panelrecomendacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 400, 360, 70));
 
         panel11.setBackground(new java.awt.Color(0, 153, 255));
         panel11.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -381,6 +396,13 @@ public class heart extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_EJERCICIOSMouseClicked
 
+    private void panelrecomendacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelrecomendacionMouseClicked
+        // TODO add your handling code here:
+        recomendacion recomen=new recomendacion();
+        recomen.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_panelrecomendacionMouseClicked
+
     /**
      * @param args the command line arguments
      */
@@ -424,7 +446,6 @@ public class heart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JPanel panel1;
-    private javax.swing.JPanel panel10;
     private javax.swing.JPanel panel11;
     private javax.swing.JPanel panel12;
     private javax.swing.JPanel panel2;
@@ -435,5 +456,7 @@ public class heart extends javax.swing.JFrame {
     private javax.swing.JPanel panel7;
     private javax.swing.JPanel panel8;
     private javax.swing.JPanel panel9;
+    private javax.swing.JPanel panelrecomendacion;
+    private javax.swing.JLabel recomndacion;
     // End of variables declaration//GEN-END:variables
 }
