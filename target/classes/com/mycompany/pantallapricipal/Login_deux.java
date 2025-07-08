@@ -153,7 +153,7 @@ public class Login_deux extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 460, 110, 50));
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 90, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -171,7 +171,7 @@ public class Login_deux extends javax.swing.JFrame {
                 registroActionPerformed(evt);
             }
         });
-        jPanel1.add(registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 390, 130, -1));
+        jPanel1.add(registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, 130, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
