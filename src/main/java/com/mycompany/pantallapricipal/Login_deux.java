@@ -20,7 +20,6 @@ public class Login_deux extends javax.swing.JFrame {
         user3 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         usuario = new javax.swing.JLabel();
-        nombre = new javax.swing.JTextField();
         barra = new javax.swing.JSeparator();
         jSeparator1 = new javax.swing.JSeparator();
         contrasena = new javax.swing.JLabel();
@@ -34,6 +33,8 @@ public class Login_deux extends javax.swing.JFrame {
         jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         registro = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTextArea1 = new javax.swing.JTextArea();
 
         jScrollPane1.setViewportView(jTextPane1);
 
@@ -45,19 +46,7 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         usuario.setText("USER");
-        jPanel1.add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 50, -1));
-
-        nombre.setEditable(false);
-        nombre.setBackground(new java.awt.Color(222, 255, 255));
-        nombre.setText("NAME\n");
-        nombre.setToolTipText("");
-        nombre.setBorder(null);
-        nombre.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                nombreActionPerformed(evt);
-            }
-        });
-        jPanel1.add(nombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 236, 280, 30));
+        jPanel1.add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 50, -1));
         jPanel1.add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 340, 0));
 
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
@@ -67,7 +56,6 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.add(contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 296, 90, 20));
 
         jPasswordField1.setBackground(new java.awt.Color(222, 255, 255));
-        jPasswordField1.setText("jPasswordField1");
         jPasswordField1.setBorder(null);
         jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,7 +127,7 @@ public class Login_deux extends javax.swing.JFrame {
         Night_City.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/blue heart (2).jpeg"))); // NOI18N
         Night_City.setText("jLabel7");
         jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 320, 590));
-        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 260, 230));
+        jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 30, 210, 180));
 
         jButton1.setBackground(new java.awt.Color(110, 161, 182));
         jButton1.setText("Start");
@@ -173,6 +161,20 @@ public class Login_deux extends javax.swing.JFrame {
         });
         jPanel1.add(registro, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 460, 130, -1));
 
+        jScrollPane2.setBackground(new java.awt.Color(204, 255, 204));
+        jScrollPane2.setBorder(null);
+        jScrollPane2.setForeground(new java.awt.Color(204, 255, 204));
+
+        jTextArea1.setBackground(new java.awt.Color(222, 255, 255));
+        jTextArea1.setColumns(20);
+        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
+        jTextArea1.setLineWrap(true);
+        jTextArea1.setRows(5);
+        jTextArea1.setBorder(null);
+        jScrollPane2.setViewportView(jTextArea1);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 290, 20));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -186,10 +188,6 @@ public class Login_deux extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void nombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nombreActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_nombreActionPerformed
 
     private void barraSuperiorMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_barraSuperiorMousePressed
         // TODO add your handling code here:
@@ -253,11 +251,12 @@ public class Login_deux extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
+    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel logo;
-    private javax.swing.JTextField nombre;
     private javax.swing.JButton registro;
     private javax.swing.JLabel user3;
     private javax.swing.JLabel usuario;
