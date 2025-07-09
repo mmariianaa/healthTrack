@@ -76,7 +76,7 @@ public class recomendacion extends javax.swing.JFrame {
 
         jLabel3.setText("Aqui se muestran algunas de las recomendaciones que se podrian");
 
-        jLabel4.setText("dar, ");
+        jLabel4.setText("dar ");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
