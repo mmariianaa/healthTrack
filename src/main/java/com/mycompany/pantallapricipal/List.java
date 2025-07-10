@@ -49,9 +49,9 @@ public class List extends javax.swing.JFrame {
 
         underground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        izquierdo1.setBackground(new java.awt.Color(0, 153, 153));
+        izquierdo1.setBackground(new java.awt.Color(202, 240, 248));
 
-        izquierdo2.setBackground(new java.awt.Color(0, 102, 102));
+        izquierdo2.setBackground(new java.awt.Color(222, 255, 255));
 
         javax.swing.GroupLayout izquierdo2Layout = new javax.swing.GroupLayout(izquierdo2);
         izquierdo2.setLayout(izquierdo2Layout);
@@ -79,9 +79,9 @@ public class List extends javax.swing.JFrame {
 
         underground.add(izquierdo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 500));
 
-        derecho1.setBackground(new java.awt.Color(0, 153, 153));
+        derecho1.setBackground(new java.awt.Color(202, 240, 248));
 
-        derecho2.setBackground(new java.awt.Color(0, 102, 102));
+        derecho2.setBackground(new java.awt.Color(222, 255, 255));
 
         javax.swing.GroupLayout derecho2Layout = new javax.swing.GroupLayout(derecho2);
         derecho2.setLayout(derecho2Layout);
@@ -132,7 +132,7 @@ public class List extends javax.swing.JFrame {
         logo.setText("jLabel1");
         underground.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 170, 140));
 
-        E1.setBackground(new java.awt.Color(71, 153, 239));
+        E1.setBackground(new java.awt.Color(202, 240, 248));
 
         e2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/cuerda.png"))); // NOI18N
         e2.setText("jLabel1");
@@ -147,8 +147,9 @@ public class List extends javax.swing.JFrame {
         E1Layout.setHorizontalGroup(
             E1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, E1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(e2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(e2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(16, 16, 16))
         );
         E1Layout.setVerticalGroup(
             E1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -158,9 +159,9 @@ public class List extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        underground.add(E1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, -1, -1));
+        underground.add(E1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 220, 100, -1));
 
-        C1.setBackground(new java.awt.Color(71, 153, 239));
+        C1.setBackground(new java.awt.Color(202, 240, 248));
 
         c1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/bicicleta.png"))); // NOI18N
         c1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -184,7 +185,7 @@ public class List extends javax.swing.JFrame {
 
         underground.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 110, -1));
 
-        N1.setBackground(new java.awt.Color(71, 153, 239));
+        N1.setBackground(new java.awt.Color(202, 240, 248));
 
         n1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/natacion.png"))); // NOI18N
         n1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -210,22 +211,13 @@ public class List extends javax.swing.JFrame {
 
         man.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/man.png"))); // NOI18N
         man.setText("jLabel1");
-        underground.add(man, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 440, 500));
+        underground.add(man, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 440, 500));
 
         gym.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg"))); // NOI18N
         gym.setText("jLabel1");
         underground.add(gym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 540, 500));
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(underground, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(underground, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
+        getContentPane().add(underground, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

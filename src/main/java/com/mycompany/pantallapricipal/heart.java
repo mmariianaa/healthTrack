@@ -56,7 +56,7 @@ public class heart extends javax.swing.JFrame {
         panel1.setBackground(new java.awt.Color(240, 243, 250));
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panel2.setBackground(new java.awt.Color(213, 222, 239));
+        panel2.setBackground(new java.awt.Color(202, 240, 248));
         panel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel1.setFont(new java.awt.Font("Bernard MT Condensed", 3, 36)); // NOI18N
@@ -111,10 +111,11 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 50));
 
-        panel4.setBackground(new java.awt.Color(57, 88, 134));
+        panel4.setBackground(new java.awt.Color(222, 255, 255));
 
+        jLabel3.setBackground(new java.awt.Color(222, 255, 255));
         jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("STATISTICANS");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -141,7 +142,8 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 260, 60));
 
-        panel5.setBackground(new java.awt.Color(57, 88, 134));
+        panel5.setBackground(new java.awt.Color(222, 255, 255));
+        panel5.setForeground(new java.awt.Color(0, 0, 0));
         panel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 panel5MouseClicked(evt);
@@ -149,7 +151,7 @@ public class heart extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("YOUR WEEK");
 
         javax.swing.GroupLayout panel5Layout = new javax.swing.GroupLayout(panel5);
@@ -196,7 +198,7 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 700, -1));
 
-        panel12.setBackground(new java.awt.Color(204, 204, 255));
+        panel12.setBackground(new java.awt.Color(230, 255, 255));
         panel12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         javax.swing.GroupLayout panel12Layout = new javax.swing.GroupLayout(panel12);
@@ -212,7 +214,7 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 350, 310));
 
-        panel7.setBackground(new java.awt.Color(45, 165, 243));
+        panel7.setBackground(new java.awt.Color(222, 240, 248));
         panel7.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         EJERCICIOS.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
@@ -242,7 +244,7 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 360, 80));
 
-        panel8.setBackground(new java.awt.Color(45, 165, 243));
+        panel8.setBackground(new java.awt.Color(222, 240, 248));
         panel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
@@ -266,7 +268,7 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 360, 80));
 
-        panel9.setBackground(new java.awt.Color(45, 165, 243));
+        panel9.setBackground(new java.awt.Color(222, 240, 248));
         panel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel8.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
@@ -290,7 +292,7 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 320, 360, 80));
 
-        panelrecomendacion.setBackground(new java.awt.Color(0, 102, 153));
+        panelrecomendacion.setBackground(new java.awt.Color(222, 240, 248));
         panelrecomendacion.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         panelrecomendacion.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
