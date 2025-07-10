@@ -54,7 +54,7 @@ public class registro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 236, 229));
+        jPanel1.setBackground(new java.awt.Color(222, 255, 255));
 
         nombre.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         nombre.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -72,7 +72,7 @@ public class registro extends javax.swing.JFrame {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(0, 153, 204));
+        jPanel2.setBackground(new java.awt.Color(202, 240, 248));
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel1.setFont(new java.awt.Font("Bodoni MT Condensed", 0, 36)); // NOI18N
@@ -127,8 +127,6 @@ public class registro extends javax.swing.JFrame {
 
         contrasena.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         contrasena.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\holan\\Downloads\\img-resized.png")); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel3.setText("NAME");
