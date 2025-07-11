@@ -63,7 +63,7 @@ public class Login_deux extends javax.swing.JFrame {
                 jPasswordField1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 280, 30));
+        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 240, 30));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
@@ -114,7 +114,7 @@ public class Login_deux extends javax.swing.JFrame {
             barraSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(barraSuperiorLayout.createSequentialGroup()
                 .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 591, Short.MAX_VALUE))
         );
         barraSuperiorLayout.setVerticalGroup(
             barraSuperiorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,11 +123,11 @@ public class Login_deux extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        jPanel1.add(barraSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 310, 40));
+        jPanel1.add(barraSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 40));
 
-        Night_City.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/blue heart (2).jpeg"))); // NOI18N
+        Night_City.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/animated_heart.gif"))); // NOI18N
         Night_City.setText("jLabel7");
-        jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 0, 320, 590));
+        jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 460, 580));
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 210, 180));
 
         jButton1.setBackground(new java.awt.Color(110, 161, 182));

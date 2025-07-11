@@ -113,7 +113,7 @@ public class heart extends javax.swing.JFrame {
 
         panel4.setBackground(new java.awt.Color(222, 255, 255));
 
-        jLabel3.setBackground(new java.awt.Color(222, 255, 255));
+        jLabel3.setBackground(new java.awt.Color(222, 246, 248));
         jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("STATISTICANS");
