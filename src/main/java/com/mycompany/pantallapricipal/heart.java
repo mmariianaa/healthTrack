@@ -111,11 +111,10 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 50));
 
-        panel4.setBackground(new java.awt.Color(222, 255, 255));
+        panel4.setBackground(new java.awt.Color(222, 246, 248));
 
         jLabel3.setBackground(new java.awt.Color(222, 246, 248));
         jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("STATISTICANS");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -143,7 +142,6 @@ public class heart extends javax.swing.JFrame {
         panel1.add(panel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 260, 60));
 
         panel5.setBackground(new java.awt.Color(222, 255, 255));
-        panel5.setForeground(new java.awt.Color(0, 0, 0));
         panel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 panel5MouseClicked(evt);
@@ -151,7 +149,6 @@ public class heart extends javax.swing.JFrame {
         });
 
         jLabel4.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("YOUR WEEK");
 
         javax.swing.GroupLayout panel5Layout = new javax.swing.GroupLayout(panel5);
@@ -323,6 +320,7 @@ public class heart extends javax.swing.JFrame {
         panel1.add(panelrecomendacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 400, 360, 70));
 
         panel11.setBackground(new java.awt.Color(177, 201, 239));
+        panel11.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         panel11.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 panel11MouseClicked(evt);
@@ -339,12 +337,12 @@ public class heart extends javax.swing.JFrame {
             .addGroup(panel11Layout.createSequentialGroup()
                 .addGap(316, 316, 316)
                 .addComponent(jLabel6)
-                .addContainerGap(319, Short.MAX_VALUE))
+                .addContainerGap(315, Short.MAX_VALUE))
         );
         panel11Layout.setVerticalGroup(
             panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel11Layout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
+                .addContainerGap(13, Short.MAX_VALUE)
                 .addComponent(jLabel6)
                 .addGap(14, 14, 14))
         );
