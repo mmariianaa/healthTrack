@@ -101,7 +101,7 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Calisto MT" size="24" style="3"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="RECOMMENDATIONES"/>
+                <Property name="text" type="java.lang.String" value="RECOMMENDATIONS"/>
               </Properties>
             </Component>
           </SubComponents>

@@ -43,7 +43,7 @@ public class recomendacion extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jLabel1.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel1.setText("RECOMMENDATIONES");
+        jLabel1.setText("RECOMMENDATIONS");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
