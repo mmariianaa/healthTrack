@@ -245,6 +245,11 @@ public class heart extends javax.swing.JFrame {
 
         panel8.setBackground(new java.awt.Color(222, 240, 248));
         panel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        panel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panel8MouseClicked(evt);
+            }
+        });
 
         jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel7.setText("HEART RATE ");
@@ -425,6 +430,12 @@ public class heart extends javax.swing.JFrame {
         // ESTE ES EL PANEL DE EL RITMO 
         JOptionPane.showMessageDialog(null, "mensaje que quiero dar");
     }//GEN-LAST:event_panel9MouseClicked
+
+    private void panel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel8MouseClicked
+        // TODO add your handling code here:
+        // ESTE ESPACIO ES PARA HEART RATE 
+        JOptionPane.showMessageDialog(null, "ESTE MENSAJE ES PARA LOS HEART RATE");
+    }//GEN-LAST:event_panel8MouseClicked
 
     /**
      * @param args the command line arguments
