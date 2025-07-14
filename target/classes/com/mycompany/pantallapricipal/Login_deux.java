@@ -23,18 +23,18 @@ public class Login_deux extends javax.swing.JFrame {
         barra = new javax.swing.JSeparator();
         jSeparator1 = new javax.swing.JSeparator();
         contrasena = new javax.swing.JLabel();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        contrasenainicio = new javax.swing.JPasswordField();
         jSeparator2 = new javax.swing.JSeparator();
         barraSuperior = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         Xbutton = new javax.swing.JButton();
         Night_City = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        inicio = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         registro = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTextArea1 = new javax.swing.JTextArea();
+        texto1 = new javax.swing.JTextArea();
 
         jScrollPane1.setViewportView(jTextPane1);
 
@@ -56,14 +56,14 @@ public class Login_deux extends javax.swing.JFrame {
         contrasena.setText("PASSWORD");
         jPanel1.add(contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 296, 90, 20));
 
-        jPasswordField1.setBackground(new java.awt.Color(222, 255, 255));
-        jPasswordField1.setBorder(null);
-        jPasswordField1.addActionListener(new java.awt.event.ActionListener() {
+        contrasenainicio.setBackground(new java.awt.Color(222, 255, 255));
+        contrasenainicio.setBorder(null);
+        contrasenainicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jPasswordField1ActionPerformed(evt);
+                contrasenainicioActionPerformed(evt);
             }
         });
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 240, 30));
+        jPanel1.add(contrasenainicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, 240, 30));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
@@ -130,19 +130,19 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 460, 580));
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 210, 180));
 
-        jButton1.setBackground(new java.awt.Color(110, 161, 182));
-        jButton1.setText("Start");
-        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+        inicio.setBackground(new java.awt.Color(110, 161, 182));
+        inicio.setText("Start");
+        inicio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jButton1MouseClicked(evt);
+                inicioMouseClicked(evt);
             }
         });
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        inicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                inicioActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 90, 40));
+        jPanel1.add(inicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 400, 90, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -166,13 +166,12 @@ public class Login_deux extends javax.swing.JFrame {
         jScrollPane2.setBorder(null);
         jScrollPane2.setForeground(new java.awt.Color(204, 255, 204));
 
-        jTextArea1.setBackground(new java.awt.Color(222, 255, 255));
-        jTextArea1.setColumns(20);
-        jTextArea1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextArea1.setLineWrap(true);
-        jTextArea1.setRows(5);
-        jTextArea1.setBorder(null);
-        jScrollPane2.setViewportView(jTextArea1);
+        texto1.setBackground(new java.awt.Color(222, 255, 255));
+        texto1.setColumns(20);
+        texto1.setLineWrap(true);
+        texto1.setRows(5);
+        texto1.setBorder(null);
+        jScrollPane2.setViewportView(texto1);
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 250, 290, 20));
 
@@ -191,21 +190,36 @@ public class Login_deux extends javax.swing.JFrame {
         this.setLocation(xMouse, yMouse);
     }//GEN-LAST:event_barraSuperiorMouseDragged
 
-    private void jPasswordField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordField1ActionPerformed
+    private void contrasenainicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contrasenainicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jPasswordField1ActionPerformed
+        
+        
+    }//GEN-LAST:event_contrasenainicioActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void inicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_inicioActionPerformed
 
-    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+    private void inicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMouseClicked
         // TODO add your handling code here:
-        heart principal=new heart();//se crea un nuevo 
-        principal.setVisible(true);//se crea desde arriba para que sea visible//
-        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+       // este espacio es para verificar la contrasena
+        if (texto1.getText().trim().isEmpty()) {
+            System.out.println("ENTER A TEXT");
+        } else {
+            heart principal=new heart();//se crea un nuevo 
+            principal.setVisible(true);//se crea desde arriba para que sea visible//
+            dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+        }
+        String pass=new String(contrasenainicio.getPassword());
+        if (pass.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#$%!^&*+=_?])[A-Za-z\\d@#$%!^&*+=_?]{8}$")) {
+            System.out.println("La contraseña no es válida.");
+        } else {
+            System.out.println("La contraseña cumple con los requisitos.");
+        }
+
+        
                                          
-    }//GEN-LAST:event_jButton1MouseClicked
+    }//GEN-LAST:event_inicioMouseClicked
 
     private void XbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XbuttonMouseClicked
         // TODO add your handling code here:
@@ -237,19 +251,19 @@ public class Login_deux extends javax.swing.JFrame {
     private javax.swing.JSeparator barra;
     private javax.swing.JPanel barraSuperior;
     private javax.swing.JLabel contrasena;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JPasswordField contrasenainicio;
+    private javax.swing.JButton inicio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel4;
-    private javax.swing.JPasswordField jPasswordField1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JTextArea jTextArea1;
     private javax.swing.JTextPane jTextPane1;
     private javax.swing.JLabel logo;
     private javax.swing.JButton registro;
+    private javax.swing.JTextArea texto1;
     private javax.swing.JLabel user3;
     private javax.swing.JLabel usuario;
     // End of variables declaration//GEN-END:variables

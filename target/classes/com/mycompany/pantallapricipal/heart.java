@@ -267,9 +267,19 @@ public class heart extends javax.swing.JFrame {
 
         panel9.setBackground(new java.awt.Color(222, 240, 248));
         panel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        panel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panel9MouseClicked(evt);
+            }
+        });
 
         jLabel8.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel8.setText("RHYTM");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel9Layout = new javax.swing.GroupLayout(panel9);
         panel9.setLayout(panel9Layout);
@@ -402,6 +412,16 @@ public class heart extends javax.swing.JFrame {
         recomen.setVisible(true);
         dispose();
     }//GEN-LAST:event_panelrecomendacionMouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void panel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel9MouseClicked
+        // TODO add your handling code here:
+        // ESTE ES EL PANEL DE EL RITMO 
+        
+    }//GEN-LAST:event_panel9MouseClicked
 
     /**
      * @param args the command line arguments
