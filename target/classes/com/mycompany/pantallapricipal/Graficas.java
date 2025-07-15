@@ -16,6 +16,7 @@ public class Graficas extends javax.swing.JFrame {
     public Graficas() {
         initComponents();
         
+        
     }
     
 
