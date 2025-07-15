@@ -27,10 +27,10 @@ public class Login_deux extends javax.swing.JFrame {
         contrasena = new javax.swing.JLabel();
         contrasenainicio = new javax.swing.JPasswordField();
         jSeparator2 = new javax.swing.JSeparator();
+        Night_City = new javax.swing.JLabel();
         barraSuperior = new javax.swing.JPanel();
         jPanel4 = new javax.swing.JPanel();
         Xbutton = new javax.swing.JButton();
-        Night_City = new javax.swing.JLabel();
         logo = new javax.swing.JLabel();
         inicio = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -71,7 +71,11 @@ public class Login_deux extends javax.swing.JFrame {
         jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
         jPanel1.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 373, 290, 10));
 
-        barraSuperior.setBackground(new java.awt.Color(202, 240, 248));
+        Night_City.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/animated_heart.gif"))); // NOI18N
+        Night_City.setText("jLabel7");
+        jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 460, 620));
+
+        barraSuperior.setBackground(new java.awt.Color(13, 70, 113));
         barraSuperior.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 barraSuperiorMouseDragged(evt);
@@ -83,7 +87,7 @@ public class Login_deux extends javax.swing.JFrame {
             }
         });
 
-        jPanel4.setBackground(new java.awt.Color(202, 240, 248));
+        jPanel4.setBackground(new java.awt.Color(13, 70, 113));
 
         Xbutton.setBackground(new java.awt.Color(213, 222, 239));
         Xbutton.setText("X");
@@ -126,10 +130,6 @@ public class Login_deux extends javax.swing.JFrame {
         );
 
         jPanel1.add(barraSuperior, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 630, 40));
-
-        Night_City.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/animated_heart.gif"))); // NOI18N
-        Night_City.setText("jLabel7");
-        jPanel1.add(Night_City, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 40, 460, 580));
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 210, 180));
 
         inicio.setBackground(new java.awt.Color(110, 161, 182));
@@ -148,7 +148,7 @@ public class Login_deux extends javax.swing.JFrame {
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
         jLabel1.setText("jLabel1");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 180, 170));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 180, 170));
 
         registro.setBackground(new java.awt.Color(222, 255, 255));
         registro.setText("Register");

@@ -49,9 +49,10 @@ public class List extends javax.swing.JFrame {
 
         underground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        izquierdo1.setBackground(new java.awt.Color(202, 240, 248));
+        izquierdo1.setBackground(new java.awt.Color(13, 70, 113));
 
-        izquierdo2.setBackground(new java.awt.Color(222, 255, 255));
+        izquierdo2.setBackground(new java.awt.Color(193, 232, 255));
+        izquierdo2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout izquierdo2Layout = new javax.swing.GroupLayout(izquierdo2);
         izquierdo2.setLayout(izquierdo2Layout);
@@ -61,7 +62,7 @@ public class List extends javax.swing.JFrame {
         );
         izquierdo2Layout.setVerticalGroup(
             izquierdo2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 500, Short.MAX_VALUE)
+            .addGap(0, 498, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout izquierdo1Layout = new javax.swing.GroupLayout(izquierdo1);
@@ -70,7 +71,7 @@ public class List extends javax.swing.JFrame {
             izquierdo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(izquierdo1Layout.createSequentialGroup()
                 .addComponent(izquierdo2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 56, Short.MAX_VALUE))
+                .addGap(0, 54, Short.MAX_VALUE))
         );
         izquierdo1Layout.setVerticalGroup(
             izquierdo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -79,9 +80,10 @@ public class List extends javax.swing.JFrame {
 
         underground.add(izquierdo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 500));
 
-        derecho1.setBackground(new java.awt.Color(202, 240, 248));
+        derecho1.setBackground(new java.awt.Color(13, 70, 113));
 
-        derecho2.setBackground(new java.awt.Color(222, 255, 255));
+        derecho2.setBackground(new java.awt.Color(193, 232, 255));
+        derecho2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         javax.swing.GroupLayout derecho2Layout = new javax.swing.GroupLayout(derecho2);
         derecho2.setLayout(derecho2Layout);
@@ -91,7 +93,7 @@ public class List extends javax.swing.JFrame {
         );
         derecho2Layout.setVerticalGroup(
             derecho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 461, Short.MAX_VALUE)
+            .addGap(0, 459, Short.MAX_VALUE)
         );
 
         backbutton.setBackground(new java.awt.Color(204, 204, 255));

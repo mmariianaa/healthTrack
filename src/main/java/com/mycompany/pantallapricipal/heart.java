@@ -58,10 +58,12 @@ public class heart extends javax.swing.JFrame {
         panel1.setBackground(new java.awt.Color(240, 243, 250));
         panel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panel2.setBackground(new java.awt.Color(202, 240, 248));
+        panel2.setBackground(new java.awt.Color(13, 70, 113));
         panel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        panel2.setForeground(new java.awt.Color(255, 255, 255));
 
         jLabel1.setFont(new java.awt.Font("Bernard MT Condensed", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("HEALTH TRACK ");
 
         javax.swing.GroupLayout panel2Layout = new javax.swing.GroupLayout(panel2);
@@ -122,7 +124,7 @@ public class heart extends javax.swing.JFrame {
 
         jLabel3.setBackground(new java.awt.Color(222, 246, 248));
         jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel3.setText("STATISTICANS");
+        jLabel3.setText("STATISTICS");
         jLabel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel3MouseClicked(evt);
