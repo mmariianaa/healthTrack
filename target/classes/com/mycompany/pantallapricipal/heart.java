@@ -395,6 +395,9 @@ public class heart extends javax.swing.JFrame {
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
         // TODO add your handling code here:
         // ESTE ESPACIO ES PARA EL SEGUNDO EVENTO 
+        estadisticas estadis=new estadisticas();//se crea un nuevo 
+        estadis.setVisible(true);//se crea desde arriba para que sea visible//
+        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
     }//GEN-LAST:event_jLabel3MouseClicked
 
     private void panel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel5MouseClicked
