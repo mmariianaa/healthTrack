@@ -114,6 +114,11 @@ public class heart extends javax.swing.JFrame {
         panel1.add(panel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 50));
 
         panel4.setBackground(new java.awt.Color(222, 246, 248));
+        panel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                panel4MouseClicked(evt);
+            }
+        });
 
         jLabel3.setBackground(new java.awt.Color(222, 246, 248));
         jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
@@ -436,6 +441,13 @@ public class heart extends javax.swing.JFrame {
         // ESTE ESPACIO ES PARA HEART RATE 
         JOptionPane.showMessageDialog(null, "ESTE MENSAJE ES PARA LOS HEART RATE");
     }//GEN-LAST:event_panel8MouseClicked
+
+    private void panel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel4MouseClicked
+        // TODO add your handling code here:
+        estadisticas estadis=new estadisticas();//se crea un nuevo 
+        estadis.setVisible(true);//se crea desde arriba para que sea visible//
+        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+    }//GEN-LAST:event_panel4MouseClicked
 
     /**
      * @param args the command line arguments
