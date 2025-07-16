@@ -39,8 +39,6 @@ public class estadisticas extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         plana = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        back = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -150,7 +148,7 @@ public class estadisticas extends javax.swing.JFrame {
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(planaLayout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 611, Short.MAX_VALUE))
+                .addGap(0, 621, Short.MAX_VALUE))
         );
         planaLayout.setVerticalGroup(
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -160,49 +158,12 @@ public class estadisticas extends javax.swing.JFrame {
                 .addContainerGap(292, Short.MAX_VALUE))
         );
 
-        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 145, 700, 340));
+        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 145, 710, 340));
 
-        back.setBackground(new java.awt.Color(177, 201, 239));
-        back.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        back.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                backMouseClicked(evt);
-            }
-        });
-
-        jLabel6.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel6.setText("BACK");
-
-        javax.swing.GroupLayout backLayout = new javax.swing.GroupLayout(back);
-        back.setLayout(backLayout);
-        backLayout.setHorizontalGroup(
-            backLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(backLayout.createSequentialGroup()
-                .addGap(316, 316, 316)
-                .addComponent(jLabel6)
-                .addContainerGap(315, Short.MAX_VALUE))
-        );
-        backLayout.setVerticalGroup(
-            backLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, backLayout.createSequentialGroup()
-                .addContainerGap(13, Short.MAX_VALUE)
-                .addComponent(jLabel6)
-                .addGap(14, 14, 14))
-        );
-
-        underground.add(back, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 476, 700, 60));
-
-        getContentPane().add(underground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+        getContentPane().add(underground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 540));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
-        // TODO add your handling code here:
-        heart vueltalogin_denux=new heart();//se crea un nuevo
-        vueltalogin_denux.setVisible(true);//se crea desde arriba para que sea visible//
-        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
-    }//GEN-LAST:event_backMouseClicked
 
     private void heartMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_heartMouseClicked
         // TODO add your handling code here:
@@ -255,14 +216,12 @@ public class estadisticas extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel STATISTICS;
-    private javax.swing.JPanel back;
     private javax.swing.JPanel heart;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel kcal;
     private javax.swing.JPanel panel2;

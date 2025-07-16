@@ -84,7 +84,7 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 50));
 
-        panel3.setBackground(new java.awt.Color(138, 174, 224));
+        panel3.setBackground(new java.awt.Color(177, 201, 239));
         panel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panel3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
