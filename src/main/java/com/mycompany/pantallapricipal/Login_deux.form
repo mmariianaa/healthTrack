@@ -60,6 +60,9 @@
       <SubComponents>
         <Component class="javax.swing.JLabel" name="usuario">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calisto MT" size="14" style="3"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="USER"/>
           </Properties>
           <Constraints>
@@ -89,6 +92,9 @@
         </Component>
         <Component class="javax.swing.JLabel" name="contrasena">
           <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calisto MT" size="12" style="3"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="PASSWORD"/>
           </Properties>
           <Constraints>
@@ -233,7 +239,10 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="b6" green="a1" red="6e" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Start"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calisto MT" size="18" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="START"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="inicioMouseClicked"/>
@@ -263,7 +272,10 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="de" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Register"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Calisto MT" size="18" style="3"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="REGISTER"/>
           </Properties>
           <Events>
             <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="registroMouseClicked"/>
