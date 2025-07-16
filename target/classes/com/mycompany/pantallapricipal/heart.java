@@ -43,6 +43,7 @@ public class heart extends javax.swing.JFrame {
         panel6 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         panel12 = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
         panel7 = new javax.swing.JPanel();
         EJERCICIOS = new javax.swing.JLabel();
         panel8 = new javax.swing.JPanel();
@@ -208,15 +209,23 @@ public class heart extends javax.swing.JFrame {
         panel12.setBackground(new java.awt.Color(230, 255, 255));
         panel12.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
+
         javax.swing.GroupLayout panel12Layout = new javax.swing.GroupLayout(panel12);
         panel12.setLayout(panel12Layout);
         panel12Layout.setHorizontalGroup(
             panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 346, Short.MAX_VALUE)
+            .addGroup(panel12Layout.createSequentialGroup()
+                .addGap(65, 65, 65)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 217, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(64, Short.MAX_VALUE))
         );
         panel12Layout.setVerticalGroup(
             panel12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 306, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel12Layout.createSequentialGroup()
+                .addContainerGap(41, Short.MAX_VALUE)
+                .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(38, 38, 38))
         );
 
         panel1.add(panel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 350, 310));
@@ -260,7 +269,7 @@ public class heart extends javax.swing.JFrame {
         });
 
         jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel7.setText("HEART RATE ");
+        jLabel7.setText("SLEEP");
 
         javax.swing.GroupLayout panel8Layout = new javax.swing.GroupLayout(panel8);
         panel8.setLayout(panel8Layout);
@@ -289,7 +298,7 @@ public class heart extends javax.swing.JFrame {
         });
 
         jLabel8.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel8.setText("RHYTM");
+        jLabel8.setText("FOOD");
         jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel8MouseClicked(evt);
@@ -301,9 +310,9 @@ public class heart extends javax.swing.JFrame {
         panel9Layout.setHorizontalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel9Layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(14, 14, 14)
                 .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 264, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addContainerGap(78, Short.MAX_VALUE))
         );
         panel9Layout.setVerticalGroup(
             panel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -496,6 +505,7 @@ public class heart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel11;
