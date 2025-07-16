@@ -270,6 +270,11 @@ public class heart extends javax.swing.JFrame {
 
         jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel7.setText("SLEEP");
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel8Layout = new javax.swing.GroupLayout(panel8);
         panel8.setLayout(panel8Layout);
@@ -463,6 +468,13 @@ public class heart extends javax.swing.JFrame {
         estadis.setVisible(true);//se crea desde arriba para que sea visible//
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
     }//GEN-LAST:event_panel4MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        stick_man suenos = new stick_man();
+        suenos.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel7MouseClicked
 
     /**
      * @param args the command line arguments
