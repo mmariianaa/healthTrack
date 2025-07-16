@@ -6,6 +6,7 @@ package com.mycompany.pantallapricipal;
 
 import javax.swing.JOptionPane;
 
+
 /**
  *
  * @author holan

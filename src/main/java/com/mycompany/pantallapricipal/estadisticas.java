@@ -160,7 +160,7 @@ public class estadisticas extends javax.swing.JFrame {
 
         underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 145, 710, 340));
 
-        getContentPane().add(underground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, 540));
+        getContentPane().add(underground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
