@@ -54,7 +54,7 @@ public class registro extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(222, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(222, 246, 248));
 
         nombre.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         nombre.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -128,6 +128,8 @@ public class registro extends javax.swing.JFrame {
 
         contrasena.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         contrasena.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel3.setText("NAME");

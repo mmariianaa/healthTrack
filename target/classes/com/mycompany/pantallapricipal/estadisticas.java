@@ -33,14 +33,12 @@ public class estadisticas extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         your_week = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        kcal = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
         STATISTICS = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        kcal = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
         plana = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
-        recomendation = new javax.swing.JPanel();
-        jLabel8 = new javax.swing.JLabel();
         back = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -49,17 +47,18 @@ public class estadisticas extends javax.swing.JFrame {
 
         underground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        panel2.setBackground(new java.awt.Color(202, 240, 248));
+        panel2.setBackground(new java.awt.Color(13, 70, 113));
         panel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setFont(new java.awt.Font("Bernard MT Condensed", 3, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("HEALTH TRACK ");
         panel2.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 7, -1, -1));
 
         underground.add(panel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, -1));
 
-        heart.setBackground(new java.awt.Color(222, 255, 255));
+        heart.setBackground(new java.awt.Color(222, 246, 248));
         heart.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         heart.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -75,19 +74,19 @@ public class estadisticas extends javax.swing.JFrame {
         heartLayout.setHorizontalGroup(
             heartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, heartLayout.createSequentialGroup()
-                .addContainerGap(60, Short.MAX_VALUE)
+                .addContainerGap(101, Short.MAX_VALUE)
                 .addComponent(jLabel2)
-                .addGap(80, 80, 80))
+                .addGap(89, 89, 89))
         );
         heartLayout.setVerticalGroup(
             heartLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, heartLayout.createSequentialGroup()
-                .addContainerGap(13, Short.MAX_VALUE)
+            .addGroup(heartLayout.createSequentialGroup()
+                .addGap(14, 14, 14)
                 .addComponent(jLabel2)
-                .addContainerGap())
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        underground.add(heart, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 230, 50));
+        underground.add(heart, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 280, 60));
 
         your_week.setBackground(new java.awt.Color(222, 255, 255));
         your_week.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -105,29 +104,19 @@ public class estadisticas extends javax.swing.JFrame {
         your_weekLayout.setHorizontalGroup(
             your_weekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, your_weekLayout.createSequentialGroup()
-                .addContainerGap(42, Short.MAX_VALUE)
+                .addContainerGap(22, Short.MAX_VALUE)
                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         your_weekLayout.setVerticalGroup(
             your_weekLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(your_weekLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(14, 14, 14)
                 .addComponent(jLabel4)
-                .addContainerGap(13, Short.MAX_VALUE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
-        underground.add(your_week, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 50, 230, 50));
-
-        kcal.setBackground(new java.awt.Color(177, 201, 239));
-        kcal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        kcal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel5.setText("KCAL");
-        kcal.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 690, -1));
-
-        underground.add(kcal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 700, 40));
+        underground.add(your_week, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 50, 210, 60));
 
         STATISTICS.setBackground(new java.awt.Color(177, 201, 239));
         STATISTICS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -135,9 +124,19 @@ public class estadisticas extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel3.setText("STATISTICS");
-        STATISTICS.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 1, 212, 42));
+        STATISTICS.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 10, 212, 42));
 
-        underground.add(STATISTICS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 240, 50));
+        underground.add(STATISTICS, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, 260, 60));
+
+        kcal.setBackground(new java.awt.Color(177, 201, 239));
+        kcal.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        kcal.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        jLabel5.setText("KCAL");
+        kcal.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 690, -1));
+
+        underground.add(kcal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 700, 50));
 
         plana.setBackground(new java.awt.Color(230, 255, 255));
         plana.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -145,53 +144,23 @@ public class estadisticas extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
         jLabel7.setText("CHARTS");
 
-        recomendation.setBackground(new java.awt.Color(202, 240, 248));
-        recomendation.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                recomendationMouseClicked(evt);
-            }
-        });
-
-        jLabel8.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel8.setText("RECOMENDATION");
-
-        javax.swing.GroupLayout recomendationLayout = new javax.swing.GroupLayout(recomendation);
-        recomendation.setLayout(recomendationLayout);
-        recomendationLayout.setHorizontalGroup(
-            recomendationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, recomendationLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 233, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(225, 225, 225))
-        );
-        recomendationLayout.setVerticalGroup(
-            recomendationLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(recomendationLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel8, javax.swing.GroupLayout.DEFAULT_SIZE, 47, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
         javax.swing.GroupLayout planaLayout = new javax.swing.GroupLayout(plana);
         plana.setLayout(planaLayout);
         planaLayout.setHorizontalGroup(
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(planaLayout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(605, Short.MAX_VALUE))
-            .addComponent(recomendation, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(0, 611, Short.MAX_VALUE))
         );
         planaLayout.setVerticalGroup(
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(planaLayout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(17, 17, 17)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 254, Short.MAX_VALUE)
-                .addComponent(recomendation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(292, Short.MAX_VALUE))
         );
 
-        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 135, 700, 350));
+        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 145, 700, 340));
 
         back.setBackground(new java.awt.Color(177, 201, 239));
         back.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -230,7 +199,7 @@ public class estadisticas extends javax.swing.JFrame {
 
     private void backMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_backMouseClicked
         // TODO add your handling code here:
-        Login_deux vueltalogin_denux=new Login_deux();//se crea un nuevo
+        heart vueltalogin_denux=new heart();//se crea un nuevo
         vueltalogin_denux.setVisible(true);//se crea desde arriba para que sea visible//
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
     }//GEN-LAST:event_backMouseClicked
@@ -243,15 +212,6 @@ public class estadisticas extends javax.swing.JFrame {
         vueltaheart.setVisible(true);//se crea desde arriba para que sea visible//
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
     }//GEN-LAST:event_heartMouseClicked
-
-    private void recomendationMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_recomendationMouseClicked
-        // TODO add your handling code here:
-        //ESTE ES PAR VOLVER A LA PANTALLA DE RECOMENDACIONES 
-        // ESTE ESPACIO ES PARA CAMBIAR A LA PAGINA DEL LOGUIN
-        recomendacion vueltareco=new recomendacion();//se crea un nuevo
-        vueltareco.setVisible(true);//se crea desde arriba para que sea visible//
-        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
-    }//GEN-LAST:event_recomendationMouseClicked
 
     private void your_weekMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_your_weekMouseClicked
         // TODO add your handling code here:
@@ -304,11 +264,9 @@ public class estadisticas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel kcal;
     private javax.swing.JPanel panel2;
     private javax.swing.JPanel plana;
-    private javax.swing.JPanel recomendation;
     private javax.swing.JPanel underground;
     private javax.swing.JPanel your_week;
     // End of variables declaration//GEN-END:variables
