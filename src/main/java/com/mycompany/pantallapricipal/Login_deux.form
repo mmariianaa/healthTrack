@@ -240,7 +240,7 @@
               <Color blue="b6" green="a1" red="6e" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Calisto MT" size="18" style="3"/>
+              <Font name="Calisto MT" size="14" style="3"/>
             </Property>
             <Property name="text" type="java.lang.String" value="START"/>
           </Properties>

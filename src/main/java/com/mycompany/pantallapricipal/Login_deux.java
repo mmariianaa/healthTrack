@@ -135,7 +135,7 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 210, 180));
 
         inicio.setBackground(new java.awt.Color(110, 161, 182));
-        inicio.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        inicio.setFont(new java.awt.Font("Calisto MT", 3, 14)); // NOI18N
         inicio.setText("START");
         inicio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {

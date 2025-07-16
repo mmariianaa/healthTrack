@@ -48,6 +48,7 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(222, 255, 255));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        usuario.setFont(new java.awt.Font("Calisto MT", 3, 14)); // NOI18N
         usuario.setText("USER");
         jPanel1.add(usuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 50, -1));
         jPanel1.add(barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 340, 0));
@@ -55,6 +56,7 @@ public class Login_deux extends javax.swing.JFrame {
         jSeparator1.setForeground(new java.awt.Color(51, 51, 51));
         jPanel1.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, 290, -1));
 
+        contrasena.setFont(new java.awt.Font("Calisto MT", 3, 12)); // NOI18N
         contrasena.setText("PASSWORD");
         jPanel1.add(contrasena, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 296, 90, 20));
 
@@ -133,7 +135,8 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, 210, 180));
 
         inicio.setBackground(new java.awt.Color(110, 161, 182));
-        inicio.setText("Start");
+        inicio.setFont(new java.awt.Font("Calisto MT", 3, 14)); // NOI18N
+        inicio.setText("START");
         inicio.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 inicioMouseClicked(evt);
@@ -151,7 +154,8 @@ public class Login_deux extends javax.swing.JFrame {
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 50, 180, 170));
 
         registro.setBackground(new java.awt.Color(222, 255, 255));
-        registro.setText("Register");
+        registro.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        registro.setText("REGISTER");
         registro.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 registroMouseClicked(evt);
