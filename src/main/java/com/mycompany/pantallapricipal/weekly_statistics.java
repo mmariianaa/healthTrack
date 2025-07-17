@@ -90,7 +90,7 @@ public class weekly_statistics extends javax.swing.JFrame {
         panel13 = new javax.swing.JPanel();
         jLabel10 = new javax.swing.JLabel();
         panel14 = new javax.swing.JPanel();
-        jLabel11 = new javax.swing.JLabel();
+        estadisticas = new javax.swing.JLabel();
         panel15 = new javax.swing.JPanel();
         jLabel12 = new javax.swing.JLabel();
         jPanel24 = new javax.swing.JPanel();
@@ -898,6 +898,8 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel3.setBackground(new java.awt.Color(204, 255, 204));
+        jPanel3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         panel10.setBackground(new java.awt.Color(13, 70, 113));
         panel10.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -923,6 +925,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addGap(0, 5, Short.MAX_VALUE))
         );
 
+        jPanel3.add(panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 2, 772, -1));
+
         panel13.setBackground(new java.awt.Color(177, 201, 239));
         panel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panel13.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -933,23 +937,30 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel10.setText("HEART ");
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel13Layout = new javax.swing.GroupLayout(panel13);
         panel13.setLayout(panel13Layout);
         panel13Layout.setHorizontalGroup(
             panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel10)
-                .addGap(82, 82, 82))
+            .addGroup(panel13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 228, Short.MAX_VALUE)
+                .addGap(24, 24, 24))
         );
         panel13Layout.setVerticalGroup(
             panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel13Layout.createSequentialGroup()
-                .addGap(15, 15, 15)
-                .addComponent(jLabel10)
-                .addContainerGap(19, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10, javax.swing.GroupLayout.DEFAULT_SIZE, 51, Short.MAX_VALUE)
+                .addContainerGap())
         );
+
+        jPanel3.add(panel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 260, -1));
 
         panel14.setBackground(new java.awt.Color(222, 246, 248));
         panel14.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -959,12 +970,12 @@ public class weekly_statistics extends javax.swing.JFrame {
             }
         });
 
-        jLabel11.setBackground(new java.awt.Color(222, 246, 248));
-        jLabel11.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel11.setText("STATISTICS");
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+        estadisticas.setBackground(new java.awt.Color(222, 246, 248));
+        estadisticas.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        estadisticas.setText("STATISTICS");
+        estadisticas.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
+                estadisticasMouseClicked(evt);
             }
         });
 
@@ -974,15 +985,17 @@ public class weekly_statistics extends javax.swing.JFrame {
             panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(estadisticas, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50))
         );
         panel14Layout.setVerticalGroup(
             panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel14Layout.createSequentialGroup()
-                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                .addComponent(estadisticas, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
                 .addContainerGap())
         );
+
+        jPanel3.add(panel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 52, 272, -1));
 
         panel15.setBackground(new java.awt.Color(222, 255, 255));
         panel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -991,24 +1004,18 @@ public class weekly_statistics extends javax.swing.JFrame {
                 panel15MouseClicked(evt);
             }
         });
+        panel15.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel12.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel12.setText("YOUR WEEK");
+        jLabel12.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel12MouseClicked(evt);
+            }
+        });
+        panel15.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 226, 56));
 
-        javax.swing.GroupLayout panel15Layout = new javax.swing.GroupLayout(panel15);
-        panel15.setLayout(panel15Layout);
-        panel15Layout.setHorizontalGroup(
-            panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel15Layout.createSequentialGroup()
-                .addGap(0, 26, Short.MAX_VALUE)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-        panel15Layout.setVerticalGroup(
-            panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel15Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel12, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE))
-        );
+        jPanel3.add(panel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 240, 70));
 
         jPanel24.setBackground(new java.awt.Color(255, 255, 255));
         jPanel24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1038,6 +1045,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 175, 267, -1));
+
         jPanel25.setBackground(new java.awt.Color(255, 255, 255));
         jPanel25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1065,6 +1074,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addComponent(jLabel35)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
+
+        jPanel3.add(jPanel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 265, -1, -1));
 
         jPanel26.setBackground(new java.awt.Color(255, 255, 255));
         jPanel26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1094,6 +1105,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 355, 267, -1));
+
         jPanel27.setBackground(new java.awt.Color(255, 255, 255));
         jPanel27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1117,6 +1130,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addComponent(jLabel37)
                 .addContainerGap())
         );
+
+        jPanel3.add(jPanel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 400, -1, -1));
 
         jPanel28.setBackground(new java.awt.Color(255, 255, 255));
         jPanel28.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1146,6 +1161,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 445, 267, -1));
+
         jPanel31.setBackground(new java.awt.Color(255, 255, 255));
         jPanel31.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1173,6 +1190,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addComponent(jLabel41)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
+
+        jPanel3.add(jPanel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 267, -1));
 
         jPanel39.setBackground(new java.awt.Color(255, 255, 255));
         jPanel39.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1202,6 +1221,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 310, 267, -1));
+
         jPanel45.setBackground(new java.awt.Color(255, 255, 255));
         jPanel45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1230,6 +1251,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 310, -1, -1));
+
         jPanel46.setBackground(new java.awt.Color(255, 255, 255));
         jPanel46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1253,6 +1276,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addComponent(jLabel56)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
+
+        jPanel3.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 265, 227, -1));
 
         jPanel47.setBackground(new java.awt.Color(255, 255, 255));
         jPanel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1282,6 +1307,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 355, -1, -1));
+
         jPanel48.setBackground(new java.awt.Color(255, 255, 255));
         jPanel48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1310,6 +1337,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 220, -1, -1));
+
         jPanel49.setBackground(new java.awt.Color(255, 255, 255));
         jPanel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1333,6 +1362,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addComponent(jLabel59)
                 .addContainerGap())
         );
+
+        jPanel3.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 400, 227, -1));
 
         jPanel50.setBackground(new java.awt.Color(255, 255, 255));
         jPanel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1362,6 +1393,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 445, -1, -1));
+
         jPanel51.setBackground(new java.awt.Color(255, 255, 255));
         jPanel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1389,6 +1422,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addComponent(jLabel61)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
+
+        jPanel3.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 175, -1, -1));
 
         jPanel59.setBackground(new java.awt.Color(255, 255, 255));
         jPanel59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1418,6 +1453,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 445, -1, -1));
+
         jPanel60.setBackground(new java.awt.Color(255, 255, 255));
         jPanel60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1445,6 +1482,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addComponent(jLabel70)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
+
+        jPanel3.add(jPanel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 310, -1, -1));
 
         jPanel61.setBackground(new java.awt.Color(255, 255, 255));
         jPanel61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1474,6 +1513,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 175, -1, -1));
+
         jPanel62.setBackground(new java.awt.Color(255, 255, 255));
         jPanel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1497,6 +1538,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addComponent(jLabel72)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
+
+        jPanel3.add(jPanel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 265, 248, -1));
 
         jPanel63.setBackground(new java.awt.Color(255, 255, 255));
         jPanel63.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -1526,6 +1569,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 355, -1, -1));
+
         jPanel64.setBackground(new java.awt.Color(255, 255, 255));
         jPanel64.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1554,6 +1599,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
+        jPanel3.add(jPanel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 220, -1, -1));
+
         jPanel65.setBackground(new java.awt.Color(255, 255, 255));
         jPanel65.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -1578,107 +1625,7 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(jPanel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel25, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel26, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel27, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel31, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel39, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(panel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel51, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel48, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel47, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel49, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel61, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel64, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel60, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel63, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel59, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel65, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(18, Short.MAX_VALUE))
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addGap(0, 258, Short.MAX_VALUE)
-                    .addComponent(panel14, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                    .addComponent(panel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addComponent(panel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(51, 51, 51)
-                .addComponent(panel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(59, 59, 59)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jPanel24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel61, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jPanel31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jPanel48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jPanel64, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                                .addComponent(jPanel25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                                .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                            .addGroup(jPanel3Layout.createSequentialGroup()
-                                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jPanel45, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jPanel60, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(jPanel26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(jPanel63, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jPanel65, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel59, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(71, Short.MAX_VALUE))
-            .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(panel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(panel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(panel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGap(0, 437, Short.MAX_VALUE)))
-        );
+        jPanel3.add(jPanel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 400, 248, -1));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1770,16 +1717,35 @@ public class weekly_statistics extends javax.swing.JFrame {
     }//GEN-LAST:event_panel15MouseClicked
 
     private void panel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel14MouseClicked
-       
+
+        estadisticas esta = new estadisticas();
+        esta.setVisible(true);
+        dispose ();
     }//GEN-LAST:event_panel14MouseClicked
 
-    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
-     
-    }//GEN-LAST:event_jLabel11MouseClicked
+    private void estadisticasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_estadisticasMouseClicked
+        estadisticas esta = new estadisticas();
+        esta.setVisible(true);
+        dispose ();
+    }//GEN-LAST:event_estadisticasMouseClicked
 
     private void panel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel13MouseClicked
         // TODO add your handling code here
     }//GEN-LAST:event_panel13MouseClicked
+
+    private void jLabel12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel12MouseClicked
+        // TODO add your handling code here:
+        //your week
+        
+    }//GEN-LAST:event_jLabel12MouseClicked
+
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
+        // TODO add your handling code here:
+        //heart
+        heart yuyu = new heart();
+        yuyu.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel10MouseClicked
 
     /**
      * @param args the command line arguments
@@ -1818,11 +1784,11 @@ public class weekly_statistics extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel EJERCICIOS;
+    private javax.swing.JLabel estadisticas;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel25;

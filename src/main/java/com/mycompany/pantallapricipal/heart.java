@@ -161,6 +161,11 @@ public class heart extends javax.swing.JFrame {
 
         jLabel4.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
         jLabel4.setText("YOUR WEEK");
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel4MouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout panel5Layout = new javax.swing.GroupLayout(panel5);
         panel5.setLayout(panel5Layout);
@@ -481,6 +486,14 @@ public class heart extends javax.swing.JFrame {
         suenos.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
+        // TODO add your handling code here:
+        //your week
+        weekly_statistics esta = new weekly_statistics();
+        esta.setVisible(true);
+        dispose ();
+    }//GEN-LAST:event_jLabel4MouseClicked
 
     /**
      * @param args the command line arguments

@@ -177,6 +177,9 @@ public class estadisticas extends javax.swing.JFrame {
     private void your_weekMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_your_weekMouseClicked
         // TODO add your handling code here:
         //ESTE APARTADO ES PARA EL TERCER EVENTO
+        weekly_statistics cabello = new weekly_statistics ();
+        cabello.setVisible(true);
+        dispose ();
     }//GEN-LAST:event_your_weekMouseClicked
 
     /**
