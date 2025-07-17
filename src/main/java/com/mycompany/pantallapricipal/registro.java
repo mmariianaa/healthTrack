@@ -253,6 +253,7 @@ public class registro extends javax.swing.JFrame {
     private void registrarseMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_registrarseMouseClicked
         // TODO add your handling code here:
         //ESTE APARTADO ES PARA ENLAZAR EL REGISTRO A LA PRINCIPAL 
+        //peticiones.insertarUsuario(nombreCompleto, rol, curp, correo, password)
         Login_deux vueltaalloguin=new Login_deux();//se crea un nuevo 
         vueltaalloguin.setVisible(true);//se crea desde arriba para que sea visible//
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//

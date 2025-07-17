@@ -16,6 +16,7 @@ com\mycompany\pantallapricipal\Login_deux$5.class
 com\mycompany\pantallapricipal\heart$9.class
 com\mycompany\pantallapricipal\recomendacion.class
 com\mycompany\pantallapricipal\stick_man$2.class
+com\mycompany\pantallapricipal\DB.class
 com\mycompany\pantallapricipal\Login_deux$6.class
 com\mycompany\pantallapricipal\Graficas$2.class
 com\mycompany\pantallapricipal\List$4.class
@@ -49,4 +50,5 @@ com\mycompany\pantallapricipal\heart$5.class
 com\mycompany\pantallapricipal\estadisticas$3.class
 com\mycompany\pantallapricipal\heart.class
 com\mycompany\pantallapricipal\Graficas.class
+com\mycompany\pantallapricipal\peticiones.class
 com\mycompany\pantallapricipal\Login_deux$3.class

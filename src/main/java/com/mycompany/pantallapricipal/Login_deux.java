@@ -209,26 +209,17 @@ public class Login_deux extends javax.swing.JFrame {
     private void inicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMouseClicked
         // TODO add your handling code here:
        // este espacio es para verificar la contrasena
-        if (texto1.getText().trim().isEmpty() && contrasenainicio.getPassword().length>0) {
-            System.out.println("ENTER A TEXT");
-            JOptionPane.showMessageDialog(null, "Holis el texto esta vacio we");
-        } else {
-            String pass=new String(contrasenainicio.getPassword());
-            String user=texto1.getText();
-            
-        if (pass.matches("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[@#$%!^&*+=_?])[A-Za-z\\d@#$%!^&*+=_?]{8}$")) {
-            System.out.println("La contraseña no es válida.");
-        } else {
-            System.out.println("La contraseña cumple con los requisitos.");
-        }
+       String correo=texto1.getText();
+       String password=new String(contrasenainicio.getPassword());
+       int pass=Integer.parseInt(password);
+       boolean exito=peticiones.login(correo, pass);
+        if(exito){
             heart principal=new heart();//se crea un nuevo 
             principal.setVisible(true);//se crea desde arriba para que sea visible//
             dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
-        }
-        
-
-        
-                                         
+        }else{
+            JOptionPane.showMessageDialog(null, "Tus credenciales son erroneas");
+        }                                 
     }//GEN-LAST:event_inicioMouseClicked
 
     private void XbuttonMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XbuttonMouseClicked
