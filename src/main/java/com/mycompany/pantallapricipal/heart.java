@@ -442,13 +442,19 @@ public class heart extends javax.swing.JFrame {
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "mensaje que quiero dar");
+        food comida=new food();
+        comida.setVisible(true);
+        dispose();
+        
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void panel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel9MouseClicked
         // TODO add your handling code here:
-        // ESTE ES EL PANEL DE EL RITMO 
-        JOptionPane.showMessageDialog(null, "mensaje que quiero dar");
+        // ESTE ES EL PANEL DE comida 
+        food comida=new food();
+        comida.setVisible(true);
+        dispose();
+        
     }//GEN-LAST:event_panel9MouseClicked
 
     private void panel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel8MouseClicked
