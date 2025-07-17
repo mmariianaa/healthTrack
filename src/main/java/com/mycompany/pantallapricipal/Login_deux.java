@@ -211,8 +211,8 @@ public class Login_deux extends javax.swing.JFrame {
        // este espacio es para verificar la contrasena
        String correo=texto1.getText();
        String password=new String(contrasenainicio.getPassword());
-       int pass=Integer.parseInt(password);
-       boolean exito=peticiones.login(correo, pass);
+  
+       boolean exito=peticiones.login(correo, password);
         if(exito){
             heart principal=new heart();//se crea un nuevo 
             principal.setVisible(true);//se crea desde arriba para que sea visible//

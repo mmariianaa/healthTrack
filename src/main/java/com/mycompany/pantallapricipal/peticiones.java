@@ -52,20 +52,23 @@ public class peticiones {
     }
     
     //Otra peticion
-    public static boolean insertarUsuario(String nombreCompleto, String rol, String curp, String correo, String password) {
+    public static boolean insertarUsuario(String nombre, String correo, String contrasena, int edad, double peso,String sexo, double altura) {
     
     Connection conn = DB.conectar();
 
     if (conn != null) {
         
-        String query = "INSERT INTO usuarios (nombre_completo, rol, curp, correo, password) VALUES (?, ?, ?, ?, ?)";
+        String query = "INSERT INTO usuarios (nombre, correo,contrasena, edad, peso, sexo, altura) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
-            stmt.setString(1, nombreCompleto);
-            stmt.setString(2, rol);
-            stmt.setString(3, curp);
-            stmt.setString(4, correo);
-            stmt.setString(5, password);
+            stmt.setString(1, nombre);
+            stmt.setString(2, correo);
+            stmt.setString(3, contrasena);
+            stmt.setInt(5, edad);
+            stmt.setDouble(6, peso);
+            stmt.setString(7, sexo);
+            stmt.setDouble(8, altura);
+            
 
             int filasAfectadas = stmt.executeUpdate();
 
@@ -79,17 +82,17 @@ public class peticiones {
 
     return false;
 }
-    public static boolean login(String correo, int password) {
+    public static boolean login(String correo, String password) {
     
     Connection conn = DB.conectar();
 
     if (conn != null) {
         
-        String query = "SELECT * FROM usuario WHERE correo = ? AND edad = ?";
+        String query = "SELECT * FROM usuario WHERE correo = ? AND contrasena = ?";
 
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
             stmt.setString(1, correo);
-            stmt.setInt(2, password);
+            stmt.setString(2, password);
 
             ResultSet rs = stmt.executeQuery();
 
