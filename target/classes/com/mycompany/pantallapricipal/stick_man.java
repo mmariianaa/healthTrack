@@ -55,7 +55,7 @@ if (buenosHabitos) {
                 lunaMouseClicked(evt);
             }
         });
-        jPanel1.add(luna, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 60, 440, 450));
+        jPanel1.add(luna, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 440, 450));
 
         head.setBackground(new java.awt.Color(13, 70, 113));
         head.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -73,13 +73,14 @@ if (buenosHabitos) {
 
         jPanel1.add(head, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 586, -1));
 
-        change.setText("jButton1");
+        change.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        change.setText("change\n");
         change.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 changeActionPerformed(evt);
             }
         });
-        jPanel1.add(change, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 70, -1, -1));
+        jPanel1.add(change, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, -1, -1));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
