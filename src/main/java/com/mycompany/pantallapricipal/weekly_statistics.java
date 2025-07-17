@@ -484,7 +484,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel25.setBackground(new java.awt.Color(0, 0, 0));
         jLabel25.setFont(new java.awt.Font("Calisto MT", 0, 11)); // NOI18N
-        jLabel25.setForeground(new java.awt.Color(0, 0, 0));
         jLabel25.setText("Monday");
 
         javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
@@ -519,7 +518,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel50.setBackground(new java.awt.Color(0, 0, 0));
         jLabel50.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel50.setForeground(new java.awt.Color(0, 0, 0));
         jLabel50.setText("Steps:");
 
         javax.swing.GroupLayout jPanel40Layout = new javax.swing.GroupLayout(jPanel40);
@@ -548,7 +546,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel40.setBackground(new java.awt.Color(0, 0, 0));
         jLabel40.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel40.setForeground(new java.awt.Color(0, 0, 0));
         jLabel40.setText("Steps:");
 
         javax.swing.GroupLayout jPanel30Layout = new javax.swing.GroupLayout(jPanel30);
@@ -577,7 +574,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel48.setBackground(new java.awt.Color(0, 0, 0));
         jLabel48.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel48.setForeground(new java.awt.Color(0, 0, 0));
         jLabel48.setText("Steps:");
 
         javax.swing.GroupLayout jPanel38Layout = new javax.swing.GroupLayout(jPanel38);
@@ -606,7 +602,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel51.setBackground(new java.awt.Color(0, 0, 0));
         jLabel51.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel51.setForeground(new java.awt.Color(0, 0, 0));
         jLabel51.setText("Steps:");
 
         javax.swing.GroupLayout jPanel41Layout = new javax.swing.GroupLayout(jPanel41);
@@ -635,7 +630,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel52.setBackground(new java.awt.Color(0, 0, 0));
         jLabel52.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel52.setForeground(new java.awt.Color(0, 0, 0));
         jLabel52.setText("Steps:");
 
         javax.swing.GroupLayout jPanel42Layout = new javax.swing.GroupLayout(jPanel42);
@@ -660,7 +654,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel53.setBackground(new java.awt.Color(0, 0, 0));
         jLabel53.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel53.setForeground(new java.awt.Color(0, 0, 0));
         jLabel53.setText("Steps:");
 
         javax.swing.GroupLayout jPanel43Layout = new javax.swing.GroupLayout(jPanel43);
@@ -689,7 +682,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel54.setBackground(new java.awt.Color(0, 0, 0));
         jLabel54.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(0, 0, 0));
         jLabel54.setText("Steps:");
 
         javax.swing.GroupLayout jPanel44Layout = new javax.swing.GroupLayout(jPanel44);
@@ -718,7 +710,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel62.setBackground(new java.awt.Color(0, 0, 0));
         jLabel62.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel62.setForeground(new java.awt.Color(0, 0, 0));
         jLabel62.setText("Steps:");
 
         javax.swing.GroupLayout jPanel52Layout = new javax.swing.GroupLayout(jPanel52);
@@ -747,7 +738,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel63.setBackground(new java.awt.Color(0, 0, 0));
         jLabel63.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel63.setForeground(new java.awt.Color(0, 0, 0));
         jLabel63.setText("Steps:");
 
         javax.swing.GroupLayout jPanel53Layout = new javax.swing.GroupLayout(jPanel53);
@@ -772,7 +762,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel64.setBackground(new java.awt.Color(0, 0, 0));
         jLabel64.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel64.setForeground(new java.awt.Color(0, 0, 0));
         jLabel64.setText("Steps:");
 
         javax.swing.GroupLayout jPanel54Layout = new javax.swing.GroupLayout(jPanel54);
@@ -801,7 +790,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel65.setBackground(new java.awt.Color(0, 0, 0));
         jLabel65.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel65.setForeground(new java.awt.Color(0, 0, 0));
         jLabel65.setText("Steps:");
 
         javax.swing.GroupLayout jPanel55Layout = new javax.swing.GroupLayout(jPanel55);
@@ -830,7 +818,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel66.setBackground(new java.awt.Color(0, 0, 0));
         jLabel66.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel66.setForeground(new java.awt.Color(0, 0, 0));
         jLabel66.setText("Steps:");
 
         javax.swing.GroupLayout jPanel56Layout = new javax.swing.GroupLayout(jPanel56);
@@ -855,7 +842,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel67.setBackground(new java.awt.Color(0, 0, 0));
         jLabel67.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel67.setForeground(new java.awt.Color(0, 0, 0));
         jLabel67.setText("Steps:");
 
         javax.swing.GroupLayout jPanel57Layout = new javax.swing.GroupLayout(jPanel57);
@@ -884,7 +870,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel68.setBackground(new java.awt.Color(0, 0, 0));
         jLabel68.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel68.setForeground(new java.awt.Color(0, 0, 0));
         jLabel68.setText("Steps:");
 
         javax.swing.GroupLayout jPanel58Layout = new javax.swing.GroupLayout(jPanel58);
@@ -929,7 +914,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(panel10Layout.createSequentialGroup()
                 .addGap(219, 219, 219)
                 .addComponent(jLabel9)
-                .addContainerGap(296, Short.MAX_VALUE))
+                .addContainerGap(317, Short.MAX_VALUE))
         );
         panel10Layout.setVerticalGroup(
             panel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -954,7 +939,7 @@ public class weekly_statistics extends javax.swing.JFrame {
         panel13Layout.setHorizontalGroup(
             panel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel13Layout.createSequentialGroup()
-                .addContainerGap(83, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel10)
                 .addGap(82, 82, 82))
         );
@@ -963,7 +948,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(panel13Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jLabel10)
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         panel14.setBackground(new java.awt.Color(222, 246, 248));
@@ -989,14 +974,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel14Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30))
+                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 223, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(50, 50, 50))
         );
         panel14Layout.setVerticalGroup(
             panel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel14Layout.createSequentialGroup()
-                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addComponent(jLabel11, javax.swing.GroupLayout.DEFAULT_SIZE, 56, Short.MAX_VALUE)
+                .addContainerGap())
         );
 
         panel15.setBackground(new java.awt.Color(222, 255, 255));
@@ -1015,9 +1000,8 @@ public class weekly_statistics extends javax.swing.JFrame {
         panel15Layout.setHorizontalGroup(
             panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel15Layout.createSequentialGroup()
-                .addContainerGap(22, Short.MAX_VALUE)
-                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+                .addGap(0, 26, Short.MAX_VALUE)
+                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 208, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         panel15Layout.setVerticalGroup(
             panel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1031,7 +1015,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel34.setBackground(new java.awt.Color(0, 0, 0));
         jLabel34.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel34.setForeground(new java.awt.Color(0, 0, 0));
         jLabel34.setText("Monday");
 
         javax.swing.GroupLayout jPanel24Layout = new javax.swing.GroupLayout(jPanel24);
@@ -1060,7 +1043,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel35.setBackground(new java.awt.Color(0, 0, 0));
         jLabel35.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel35.setForeground(new java.awt.Color(0, 0, 0));
         jLabel35.setText("Wednesday:");
 
         javax.swing.GroupLayout jPanel25Layout = new javax.swing.GroupLayout(jPanel25);
@@ -1089,7 +1071,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel36.setBackground(new java.awt.Color(0, 0, 0));
         jLabel36.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(0, 0, 0));
         jLabel36.setText("Friday");
 
         javax.swing.GroupLayout jPanel26Layout = new javax.swing.GroupLayout(jPanel26);
@@ -1118,7 +1099,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel37.setBackground(new java.awt.Color(0, 0, 0));
         jLabel37.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel37.setForeground(new java.awt.Color(0, 0, 0));
         jLabel37.setText("Saturday:");
 
         javax.swing.GroupLayout jPanel27Layout = new javax.swing.GroupLayout(jPanel27);
@@ -1128,12 +1108,12 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel27Layout.createSequentialGroup()
                 .addGap(91, 91, 91)
                 .addComponent(jLabel37)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(116, Short.MAX_VALUE))
         );
         jPanel27Layout.setVerticalGroup(
             jPanel27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel27Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addComponent(jLabel37)
                 .addContainerGap())
         );
@@ -1143,7 +1123,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel38.setBackground(new java.awt.Color(0, 0, 0));
         jLabel38.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel38.setForeground(new java.awt.Color(0, 0, 0));
         jLabel38.setText("Sunday");
 
         javax.swing.GroupLayout jPanel28Layout = new javax.swing.GroupLayout(jPanel28);
@@ -1172,7 +1151,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel41.setBackground(new java.awt.Color(0, 0, 0));
         jLabel41.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel41.setForeground(new java.awt.Color(0, 0, 0));
         jLabel41.setText("Tuesday:");
 
         javax.swing.GroupLayout jPanel31Layout = new javax.swing.GroupLayout(jPanel31);
@@ -1201,7 +1179,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel49.setBackground(new java.awt.Color(0, 0, 0));
         jLabel49.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel49.setForeground(new java.awt.Color(0, 0, 0));
         jLabel49.setText("Thursday:");
 
         javax.swing.GroupLayout jPanel39Layout = new javax.swing.GroupLayout(jPanel39);
@@ -1230,7 +1207,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel55.setBackground(new java.awt.Color(0, 0, 0));
         jLabel55.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel55.setForeground(new java.awt.Color(0, 0, 0));
         jLabel55.setText("Steps:");
 
         javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
@@ -1259,7 +1235,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel56.setBackground(new java.awt.Color(0, 0, 0));
         jLabel56.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel56.setForeground(new java.awt.Color(0, 0, 0));
         jLabel56.setText("Steps:");
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
@@ -1276,7 +1251,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel46Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel56)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel47.setBackground(new java.awt.Color(255, 255, 255));
@@ -1284,7 +1259,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel57.setBackground(new java.awt.Color(0, 0, 0));
         jLabel57.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel57.setForeground(new java.awt.Color(0, 0, 0));
         jLabel57.setText("Steps:");
 
         javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
@@ -1313,7 +1287,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel58.setBackground(new java.awt.Color(0, 0, 0));
         jLabel58.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel58.setForeground(new java.awt.Color(0, 0, 0));
         jLabel58.setText("Steps:");
 
         javax.swing.GroupLayout jPanel48Layout = new javax.swing.GroupLayout(jPanel48);
@@ -1342,7 +1315,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel59.setBackground(new java.awt.Color(0, 0, 0));
         jLabel59.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel59.setForeground(new java.awt.Color(0, 0, 0));
         jLabel59.setText("Steps:");
 
         javax.swing.GroupLayout jPanel49Layout = new javax.swing.GroupLayout(jPanel49);
@@ -1357,7 +1329,7 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel49Layout.setVerticalGroup(
             jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel49Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addComponent(jLabel59)
                 .addContainerGap())
         );
@@ -1367,7 +1339,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel60.setBackground(new java.awt.Color(0, 0, 0));
         jLabel60.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel60.setForeground(new java.awt.Color(0, 0, 0));
         jLabel60.setText("Steps:");
 
         javax.swing.GroupLayout jPanel50Layout = new javax.swing.GroupLayout(jPanel50);
@@ -1396,7 +1367,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel61.setBackground(new java.awt.Color(0, 0, 0));
         jLabel61.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel61.setForeground(new java.awt.Color(0, 0, 0));
         jLabel61.setText("Steps:");
 
         javax.swing.GroupLayout jPanel51Layout = new javax.swing.GroupLayout(jPanel51);
@@ -1425,7 +1395,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel69.setBackground(new java.awt.Color(0, 0, 0));
         jLabel69.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel69.setForeground(new java.awt.Color(0, 0, 0));
         jLabel69.setText("Distance:");
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
@@ -1454,7 +1423,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel70.setBackground(new java.awt.Color(0, 0, 0));
         jLabel70.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel70.setForeground(new java.awt.Color(0, 0, 0));
         jLabel70.setText("Distance:");
 
         javax.swing.GroupLayout jPanel60Layout = new javax.swing.GroupLayout(jPanel60);
@@ -1483,7 +1451,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel71.setBackground(new java.awt.Color(0, 0, 0));
         jLabel71.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel71.setForeground(new java.awt.Color(0, 0, 0));
         jLabel71.setText("Distance:");
 
         javax.swing.GroupLayout jPanel61Layout = new javax.swing.GroupLayout(jPanel61);
@@ -1512,7 +1479,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel72.setBackground(new java.awt.Color(0, 0, 0));
         jLabel72.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel72.setForeground(new java.awt.Color(0, 0, 0));
         jLabel72.setText("Distance:");
 
         javax.swing.GroupLayout jPanel62Layout = new javax.swing.GroupLayout(jPanel62);
@@ -1529,7 +1495,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel62Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel72)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         jPanel63.setBackground(new java.awt.Color(255, 255, 255));
@@ -1537,7 +1503,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel73.setBackground(new java.awt.Color(0, 0, 0));
         jLabel73.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel73.setForeground(new java.awt.Color(0, 0, 0));
         jLabel73.setText("Distance:");
 
         javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
@@ -1566,7 +1531,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel74.setBackground(new java.awt.Color(0, 0, 0));
         jLabel74.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel74.setForeground(new java.awt.Color(0, 0, 0));
         jLabel74.setText("Distance:");
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
@@ -1595,7 +1559,6 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel75.setBackground(new java.awt.Color(0, 0, 0));
         jLabel75.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel75.setForeground(new java.awt.Color(0, 0, 0));
         jLabel75.setText("Distance:");
 
         javax.swing.GroupLayout jPanel65Layout = new javax.swing.GroupLayout(jPanel65);
@@ -1610,7 +1573,7 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel65Layout.setVerticalGroup(
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel65Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap(14, Short.MAX_VALUE)
                 .addComponent(jLabel75)
                 .addContainerGap())
         );
@@ -1621,16 +1584,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(panel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addComponent(jPanel24, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel25, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel26, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel27, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel28, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel31, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel39, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jPanel39, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(panel13, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jPanel46, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1649,26 +1610,21 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addComponent(jPanel59, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel62, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel65, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(18, Short.MAX_VALUE))
             .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel3Layout.createSequentialGroup()
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addContainerGap()
-                            .addComponent(panel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanel3Layout.createSequentialGroup()
-                            .addGap(0, 258, Short.MAX_VALUE)
-                            .addComponent(panel14, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGap(0, 0, 0)
-                            .addComponent(panel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGap(0, 0, Short.MAX_VALUE)))
+                    .addGap(0, 258, Short.MAX_VALUE)
+                    .addComponent(panel14, javax.swing.GroupLayout.PREFERRED_SIZE, 272, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                    .addComponent(panel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(panel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGap(51, 51, 51)
                 .addComponent(panel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(54, 54, 54)
+                .addGap(59, 59, 59)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jPanel50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
@@ -1693,8 +1649,8 @@ public class weekly_statistics extends javax.swing.JFrame {
                                                 .addComponent(jPanel39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                             .addGroup(jPanel3Layout.createSequentialGroup()
                                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                    .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                    .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                                    .addComponent(jPanel46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                    .addComponent(jPanel62, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                                     .addComponent(jPanel45, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1706,9 +1662,9 @@ public class weekly_statistics extends javax.swing.JFrame {
                                     .addComponent(jPanel47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jPanel65, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jPanel27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jPanel65, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jPanel49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1718,10 +1674,10 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(panel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(panel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(panel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGap(0, 431, Short.MAX_VALUE)))
+                    .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(panel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(panel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGap(0, 437, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -1787,33 +1743,25 @@ public class weekly_statistics extends javax.swing.JFrame {
     private void panel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel8MouseClicked
         // TODO add your handling code here:
         // ESTE ESPACIO ES PARA HEART RATE
-        JOptionPane.showMessageDialog(null, "ESTE MENSAJE ES PARA LOS HEART RATE");
+      
     }//GEN-LAST:event_panel8MouseClicked
 
     private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(null, "mensaje que quiero dar");
+        
     }//GEN-LAST:event_jLabel8MouseClicked
 
     private void panel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel9MouseClicked
         // TODO add your handling code here:
-        // ESTE ES EL PANEL DE EL RITMO
-        JOptionPane.showMessageDialog(null, "mensaje que quiero dar");
+      
     }//GEN-LAST:event_panel9MouseClicked
 
     private void panelrecomendacionMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panelrecomendacionMouseClicked
-        // TODO add your handling code here:
-        recomendacion recomen=new recomendacion();
-        recomen.setVisible(true);
-        dispose();
+      
     }//GEN-LAST:event_panelrecomendacionMouseClicked
 
     private void panel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel11MouseClicked
-        // TODO add your handling code here:
-        // ESTE ESPACIO ES PARA CAMBIAR A LA PAGINA DEL LOGUIN
-        Login_deux vueltaloguin=new Login_deux();//se crea un nuevo
-        vueltaloguin.setVisible(true);//se crea desde arriba para que sea visible//
-        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+
     }//GEN-LAST:event_panel11MouseClicked
 
     private void panel15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel15MouseClicked
@@ -1822,23 +1770,15 @@ public class weekly_statistics extends javax.swing.JFrame {
     }//GEN-LAST:event_panel15MouseClicked
 
     private void panel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel14MouseClicked
-        // TODO add your handling code here:
-        estadisticas estadis=new estadisticas();//se crea un nuevo
-        estadis.setVisible(true);//se crea desde arriba para que sea visible//
-        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+       
     }//GEN-LAST:event_panel14MouseClicked
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
-        // TODO add your handling code here:
-        // ESTE ESPACIO ES PARA EL SEGUNDO EVENTO
-        estadisticas estadis=new estadisticas();//se crea un nuevo
-        estadis.setVisible(true);//se crea desde arriba para que sea visible//
-        dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
+     
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void panel13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel13MouseClicked
-        // TODO add your handling code here:
-        //ESTE ESPACIO ES PARA EL PRIMER EVENTO
+        // TODO add your handling code here
     }//GEN-LAST:event_panel13MouseClicked
 
     /**
@@ -1884,15 +1824,9 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
@@ -1935,12 +1869,8 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel10;
-    private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel15;
-    private javax.swing.JPanel jPanel18;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel22;
     private javax.swing.JPanel jPanel24;
     private javax.swing.JPanel jPanel25;
     private javax.swing.JPanel jPanel26;
@@ -1977,8 +1907,6 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel63;
     private javax.swing.JPanel jPanel64;
     private javax.swing.JPanel jPanel65;
-    private javax.swing.JPanel jPanel8;
-    private javax.swing.JPanel jPanel9;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel10;
