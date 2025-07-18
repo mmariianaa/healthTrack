@@ -64,10 +64,10 @@ public class peticiones {
             stmt.setString(1, nombre);
             stmt.setString(2, correo);
             stmt.setString(3, contrasena);
-            stmt.setInt(5, edad);
-            stmt.setDouble(6, peso);
-            stmt.setString(7, sexo);
-            stmt.setDouble(8, altura);
+            stmt.setInt(4, edad);
+            stmt.setDouble(5, peso);
+            stmt.setString(6, sexo);
+            stmt.setDouble(7, altura);
             
 
             int filasAfectadas = stmt.executeUpdate();
