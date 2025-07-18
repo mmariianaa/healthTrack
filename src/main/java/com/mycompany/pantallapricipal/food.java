@@ -47,17 +47,17 @@ public class food extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jCheckBox12 = new javax.swing.JCheckBox();
+        lechuga = new javax.swing.JCheckBox();
         cebolla = new javax.swing.JCheckBox();
-        jCheckBox14 = new javax.swing.JCheckBox();
-        jCheckBox15 = new javax.swing.JCheckBox();
-        jCheckBox16 = new javax.swing.JCheckBox();
-        jCheckBox17 = new javax.swing.JCheckBox();
-        jCheckBox18 = new javax.swing.JCheckBox();
-        jCheckBox19 = new javax.swing.JCheckBox();
-        jCheckBox20 = new javax.swing.JCheckBox();
-        jCheckBox21 = new javax.swing.JCheckBox();
-        jCheckBox22 = new javax.swing.JCheckBox();
+        apio = new javax.swing.JCheckBox();
+        brocoli = new javax.swing.JCheckBox();
+        judias_verdes = new javax.swing.JCheckBox();
+        tomates = new javax.swing.JCheckBox();
+        calabaza = new javax.swing.JCheckBox();
+        repollo = new javax.swing.JCheckBox();
+        esparragos = new javax.swing.JCheckBox();
+        recomlacha = new javax.swing.JCheckBox();
+        zanahorias = new javax.swing.JCheckBox();
         jPanel5 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -255,43 +255,43 @@ public class food extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        jCheckBox12.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox12.setText("LETTUCE                                        5 KAL ");
+        lechuga.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        lechuga.setText("LETTUCE                                        5 KAL ");
 
         cebolla.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         cebolla.setText("ONION                                          46 KAL");
 
-        jCheckBox14.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox14.setText("CELERY                                           14 KAL");
+        apio.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        apio.setText("CELERY                                           14 KAL");
 
-        jCheckBox15.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox15.setText("BROCOLI                                       31 KAL");
+        brocoli.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        brocoli.setText("BROCOLI                                       31 KAL");
 
-        jCheckBox16.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox16.setText("GREEN BEANS                              30 KAL ");
+        judias_verdes.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        judias_verdes.setText("GREEN BEANS                              30 KAL ");
 
-        jCheckBox17.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox17.setText("TOMATOES                                   36 KAL");
+        tomates.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        tomates.setText("TOMATOES                                   36 KAL");
 
-        jCheckBox18.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox18.setText("PUMPKIN                                      30 KAL");
-        jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
+        calabaza.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        calabaza.setText("PUMPKIN                                      30 KAL");
+        calabaza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox18ActionPerformed(evt);
+                calabazaActionPerformed(evt);
             }
         });
 
-        jCheckBox19.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox19.setText("CABBAGE                                    22 KAL");
+        repollo.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        repollo.setText("CABBAGE                                    22 KAL");
 
-        jCheckBox20.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox20.setText("ASPARAGUS                                 27 KAL");
+        esparragos.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        esparragos.setText("ASPARAGUS                                 27 KAL");
 
-        jCheckBox21.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox21.setText("ONION                                          46 KAL");
+        recomlacha.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        recomlacha.setText("betroot                                        46 KAL");
 
-        jCheckBox22.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        jCheckBox22.setText("CARROTS                                      53 KAL");
+        zanahorias.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        zanahorias.setText("CARROTS                                      53 KAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -301,17 +301,17 @@ public class food extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox12)
+                    .addComponent(lechuga)
                     .addComponent(cebolla)
-                    .addComponent(jCheckBox14)
-                    .addComponent(jCheckBox22)
-                    .addComponent(jCheckBox21)
-                    .addComponent(jCheckBox19)
-                    .addComponent(jCheckBox18)
-                    .addComponent(jCheckBox17)
-                    .addComponent(jCheckBox16)
-                    .addComponent(jCheckBox15)
-                    .addComponent(jCheckBox20))
+                    .addComponent(apio)
+                    .addComponent(zanahorias)
+                    .addComponent(recomlacha)
+                    .addComponent(repollo)
+                    .addComponent(calabaza)
+                    .addComponent(tomates)
+                    .addComponent(judias_verdes)
+                    .addComponent(brocoli)
+                    .addComponent(esparragos))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel4Layout.setVerticalGroup(
@@ -319,27 +319,27 @@ public class food extends javax.swing.JFrame {
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox12)
+                .addComponent(lechuga)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cebolla)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox14)
+                .addComponent(apio)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox15)
+                .addComponent(brocoli)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox16)
+                .addComponent(judias_verdes)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox17)
+                .addComponent(tomates)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox18)
+                .addComponent(calabaza)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox19)
+                .addComponent(repollo)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox20)
+                .addComponent(esparragos)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox21)
+                .addComponent(recomlacha)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jCheckBox22)
+                .addComponent(zanahorias)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -486,9 +486,9 @@ public class food extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_mangoActionPerformed
 
-    private void jCheckBox18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox18ActionPerformed
+    private void calabazaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calabazaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox18ActionPerformed
+    }//GEN-LAST:event_calabazaActionPerformed
 
     private void maizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_maizActionPerformed
         // TODO add your handling code here:
@@ -543,21 +543,15 @@ public class food extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JCheckBox aguacate;
+    private javax.swing.JCheckBox apio;
     private javax.swing.JCheckBox arroz;
     private javax.swing.JCheckBox avena;
+    private javax.swing.JCheckBox brocoli;
+    private javax.swing.JCheckBox calabaza;
     private javax.swing.JCheckBox camaron;
     private javax.swing.JCheckBox cebolla;
+    private javax.swing.JCheckBox esparragos;
     private javax.swing.JButton jButton1;
-    private javax.swing.JCheckBox jCheckBox12;
-    private javax.swing.JCheckBox jCheckBox14;
-    private javax.swing.JCheckBox jCheckBox15;
-    private javax.swing.JCheckBox jCheckBox16;
-    private javax.swing.JCheckBox jCheckBox17;
-    private javax.swing.JCheckBox jCheckBox18;
-    private javax.swing.JCheckBox jCheckBox19;
-    private javax.swing.JCheckBox jCheckBox20;
-    private javax.swing.JCheckBox jCheckBox21;
-    private javax.swing.JCheckBox jCheckBox22;
     private javax.swing.JCheckBox jCheckBox27;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -572,7 +566,9 @@ public class food extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JCheckBox judias_verdes;
     private javax.swing.JCheckBox kiwi;
+    private javax.swing.JCheckBox lechuga;
     private javax.swing.JCheckBox maiz;
     private javax.swing.JCheckBox mango;
     private javax.swing.JCheckBox manzana;
@@ -587,8 +583,12 @@ public class food extends javax.swing.JFrame {
     private javax.swing.JCheckBox platano;
     private javax.swing.JCheckBox pollo;
     private javax.swing.JCheckBox puerco;
+    private javax.swing.JCheckBox recomlacha;
+    private javax.swing.JCheckBox repollo;
     private javax.swing.JCheckBox res;
     private javax.swing.JCheckBox sandia;
+    private javax.swing.JCheckBox tomates;
     private javax.swing.JCheckBox uvas;
+    private javax.swing.JCheckBox zanahorias;
     // End of variables declaration//GEN-END:variables
 }
