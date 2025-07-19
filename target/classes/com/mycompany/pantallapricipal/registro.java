@@ -262,6 +262,8 @@ public class registro extends javax.swing.JFrame {
         int edad1=Integer.parseInt(edad.getText());
         double peso1=Integer.parseInt(peso.getText());
         double altura1=Integer.parseInt(altura.getText());
+        
+       
         String sexo = "";
         if (hombre.isSelected()) {
             sexo = "Hombre";
@@ -278,6 +280,9 @@ public class registro extends javax.swing.JFrame {
             sexo,
             altura1
         );
+        // este espacio es para validar si los espacios si estan llenos 
+        
+      
         
         Login_deux vueltaalloguin=new Login_deux();//se crea un nuevo 
         vueltaalloguin.setVisible(true);//se crea desde arriba para que sea visible//

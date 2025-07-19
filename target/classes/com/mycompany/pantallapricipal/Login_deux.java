@@ -218,7 +218,7 @@ public class Login_deux extends javax.swing.JFrame {
             principal.setVisible(true);//se crea desde arriba para que sea visible//
             dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
         }else{
-            JOptionPane.showMessageDialog(null, "Tus credenciales son erroneas");
+            JOptionPane.showMessageDialog(null, "Tus datos son incorrectos por favor verificar");
         }                                 
     }//GEN-LAST:event_inicioMouseClicked
 
