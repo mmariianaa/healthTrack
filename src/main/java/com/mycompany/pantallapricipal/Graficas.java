@@ -4,9 +4,7 @@
  */
 
 package com.mycompany.pantallapricipal;
-
-/**
- *
+/*
  * @author usuario
  */
 public class Graficas extends javax.swing.JFrame {
@@ -14,10 +12,13 @@ public class Graficas extends javax.swing.JFrame {
     /**
      * Creates new form Graficas
      */
-    public Graficas() {
-        initComponents();
-        
-        
+     public Graficas() {
+        // Título del JFrame
+        super("Gráfica de barras con JFreeChart");
+
+        // Crear dataset
+        Graficas datos = new Graficas();
+
     }
     
 
@@ -31,7 +32,7 @@ public class Graficas extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
+        panel = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
 
@@ -56,7 +57,7 @@ public class Graficas extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(2000, 2500));
         setSize(new java.awt.Dimension(1000, 1000));
 
-        jPanel3.setBackground(new java.awt.Color(51, 255, 204));
+        panel.setBackground(new java.awt.Color(51, 255, 204));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/blue heart (2).jpeg"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -68,26 +69,26 @@ public class Graficas extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+        javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
+        panel.setLayout(panelLayout);
+        panelLayout.setHorizontalGroup(
+            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
                 .addGap(0, 135, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(123, 123, 123)
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        panelLayout.setVerticalGroup(
+            panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelLayout.createSequentialGroup()
                 .addContainerGap(379, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(97, 97, 97))
         );
 
-        getContentPane().add(jPanel3, java.awt.BorderLayout.CENTER);
+        getContentPane().add(panel, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -136,6 +137,6 @@ public class Graficas extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel panel;
     // End of variables declaration//GEN-END:variables
 }
