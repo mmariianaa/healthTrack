@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.pantallapricipal;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -111,6 +112,11 @@ public class registro extends javax.swing.JFrame {
                 registrarseMouseClicked(evt);
             }
         });
+        registrarse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registrarseActionPerformed(evt);
+            }
+        });
 
         peso.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         peso.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -167,21 +173,15 @@ public class registro extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(hombre)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(peso, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel6)
-                                    .addComponent(mujer)
-                                    .addComponent(jLabel4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(hombre)
+                            .addComponent(peso, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6)
+                            .addComponent(mujer)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -260,17 +260,15 @@ public class registro extends javax.swing.JFrame {
         // TODO add your handling code here:
         //ESTE APARTADO ES PARA ENLAZAR EL REGISTRO A LA PRINCIPAL
         int edad1=Integer.parseInt(edad.getText());
-        double peso1=Integer.parseInt(peso.getText());
-        double altura1=Integer.parseInt(altura.getText());
+        double peso1=Double.parseDouble(peso.getText());
+        double altura1=Double.parseDouble(altura.getText());
         
-       
         String sexo = "";
         if (hombre.isSelected()) {
             sexo = "Hombre";
         } else if (mujer.isSelected()) {
             sexo = "Mujer";
         }
-
         peticiones.insertarUsuario(
             nombre.getText(),
             correo.getText(),
@@ -280,10 +278,8 @@ public class registro extends javax.swing.JFrame {
             sexo,
             altura1
         );
-        // este espacio es para validar si los espacios si estan llenos 
         
-      
-        
+        // este espacio es para cambiar de pantallaa
         Login_deux vueltaalloguin=new Login_deux();//se crea un nuevo 
         vueltaalloguin.setVisible(true);//se crea desde arriba para que sea visible//
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
@@ -292,6 +288,61 @@ public class registro extends javax.swing.JFrame {
     private void edadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_edadActionPerformed
+
+    private void registrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarseActionPerformed
+        // TODO add your handling code here:
+        String altura2= altura.getText().trim();
+        String peso2= peso.getText().trim();
+        String edad2= edad.getText().trim();
+        
+        if (nombre.getText().trim().isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLIS INSET YOUR NAME.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        if (edad2.isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLIS INSERT YOUR AGE");
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }
+        try {double numero= Double.parseDouble(edad2);
+        }
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT NUMBERS IN THE AGE FIELD.",
+            "FORMAT ERROR", JOptionPane.ERROR_MESSAGE);
+        } 
+        if (peso2.isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT YOUR WEIGHT.");
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }
+        try {double numero= Double.parseDouble(peso2);
+        }
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT NUMBERS IN THE WEIGHT FIELD.",
+            "FORMAT ERROR", JOptionPane.ERROR_MESSAGE);
+        } 
+        if (!hombre.isSelected() && !mujer.isSelected()) {
+            JOptionPane.showMessageDialog(this, "PLEASE SELECT YOUR GENDER");
+            return; // Detiene el flujo si no se ha seleccionado nada
+        }
+        if (correo.getText().trim().isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLEASE INSET YOUR EMAIL.");
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }
+        if (altura2.isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT YOUR HEIGHT");
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }
+        try {double numero= Double.parseDouble(peso2);
+        }
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT NUMBERS IN THE  HEIGHT FIELD.",
+            "FORMAT ERROR", JOptionPane.ERROR_MESSAGE);
+        } 
+        
+        if (contrasena.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT YOUR PASSWORD");
+            return; // Detiene el flujo si no se ha seleccionado nada     
+        }
+    }//GEN-LAST:event_registrarseActionPerformed
 
     /**
      * @param args the command line arguments
