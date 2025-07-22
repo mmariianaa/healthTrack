@@ -294,55 +294,52 @@ public class registro extends javax.swing.JFrame {
         String altura2= altura.getText().trim();
         String peso2= peso.getText().trim();
         String edad2= edad.getText().trim();
+        
         if (nombre.getText().trim().isEmpty()){
             JOptionPane.showMessageDialog(this, "PLIS INSET YOUR NAME.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
             return;
         }
         if (edad2.isEmpty()){
-            JOptionPane.showMessageDialog(this, "PLIS INSET", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLIS INSERT YOUR AGE");
             return; // Detiene el flujo si no se ha seleccionado nada  
         }
         try {double numero= Double.parseDouble(edad2);
-            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
-                     "Error de formato", JOptionPane.ERROR_MESSAGE);
         }
         catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
-                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT NUMBERS IN THE AGE FIELD.",
+            "FORMAT ERROR", JOptionPane.ERROR_MESSAGE);
         } 
         if (peso2.isEmpty()){
-            JOptionPane.showMessageDialog(this, "PLIS INSET", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT YOUR WEIGHT.");
             return; // Detiene el flujo si no se ha seleccionado nada  
         }
         try {double numero= Double.parseDouble(peso2);
-            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
-                     "Error de formato", JOptionPane.ERROR_MESSAGE);
         }
         catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
-                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT NUMBERS IN THE WEIGHT FIELD.",
+            "FORMAT ERROR", JOptionPane.ERROR_MESSAGE);
         } 
         if (!hombre.isSelected() && !mujer.isSelected()) {
-            JOptionPane.showMessageDialog(this, "PLIS INSET.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLEASE SELECT YOUR GENDER");
             return; // Detiene el flujo si no se ha seleccionado nada
         }
         if (correo.getText().trim().isEmpty()){
-            JOptionPane.showMessageDialog(this, "PLIS INSET.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLEASE INSET YOUR EMAIL.");
             return; // Detiene el flujo si no se ha seleccionado nada  
-        }if (altura2.isEmpty()){
-            JOptionPane.showMessageDialog(this, "Por favor, llena todos los campos antes de continuar.",
-            "Campos vacíos", JOptionPane.WARNING_MESSAGE);
         }
-        try {double numero= Double.parseDouble(altura2);
-            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
-                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+        if (altura2.isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT YOUR HEIGHT");
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }
+        try {double numero= Double.parseDouble(peso2);
         }
         catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
-                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT NUMBERS IN THE  HEIGHT FIELD.",
+            "FORMAT ERROR", JOptionPane.ERROR_MESSAGE);
         } 
+        
         if (contrasena.getText().trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "PLIS INSET.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "PLEASE INSERT YOUR PASSWORD");
             return; // Detiene el flujo si no se ha seleccionado nada     
         }
     }//GEN-LAST:event_registrarseActionPerformed
