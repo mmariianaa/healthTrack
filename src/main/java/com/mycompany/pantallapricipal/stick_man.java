@@ -38,24 +38,15 @@ if (buenosHabitos) {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        luna = new javax.swing.JLabel();
         head = new javax.swing.JPanel();
         name = new javax.swing.JLabel();
         change = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(170, 170, 170));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        luna.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/lunal (1).png"))); // NOI18N
-        luna.setText("jLabel1");
-        luna.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lunaMouseClicked(evt);
-            }
-        });
-        jPanel1.add(luna, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 440, 450));
 
         head.setBackground(new java.awt.Color(13, 70, 113));
         head.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -82,11 +73,23 @@ if (buenosHabitos) {
         });
         jPanel1.add(change, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, -1, -1));
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/lunal (1).png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 440, 490));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -98,28 +101,10 @@ if (buenosHabitos) {
 
     private void nameMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_nameMouseClicked
         // TODO add your handling code here:
-        heart sueno = new heart ();
-        sueno.setVisible(true);
+        heart heart = new heart ();
+        heart.setVisible(true);
         dispose();
     }//GEN-LAST:event_nameMouseClicked
-
-    private void lunaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lunaMouseClicked
-        // TODO add your handling code here:
-        int calidadSueño = 6;
-int alimentacion = 8;
-int ejercicio = 7;
-
-// Evaluación de la salud y cambio de color
-if (calidadSueño >= 7 && alimentacion >= 7 && ejercicio >= 7) {
-    jPanel1.setBackground(new java.awt.Color(0, 128, 0)); // Verde (buena salud)
-} else if (calidadSueño >= 4 && alimentacion >= 4 && ejercicio >= 4) {
-    jPanel1.setBackground(new java.awt.Color(255, 215, 0)); // Amarillo (regular)
-} else {
-    jPanel1.setBackground(new java.awt.Color(178, 34, 34)); // Rojo (mala salud)
-}
-        
-        
-    }//GEN-LAST:event_lunaMouseClicked
 
     private void changeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeActionPerformed
         // TODO add your handling code here:
@@ -127,6 +112,10 @@ if (calidadSueño >= 7 && alimentacion >= 7 && ejercicio >= 7) {
          stick_man luna = new stick_man();
     luna.setVisible(true);
     }//GEN-LAST:event_changeActionPerformed
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments
@@ -166,8 +155,8 @@ if (calidadSueño >= 7 && alimentacion >= 7 && ejercicio >= 7) {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton change;
     private javax.swing.JPanel head;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel luna;
     private javax.swing.JLabel name;
     // End of variables declaration//GEN-END:variables
 }

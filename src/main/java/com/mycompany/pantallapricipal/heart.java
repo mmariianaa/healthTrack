@@ -46,14 +46,14 @@ public class heart extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         panel7 = new javax.swing.JPanel();
         EJERCICIOS = new javax.swing.JLabel();
-        panel8 = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
         panel9 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         panelrecomendacion = new javax.swing.JPanel();
         recomndacion = new javax.swing.JLabel();
         panel11 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
+        sueno = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -259,45 +259,11 @@ public class heart extends javax.swing.JFrame {
             panel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel7Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(EJERCICIOS, javax.swing.GroupLayout.DEFAULT_SIZE, 64, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(EJERCICIOS, javax.swing.GroupLayout.DEFAULT_SIZE, 42, Short.MAX_VALUE)
+                .addGap(28, 28, 28))
         );
 
         panel1.add(panel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 160, 360, 80));
-
-        panel8.setBackground(new java.awt.Color(222, 240, 248));
-        panel8.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        panel8.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                panel8MouseClicked(evt);
-            }
-        });
-
-        jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
-        jLabel7.setText("SLEEP");
-        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel7MouseClicked(evt);
-            }
-        });
-
-        javax.swing.GroupLayout panel8Layout = new javax.swing.GroupLayout(panel8);
-        panel8.setLayout(panel8Layout);
-        panel8Layout.setHorizontalGroup(
-            panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel8Layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(108, Short.MAX_VALUE))
-        );
-        panel8Layout.setVerticalGroup(
-            panel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panel8Layout.createSequentialGroup()
-                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 70, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-
-        panel1.add(panel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 240, 360, 80));
 
         panel9.setBackground(new java.awt.Color(222, 240, 248));
         panel9.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -393,6 +359,40 @@ public class heart extends javax.swing.JFrame {
 
         panel1.add(panel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 470, 700, 60));
 
+        sueno.setBackground(new java.awt.Color(222, 240, 248));
+        sueno.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        sueno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                suenoMouseClicked(evt);
+            }
+        });
+
+        jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        jLabel7.setText("SLEEP");
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jLabel7MousePressed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout suenoLayout = new javax.swing.GroupLayout(sueno);
+        sueno.setLayout(suenoLayout);
+        suenoLayout.setHorizontalGroup(
+            suenoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 346, Short.MAX_VALUE)
+        );
+        suenoLayout.setVerticalGroup(
+            suenoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(suenoLayout.createSequentialGroup()
+                .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        panel1.add(sueno, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 240, 350, 90));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -467,25 +467,12 @@ public class heart extends javax.swing.JFrame {
         
     }//GEN-LAST:event_panel9MouseClicked
 
-    private void panel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel8MouseClicked
-        // TODO add your handling code here:
-        // ESTE ESPACIO ES PARA HEART RATE 
-        JOptionPane.showMessageDialog(null, "ESTE MENSAJE ES PARA LOS HEART RATE");
-    }//GEN-LAST:event_panel8MouseClicked
-
     private void panel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel4MouseClicked
         // TODO add your handling code here:
         estadisticas estadis=new estadisticas();//se crea un nuevo 
         estadis.setVisible(true);//se crea desde arriba para que sea visible//
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
     }//GEN-LAST:event_panel4MouseClicked
-
-    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
-        // TODO add your handling code here:
-        stick_man suenos = new stick_man();
-        suenos.setVisible(true);
-        dispose();
-    }//GEN-LAST:event_jLabel7MouseClicked
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
         // TODO add your handling code here:
@@ -494,6 +481,25 @@ public class heart extends javax.swing.JFrame {
         esta.setVisible(true);
         dispose ();
     }//GEN-LAST:event_jLabel4MouseClicked
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        stick_man sueno = new stick_man();
+        sueno.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void suenoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_suenoMouseClicked
+        // TODO add your handling code here:
+        stick_man man = new stick_man();
+        man.setVisible(true);
+        dispose();
+    }//GEN-LAST:event_suenoMouseClicked
+
+    private void jLabel7MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MousePressed
+        // TODO add your handling code here:
+       
+    }//GEN-LAST:event_jLabel7MousePressed
 
     /**
      * @param args the command line arguments
@@ -547,9 +553,9 @@ public class heart extends javax.swing.JFrame {
     private javax.swing.JPanel panel5;
     private javax.swing.JPanel panel6;
     private javax.swing.JPanel panel7;
-    private javax.swing.JPanel panel8;
     private javax.swing.JPanel panel9;
     private javax.swing.JPanel panelrecomendacion;
     private javax.swing.JLabel recomndacion;
+    private javax.swing.JPanel sueno;
     // End of variables declaration//GEN-END:variables
 }
