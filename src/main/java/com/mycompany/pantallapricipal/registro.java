@@ -270,6 +270,10 @@ public class registro extends javax.swing.JFrame {
         } else if (mujer.isSelected()) {
             sexo = "Mujer";
         }
+        if (!hombre.isSelected() && !mujer.isSelected()) {
+            JOptionPane.showMessageDialog(null, "Por favor, selecciona tu género.", "Selección requerida", JOptionPane.WARNING_MESSAGE);
+            return; // Detiene el flujo si no se ha seleccionado nada
+        }
 
         peticiones.insertarUsuario(
             nombre.getText(),
@@ -285,13 +289,15 @@ public class registro extends javax.swing.JFrame {
             contrasena.getText().trim().isEmpty()|| edad.getText().trim().isEmpty() || 
             peso.getText().trim().isEmpty() || altura.getText().trim().isEmpty() 
         ) {
-            JOptionPane.showMessageDialog(null, "Por favor, llena todos los campos antes de continuar.", "Campos vacíos", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Por favor, llena todos los campos antes de continuar.",
+            "Campos vacíos", JOptionPane.WARNING_MESSAGE);
         } else {
             try {
 
                 // asegurar que os cpos sean numeros 
             } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Asegúrate de ingresar solo números válidos.", "Error de formato", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null, "Asegúrate de ingresar solo números válidos.", 
+                "Error de formato", JOptionPane.ERROR_MESSAGE);
             }
         }
         
