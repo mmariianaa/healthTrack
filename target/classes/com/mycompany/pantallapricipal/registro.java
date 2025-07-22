@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.pantallapricipal;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -260,10 +261,9 @@ public class registro extends javax.swing.JFrame {
         // TODO add your handling code here:
         //ESTE APARTADO ES PARA ENLAZAR EL REGISTRO A LA PRINCIPAL
         int edad1=Integer.parseInt(edad.getText());
-        double peso1=Integer.parseInt(peso.getText());
-        double altura1=Integer.parseInt(altura.getText());
+        double peso1=Double.parseDouble(peso.getText());
+        double altura1=Double.parseDouble(altura.getText());
         
-       
         String sexo = "";
         if (hombre.isSelected()) {
             sexo = "Hombre";
@@ -281,9 +281,21 @@ public class registro extends javax.swing.JFrame {
             altura1
         );
         // este espacio es para validar si los espacios si estan llenos 
+        if (nombre.getText().trim().isEmpty() ||correo.getText().trim().isEmpty()||  
+            contrasena.getText().trim().isEmpty()|| edad.getText().trim().isEmpty() || 
+            peso.getText().trim().isEmpty() || altura.getText().trim().isEmpty() 
+        ) {
+            JOptionPane.showMessageDialog(null, "Por favor, llena todos los campos antes de continuar.", "Campos vacíos", JOptionPane.WARNING_MESSAGE);
+        } else {
+            try {
+
+                // asegurar que os cpos sean numeros 
+            } catch (NumberFormatException e) {
+                JOptionPane.showMessageDialog(null, "Asegúrate de ingresar solo números válidos.", "Error de formato", JOptionPane.ERROR_MESSAGE);
+            }
+        }
         
-      
-        
+        // este espacio es para cambiar de pantallaa
         Login_deux vueltaalloguin=new Login_deux();//se crea un nuevo 
         vueltaalloguin.setVisible(true);//se crea desde arriba para que sea visible//
         dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
