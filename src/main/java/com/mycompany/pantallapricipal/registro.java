@@ -112,6 +112,11 @@ public class registro extends javax.swing.JFrame {
                 registrarseMouseClicked(evt);
             }
         });
+        registrarse.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                registrarseActionPerformed(evt);
+            }
+        });
 
         peso.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         peso.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -168,21 +173,15 @@ public class registro extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(hombre)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addComponent(peso, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel7)
-                                    .addComponent(jLabel6)
-                                    .addComponent(mujer)
-                                    .addComponent(jLabel4))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(hombre)
+                            .addComponent(peso, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(edad, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel7)
+                            .addComponent(jLabel6)
+                            .addComponent(mujer)
+                            .addComponent(jLabel4))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 219, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(15, 15, 15))
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -270,11 +269,6 @@ public class registro extends javax.swing.JFrame {
         } else if (mujer.isSelected()) {
             sexo = "Mujer";
         }
-        if (!hombre.isSelected() && !mujer.isSelected()) {
-            JOptionPane.showMessageDialog(null, "Por favor, selecciona tu género.", "Selección requerida", JOptionPane.WARNING_MESSAGE);
-            return; // Detiene el flujo si no se ha seleccionado nada
-        }
-
         peticiones.insertarUsuario(
             nombre.getText(),
             correo.getText(),
@@ -284,22 +278,6 @@ public class registro extends javax.swing.JFrame {
             sexo,
             altura1
         );
-        // este espacio es para validar si los espacios si estan llenos 
-        if (nombre.getText().trim().isEmpty() ||correo.getText().trim().isEmpty()||  
-            contrasena.getText().trim().isEmpty()|| edad.getText().trim().isEmpty() || 
-            peso.getText().trim().isEmpty() || altura.getText().trim().isEmpty() 
-        ) {
-            JOptionPane.showMessageDialog(null, "Por favor, llena todos los campos antes de continuar.",
-            "Campos vacíos", JOptionPane.WARNING_MESSAGE);
-        } else {
-            try {
-
-                // asegurar que os cpos sean numeros 
-            } catch (NumberFormatException e) {
-                JOptionPane.showMessageDialog(null, "Asegúrate de ingresar solo números válidos.", 
-                "Error de formato", JOptionPane.ERROR_MESSAGE);
-            }
-        }
         
         // este espacio es para cambiar de pantallaa
         Login_deux vueltaalloguin=new Login_deux();//se crea un nuevo 
@@ -310,6 +288,64 @@ public class registro extends javax.swing.JFrame {
     private void edadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_edadActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_edadActionPerformed
+
+    private void registrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarseActionPerformed
+        // TODO add your handling code here:
+        String altura2= altura.getText().trim();
+        String peso2= peso.getText().trim();
+        String edad2= edad.getText().trim();
+        if (nombre.getText().trim().isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLIS INSET YOUR NAME.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+        if (edad2.isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLIS INSET", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }
+        try {double numero= Double.parseDouble(edad2);
+            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
+                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+        }
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
+                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+        } 
+        if (peso2.isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLIS INSET", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }
+        try {double numero= Double.parseDouble(peso2);
+            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
+                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+        }
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
+                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+        } 
+        if (!hombre.isSelected() && !mujer.isSelected()) {
+            JOptionPane.showMessageDialog(this, "PLIS INSET.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            return; // Detiene el flujo si no se ha seleccionado nada
+        }
+        if (correo.getText().trim().isEmpty()){
+            JOptionPane.showMessageDialog(this, "PLIS INSET.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            return; // Detiene el flujo si no se ha seleccionado nada  
+        }if (altura2.isEmpty()){
+            JOptionPane.showMessageDialog(this, "Por favor, llena todos los campos antes de continuar.",
+            "Campos vacíos", JOptionPane.WARNING_MESSAGE);
+        }
+        try {double numero= Double.parseDouble(altura2);
+            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
+                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+        }
+        catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Asegúrate de ingresar solo números válidos.",
+                     "Error de formato", JOptionPane.ERROR_MESSAGE);
+        } 
+        if (contrasena.getText().trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "PLIS INSET.", "REQUIRED SELECTION ", JOptionPane.WARNING_MESSAGE);
+            return; // Detiene el flujo si no se ha seleccionado nada     
+        }
+    }//GEN-LAST:event_registrarseActionPerformed
 
     /**
      * @param args the command line arguments
