@@ -16,6 +16,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 import java.sql.PreparedStatement;
+import java.util.Random;
 
 public class peticiones {
     
@@ -50,6 +51,38 @@ public class peticiones {
         }
         return usuarios;
     }
+    // esto es una peticion para otener un mensaje en la pantalla recomendaciones
+    public static String obtenermensaje() {
+    Random random = new Random();
+    List<Object[]> mensaje = new ArrayList<>();
+
+    Connection conn = DB.conectar();
+    int id = random.nextInt(20) + 1;
+
+    if (conn != null) {
+        String query = "SELECT * FROM mensaje WHERE id = ?";
+
+        try (PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setInt(1, id);
+
+            ResultSet rs = stmt.executeQuery();
+            /*while (rs.next()) {
+                Object[] fila = new Object[] {
+                    rs.getString("mensaje") // Asegúrate que el nombre de la columna sea "mensaje" y no "mensajes"
+                };
+                mensaje.add(fila);
+            }*/
+            if (rs.next()) {
+                return rs.getString("mensaje");
+            }
+            System.out.println(mensaje);
+        } catch (SQLException e) {
+            System.out.println("Error al mostrar el mensaje");
+        }
+    }
+
+    return "No hay mensaje";
+}
     
     //Otra peticion
     public static boolean insertarUsuario(String nombre, String correo, String contrasena, int edad, double peso,String sexo, double altura) {
@@ -89,7 +122,8 @@ public class peticiones {
     if (conn != null) {
         
         String query = "SELECT * FROM usuario WHERE correo = ? AND contrasena = ?";
-
+ 
+        
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
             stmt.setString(1, correo);
             stmt.setString(2, password);
