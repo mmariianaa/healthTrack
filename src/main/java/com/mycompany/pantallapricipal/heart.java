@@ -44,6 +44,7 @@ public class heart extends javax.swing.JFrame {
         panel6 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         panelGrafica = new javax.swing.JPanel();
+        logo = new javax.swing.JLabel();
         panel7 = new javax.swing.JPanel();
         EJERCICIOS = new javax.swing.JLabel();
         panel9 = new javax.swing.JPanel();
@@ -214,15 +215,24 @@ public class heart extends javax.swing.JFrame {
         panelGrafica.setBackground(new java.awt.Color(230, 255, 255));
         panelGrafica.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
+        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
+        logo.setText("jLabel9");
+
         javax.swing.GroupLayout panelGraficaLayout = new javax.swing.GroupLayout(panelGrafica);
         panelGrafica.setLayout(panelGraficaLayout);
         panelGraficaLayout.setHorizontalGroup(
             panelGraficaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 346, Short.MAX_VALUE)
+            .addGroup(panelGraficaLayout.createSequentialGroup()
+                .addGap(61, 61, 61)
+                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(82, Short.MAX_VALUE))
         );
         panelGraficaLayout.setVerticalGroup(
             panelGraficaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 306, Short.MAX_VALUE)
+            .addGroup(panelGraficaLayout.createSequentialGroup()
+                .addGap(39, 39, 39)
+                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         panel1.add(panelGrafica, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 350, 310));
@@ -535,6 +545,7 @@ public class heart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JLabel logo;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel11;
     private javax.swing.JPanel panel2;

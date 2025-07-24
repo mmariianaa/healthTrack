@@ -288,6 +288,7 @@ public class registro extends javax.swing.JFrame {
 
     private void registrarseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registrarseActionPerformed
         // TODO add your handling code here:
+        //comprobacion de datos 
         String altura2= altura.getText().trim();
         String peso2= peso.getText().trim();
         String edad2= edad.getText().trim();

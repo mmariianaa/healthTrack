@@ -7,6 +7,7 @@ package com.mycompany.pantallapricipal;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
+import org.jfree.chart.ui.RectangleInsets;
 import org.jfree.data.category.DefaultCategoryDataset;
 /**
  *
@@ -15,16 +16,21 @@ import org.jfree.data.category.DefaultCategoryDataset;
 public class miGrafica {
     public ChartPanel crearGrafica() {
         DefaultCategoryDataset dataset = new DefaultCategoryDataset();
-        dataset.addValue(1, "Pulsaciones", "Lunes");
-        dataset.addValue(2, "Pulsaciones", "Martes");
-        dataset.addValue(3, "Pulsaciones", "Miércoles");
+        dataset.addValue(1, "Pulsaciones", "Monday");
+        dataset.addValue(2, "Pulsaciones", "Tuesday");
+        dataset.addValue(3, "Pulsaciones", "Wednesday");
+        dataset.addValue(4, "Pulsaciones", "Thursday");
+        dataset.addValue(5, "Pulsaciones", "Friday");
+        dataset.addValue(6, "Pulsaciones", "Saturday");
+        dataset.addValue(7, "Pulsaciones", "Sunday");
+        
 
         JFreeChart chart = ChartFactory.createLineChart(
-            "Frecuencia Cardíaca", "Día", "Valor",
-            dataset
+            "Calories", "Day","Values",
+            dataset      
         );
-
+        
         return new ChartPanel(chart);
     }
 }
-
+    

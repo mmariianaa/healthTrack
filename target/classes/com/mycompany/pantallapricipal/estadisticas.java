@@ -144,7 +144,7 @@ public class estadisticas extends javax.swing.JFrame {
         jLabel5.setText("KCAL");
         kcal.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 690, -1));
 
-        underground.add(kcal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 700, 50));
+        underground.add(kcal, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 700, 60));
 
         plana.setBackground(new java.awt.Color(230, 255, 255));
         plana.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -158,17 +158,17 @@ public class estadisticas extends javax.swing.JFrame {
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(planaLayout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 621, Short.MAX_VALUE))
+                .addGap(0, 611, Short.MAX_VALUE))
         );
         planaLayout.setVerticalGroup(
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(planaLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(292, Short.MAX_VALUE))
+                .addContainerGap(272, Short.MAX_VALUE))
         );
 
-        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 145, 710, 340));
+        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 165, 700, 320));
 
         getContentPane().add(underground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, -1));
 

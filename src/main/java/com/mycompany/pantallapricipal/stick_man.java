@@ -6,6 +6,7 @@ package com.mycompany.pantallapricipal;
 
 import javax.swing.JFrame;
 import java.awt.Color;
+import javax.swing.JOptionPane;
 /**
  *
  * @author usuario
@@ -17,15 +18,17 @@ public class stick_man extends javax.swing.JFrame {
      */
     public stick_man() {
         initComponents();
+        var nuevo=peticiones.recomendaciondeluna();
+        System.out.println(nuevo);
+        mensaje2.setText(nuevo);// suponiendo que existe el método getTexto()
         // Dentro del constructor o un método de tu JFrame
-boolean buenosHabitos = true; // o false, según los datos
-
-// Cambia el fondo del panel principal
-if (buenosHabitos) {
-    getContentPane().setBackground(Color.GREEN);
-} else {
-    getContentPane().setBackground(Color.RED);
-}
+        boolean buenosHabitos = true; // o false, según los datos
+        // Cambia el fondo del panel principal
+        if (buenosHabitos) {
+            getContentPane().setBackground(Color.GREEN);
+        } else {
+            getContentPane().setBackground(Color.RED);
+        }
     }
 
     /**
@@ -41,6 +44,7 @@ if (buenosHabitos) {
         head = new javax.swing.JPanel();
         name = new javax.swing.JLabel();
         change = new javax.swing.JButton();
+        mensaje2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -72,6 +76,9 @@ if (buenosHabitos) {
             }
         });
         jPanel1.add(change, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, -1, -1));
+
+        mensaje2.setText("jLabel2");
+        jPanel1.add(mensaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/lunal (1).png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -110,11 +117,12 @@ if (buenosHabitos) {
         // TODO add your handling code here:
         
          stick_man luna = new stick_man();
-    luna.setVisible(true);
+         luna.setVisible(true);
     }//GEN-LAST:event_changeActionPerformed
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
+        JOptionPane.showMessageDialog(this, "PLIS INSERT YOUR AGE");
     }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
@@ -157,6 +165,7 @@ if (buenosHabitos) {
     private javax.swing.JPanel head;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JLabel mensaje2;
     private javax.swing.JLabel name;
     // End of variables declaration//GEN-END:variables
 }
