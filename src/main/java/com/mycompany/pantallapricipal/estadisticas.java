@@ -3,6 +3,11 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.pantallapricipal;
+import javax.swing.JOptionPane;
+import com.mycompany.pantallapricipal.miGrafica;
+import org.jfree.chart.ChartPanel;
+
+import org.jfree.chart.ChartPanel;
 
 /**
  *
@@ -15,6 +20,11 @@ public class estadisticas extends javax.swing.JFrame {
      */
     public estadisticas() {
         initComponents();
+         miGrafica grafica = new miGrafica();
+        ChartPanel chartPanel = grafica.crearGrafica();
+        plana.setLayout(new java.awt.BorderLayout());
+        plana.add(chartPanel, java.awt.BorderLayout.CENTER);
+        plana.validate();
     }
 
     /**

@@ -4,9 +4,7 @@
  */
 package com.mycompany.pantallapricipal;
 
-import javax.swing.JOptionPane;
-import com.mycompany.pantallapricipal.miGrafica;
-import org.jfree.chart.ChartPanel;
+
 
 
 /**
@@ -20,11 +18,6 @@ public class heart extends javax.swing.JFrame {
      */
     public heart() {
         initComponents();
-        miGrafica grafica = new miGrafica();
-        ChartPanel chartPanel = grafica.crearGrafica();
-        panelGrafica.setLayout(new java.awt.BorderLayout());
-        panelGrafica.add(chartPanel, java.awt.BorderLayout.CENTER);
-        panelGrafica.validate();
         System.out.println("holiiis");
         
     }
