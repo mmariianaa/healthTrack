@@ -5,22 +5,53 @@
 
 package com.mycompany.pantallapricipal;
 
-/**
- *
+import javax.swing.JFrame;
+import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
+import org.jfree.data.category.DefaultCategoryDataset;
+import javax.swing.JFrame;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+/*
  * @author usuario
  */
 public class Graficas extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Graficas
-     */
-    public Graficas() {
-        initComponents();
+public class JFREECHARTT extends JFrame{
+    
+    public JFREECHARTT(){
+        //crear grafico de barras
+        DefaultCategoryDataset dataset = new  DefaultCategoryDataset();
+        dataset.addValue(1, "hidrogeno verde", "2021");
+        dataset.addValue(2, "hidrogeno blanco", "2022");
+        dataset.addValue(3, "hidrogeno azul", "2023");
         
+        JFreeChart chart = ChartFactory.createBarChart(
+        "healthtrack", 
+        "anos",
+        "tipo hidrogeno",
+        dataset
+        );
         
+        ChartPanel chartPanel = new ChartPanel(chart);
+        chartPanel.setMouseWheelEnabled(true);
+        
+        add(chartPanel);
+              
+    }
+
+    public static void main(String[] args) {
+        //es para crear la pantalla o cuadro blanco sin nada 
+        Graficas v = new Graficas();//instancia
+        v.setTitle("hola");//nombre del grafico
+        v.setSize(800,600);//tamano 
+        v.setDefaultCloseOperation(EXIT_ON_CLOSE);
+        v.setLocationRelativeTo(null);
+        v.setVisible(true);     
     }
     
-
+    }
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,9 +62,7 @@ public class Graficas extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
         jPanel1.setFocusCycleRoot(true);
@@ -56,46 +85,21 @@ public class Graficas extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(2000, 2500));
         setSize(new java.awt.Dimension(1000, 1000));
 
-        jPanel3.setBackground(new java.awt.Color(51, 255, 204));
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/blue heart (2).jpeg"))); // NOI18N
-        jLabel1.setText("jLabel1");
-
-        jButton1.setText("coca");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 135, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(123, 123, 123)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE))
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 619, Short.MAX_VALUE)
         );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(379, Short.MAX_VALUE)
-                .addComponent(jButton1)
-                .addGap(97, 97, 97))
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 503, Short.MAX_VALUE)
         );
 
-        getContentPane().add(jPanel3, java.awt.BorderLayout.CENTER);
+        getContentPane().add(jPanel2, java.awt.BorderLayout.CENTER);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-        
-    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -131,11 +135,8 @@ public class Graficas extends javax.swing.JFrame {
             }
         });
     }
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel3;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
