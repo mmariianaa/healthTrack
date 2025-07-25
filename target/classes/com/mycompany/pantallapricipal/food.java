@@ -19,9 +19,9 @@ public class food extends javax.swing.JFrame {
      */
     public food() {
         initComponents();
-        manzana.setText(" manzna   59");
-        platano.setText(" platano  89");
-        naranja.setText("naranja 47");
+        manzana.setText("59");
+        platano.setText("89");
+        naranja.setText("47");
         mango.setText("60");
         pina.setText("50");
         sandia.setText("30");
@@ -81,6 +81,17 @@ public class food extends javax.swing.JFrame {
         papaya = new javax.swing.JCheckBox();
         pera = new javax.swing.JCheckBox();
         kiwi = new javax.swing.JCheckBox();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
+        jLabel14 = new javax.swing.JLabel();
+        jLabel15 = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
         jPanel4 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
@@ -95,6 +106,17 @@ public class food extends javax.swing.JFrame {
         esparragos = new javax.swing.JCheckBox();
         recomlacha = new javax.swing.JCheckBox();
         zanahorias = new javax.swing.JCheckBox();
+        jLabel17 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
         jPanel5 = new javax.swing.JPanel();
         jPanel8 = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
@@ -109,6 +131,17 @@ public class food extends javax.swing.JFrame {
         pollo = new javax.swing.JCheckBox();
         res = new javax.swing.JCheckBox();
         camaron = new javax.swing.JCheckBox();
+        jLabel28 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         regreso = new javax.swing.JButton();
         calcularsi = new javax.swing.JButton();
@@ -155,6 +188,7 @@ public class food extends javax.swing.JFrame {
         );
 
         jPanel3.setFont(new java.awt.Font("Calisto MT", 3, 14)); // NOI18N
+        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jPanel6.setBackground(new java.awt.Color(38, 158, 230));
 
@@ -178,97 +212,83 @@ public class food extends javax.swing.JFrame {
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
+        jPanel3.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
+
         manzana.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        manzana.setText("APPLE                             52 KAL");
+        jPanel3.add(manzana, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 54, -1, -1));
 
         platano.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        platano.setText("BANANA                         89KAL");
+        jPanel3.add(platano, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 79, -1, -1));
 
         naranja.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        naranja.setText("ORANGE                           47 KAL ");
         naranja.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 naranjaActionPerformed(evt);
             }
         });
+        jPanel3.add(naranja, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 107, -1, -1));
 
         mango.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        mango.setText("MANGO                           60 KAL ");
         mango.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mangoActionPerformed(evt);
             }
         });
+        jPanel3.add(mango, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 132, -1, -1));
 
         pina.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        pina.setText("PINEAPPLE                      50 KAL");
+        jPanel3.add(pina, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 157, -1, -1));
 
         sandia.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        sandia.setText("WATERMELON               30KAL ");
+        jPanel3.add(sandia, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 182, -1, -1));
 
         uvas.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        uvas.setText("GRAPES                            69KAL");
+        jPanel3.add(uvas, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 207, -1, -1));
 
         aguacate.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        aguacate.setText("AVOCADO                       160KAL");
+        jPanel3.add(aguacate, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 232, -1, -1));
 
         papaya.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        papaya.setText("PAPAYA                          43KAL");
+        jPanel3.add(papaya, new org.netbeans.lib.awtextra.AbsoluteConstraints(207, 257, -1, -1));
 
         pera.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        pera.setText("PEAR                                 57KAL");
+        jPanel3.add(pera, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 288, -1, -1));
 
         kiwi.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        kiwi.setText("KIWI                                    41KAL");
+        jPanel3.add(kiwi, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 313, -1, -1));
 
-        javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
-        jPanel3.setLayout(jPanel3Layout);
-        jPanel3Layout.setHorizontalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(33, 33, 33)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(platano)
-                    .addComponent(manzana)
-                    .addComponent(naranja)
-                    .addComponent(mango)
-                    .addComponent(pina)
-                    .addComponent(sandia)
-                    .addComponent(uvas)
-                    .addComponent(aguacate)
-                    .addComponent(papaya)
-                    .addComponent(pera)
-                    .addComponent(kiwi)))
-        );
-        jPanel3Layout.setVerticalGroup(
-            jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(manzana)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(platano)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(naranja)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(mango)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pina)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(sandia)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(uvas)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(aguacate)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(papaya)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(pera)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(kiwi)
-                .addGap(48, 48, 48))
-        );
+        jLabel5.setText("APPLE                             52 KAL");
+        jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 54, 167, -1));
+
+        jLabel6.setText("BANANA                         89KAL");
+        jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 82, 167, -1));
+
+        jLabel7.setText("ORANGE                           47 KAL ");
+        jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 107, -1, -1));
+
+        jLabel9.setText("MANGO                           60 KAL ");
+        jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 132, 167, -1));
+
+        jLabel10.setText("PINEAPPLE                      50 KAL");
+        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 157, 167, -1));
+
+        jLabel11.setText("WATERMELON               30KAL ");
+        jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 182, 167, -1));
+
+        jLabel12.setText("GRAPES                            69KAL");
+        jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 210, 167, -1));
+
+        jLabel13.setText("AVOCADO                       160KAL");
+        jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 235, 167, -1));
+
+        jLabel14.setText("PAPAYA                          43KAL");
+        jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 257, -1, -1));
+
+        jLabel15.setText("PEAR                                 57KAL");
+        jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 288, 167, -1));
+
+        jLabel16.setText("KIWI                                    41KAL");
+        jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 316, 167, -1));
 
         jPanel4.setFont(new java.awt.Font("Calisto MT", 3, 14)); // NOI18N
 
@@ -295,25 +315,18 @@ public class food extends javax.swing.JFrame {
         );
 
         lechuga.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        lechuga.setText("LETTUCE                                        5 KAL ");
 
         cebolla.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        cebolla.setText("ONION                                          46 KAL");
 
         apio.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        apio.setText("CELERY                                           14 KAL");
 
         brocoli.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        brocoli.setText("BROCOLI                                       31 KAL");
 
         ejotes.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        ejotes.setText("GREEN BEANS                              30 KAL ");
 
         tomates.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        tomates.setText("TOMATOES                                   36 KAL");
 
         calabaza.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        calabaza.setText("PUMPKIN                                      30 KAL");
         calabaza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 calabazaActionPerformed(evt);
@@ -321,16 +334,34 @@ public class food extends javax.swing.JFrame {
         });
 
         repollo.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        repollo.setText("CABBAGE                                    22 KAL");
 
         esparragos.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        esparragos.setText("ASPARAGUS                                 27 KAL");
 
         recomlacha.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        recomlacha.setText("BETROOT                               46 KAL");
 
         zanahorias.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        zanahorias.setText("CARROTS                                      53 KAL");
+
+        jLabel17.setText("LETTUCE                                        5 KAL ");
+
+        jLabel18.setText("ONION                                          46 KAL");
+
+        jLabel19.setText("CELERY                                           14 KAL");
+
+        jLabel20.setText("BROCOLI                                       31 KAL");
+
+        jLabel21.setText("GREEN BEANS                              30 KAL ");
+
+        jLabel22.setText("TOMATOES                                   36 KAL");
+
+        jLabel23.setText("PUMPKIN                                      30 KAL");
+
+        jLabel24.setText("CABBAGE                                    22 KAL");
+
+        jLabel25.setText("ASPARAGUS                                 27 KAL");
+
+        jLabel26.setText("BETROOT                                      46 KAL");
+
+        jLabel27.setText("CARROTS                                      53 KAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -339,46 +370,85 @@ public class food extends javax.swing.JFrame {
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addGap(37, 37, 37)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel27, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addComponent(jLabel18, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel19, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel20, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel21, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel22, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel24, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jLabel26, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lechuga)
-                    .addComponent(cebolla)
-                    .addComponent(apio)
-                    .addComponent(zanahorias)
-                    .addComponent(recomlacha)
-                    .addComponent(repollo)
-                    .addComponent(calabaza)
-                    .addComponent(tomates)
-                    .addComponent(ejotes)
-                    .addComponent(brocoli)
-                    .addComponent(esparragos))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(jPanel4Layout.createSequentialGroup()
+                        .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(lechuga, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(cebolla, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(apio, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(brocoli, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(ejotes, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(tomates, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(calabaza, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(repollo, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(esparragos, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(recomlacha, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addComponent(zanahorias, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap())
         );
         jPanel4Layout.setVerticalGroup(
             jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel4Layout.createSequentialGroup()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(lechuga)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lechuga)
+                    .addComponent(jLabel17))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cebolla)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(cebolla)
+                    .addComponent(jLabel18))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(apio)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(apio)
+                    .addComponent(jLabel19))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(brocoli)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(brocoli)
+                    .addComponent(jLabel20))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(ejotes)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(ejotes)
+                    .addComponent(jLabel21))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(tomates)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(tomates)
+                    .addComponent(jLabel22))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(calabaza)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(calabaza)
+                    .addComponent(jLabel23))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(repollo)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(repollo)
+                    .addComponent(jLabel24))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(esparragos)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(esparragos)
+                    .addComponent(jLabel25))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(recomlacha)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(recomlacha)
+                    .addComponent(jLabel26))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(zanahorias)
+                .addGroup(jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(zanahorias)
+                    .addComponent(jLabel27))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
@@ -410,58 +480,85 @@ public class food extends javax.swing.JFrame {
         jPanel5.add(jPanel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 50));
 
         avena.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        avena.setText("OATS                              389 KAL");
-        jPanel5.add(avena, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, -1, -1));
+        jPanel5.add(avena, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 50, -1, -1));
 
         arroz.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        arroz.setText("RICE                                130 KAL ");
-        jPanel5.add(arroz, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
+        jPanel5.add(arroz, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 70, -1, -1));
 
         maiz.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        maiz.setText("CORN FLAKES               357 KAL");
         maiz.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 maizActionPerformed(evt);
             }
         });
-        jPanel5.add(maiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, -1));
+        jPanel5.add(maiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 90, -1, -1));
 
         pan.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        pan.setText("BREAD                            247 KAL");
-        jPanel5.add(pan, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, -1, -1));
+        jPanel5.add(pan, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 120, -1, -1));
 
         quinoa.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        quinoa.setText("QUINOA                         368 KAL");
         quinoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 quinoaActionPerformed(evt);
             }
         });
-        jPanel5.add(quinoa, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+        jPanel5.add(quinoa, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 150, -1, -1));
 
         pavo.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        pavo.setText("TURKEY                          198 KAL ");
-        jPanel5.add(pavo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, -1, -1));
+        jPanel5.add(pavo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 170, -1, -1));
 
         puerco.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        puerco.setText("PORK LOIN                      242 KAL");
-        jPanel5.add(puerco, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+        jPanel5.add(puerco, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, -1, -1));
 
         pescado.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        pescado.setText("FISH                                 208 KAL ");
-        jPanel5.add(pescado, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
+        pescado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                pescadoActionPerformed(evt);
+            }
+        });
+        jPanel5.add(pescado, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 220, -1, -1));
 
         pollo.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        pollo.setText("CHICKEN                        165 KAL");
-        jPanel5.add(pollo, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+        jPanel5.add(pollo, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 250, -1, -1));
 
         res.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        res.setText("BEEF                                 250 KAL ");
-        jPanel5.add(res, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
+        jPanel5.add(res, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 280, -1, -1));
 
         camaron.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
-        camaron.setText("SHRIMP                            106 KAL ");
-        jPanel5.add(camaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, -1, -1));
+        jPanel5.add(camaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
+
+        jLabel28.setText("OATS                              389 KAL");
+        jPanel5.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 180, -1));
+
+        jLabel29.setText("RICE                                130 KAL ");
+        jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 170, -1));
+
+        jLabel30.setText("CORN FLAKES               357 KAL");
+        jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 170, -1));
+
+        jLabel31.setText("BREAD                            247 KAL");
+        jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 170, -1));
+
+        jLabel32.setText("QUINOA                         368 KAL");
+        jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 170, -1));
+
+        jLabel33.setText("TURKEY                          198 KAL ");
+        jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 170, -1));
+
+        jLabel34.setText("PORK LOIN                      242 KAL");
+        jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 180, -1));
+
+        jLabel35.setText("CHICKEN                        165 KAL");
+        jPanel5.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 170, -1));
+
+        jLabel36.setText("BEEF                                 250 KAL ");
+        jPanel5.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 170, -1));
+
+        jLabel37.setText("SHRIMP                            106 KAL ");
+        jPanel5.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 170, -1));
+
+        jLabel38.setText("FISH                                 208 KAL ");
+        jPanel5.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 180, -1));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/imagenvegetables-removebg-previe (2).png"))); // NOI18N
 
@@ -470,6 +567,11 @@ public class food extends javax.swing.JFrame {
         regreso.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 regresoMouseClicked(evt);
+            }
+        });
+        regreso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                regresoActionPerformed(evt);
             }
         });
 
@@ -487,19 +589,18 @@ public class food extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(14, 14, 14)
-                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(48, 48, 48)
                         .addComponent(jLabel8)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(regreso)))
+                .addGap(18, 18, 18)
+                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
@@ -507,27 +608,26 @@ public class food extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(resultado))
                     .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(27, Short.MAX_VALUE))
+            .addComponent(panel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
                 .addComponent(panel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
+                .addGap(24, 24, 24)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel8, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(regreso)
-                            .addComponent(calcularsi)
-                            .addComponent(resultado))
-                        .addGap(54, 54, 54))))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(regreso)
+                        .addComponent(calcularsi)
+                        .addComponent(resultado))
+                    .addComponent(jLabel8))
+                .addGap(20, 20, 20))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.LINE_START);
@@ -585,6 +685,14 @@ public class food extends javax.swing.JFrame {
 
     }//GEN-LAST:event_calcularsiMouseClicked
 
+    private void pescadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pescadoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_pescadoActionPerformed
+
+    private void regresoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_regresoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_regresoActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -633,10 +741,43 @@ public class food extends javax.swing.JFrame {
     private javax.swing.JCheckBox ejotes;
     private javax.swing.JCheckBox esparragos;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
