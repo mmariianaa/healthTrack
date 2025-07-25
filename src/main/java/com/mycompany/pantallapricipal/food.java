@@ -257,37 +257,48 @@ public class food extends javax.swing.JFrame {
         kiwi.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jPanel3.add(kiwi, new org.netbeans.lib.awtextra.AbsoluteConstraints(206, 313, -1, -1));
 
+        jLabel5.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel5.setText("APPLE                             52 KAL");
         jPanel3.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 54, 167, -1));
 
-        jLabel6.setText("BANANA                         89KAL");
+        jLabel6.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel6.setText("BANANA                       89KAL");
         jPanel3.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 82, 167, -1));
 
-        jLabel7.setText("ORANGE                           47 KAL ");
+        jLabel7.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel7.setText("ORANGE                       47 KAL ");
         jPanel3.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 107, -1, -1));
 
-        jLabel9.setText("MANGO                           60 KAL ");
+        jLabel9.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel9.setText("MANGO                        60 KAL ");
         jPanel3.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 132, 167, -1));
 
-        jLabel10.setText("PINEAPPLE                      50 KAL");
+        jLabel10.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel10.setText("PINEAPPLE                   50 KAL");
         jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 157, 167, -1));
 
-        jLabel11.setText("WATERMELON               30KAL ");
+        jLabel11.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel11.setText("WATERMELON          30KAL ");
         jPanel3.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 182, 167, -1));
 
-        jLabel12.setText("GRAPES                            69KAL");
+        jLabel12.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel12.setText("GRAPES                          69KAL");
         jPanel3.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 210, 167, -1));
 
-        jLabel13.setText("AVOCADO                       160KAL");
+        jLabel13.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel13.setText("AVOCADO                     160KAL");
         jPanel3.add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 235, 167, -1));
 
+        jLabel14.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel14.setText("PAPAYA                          43KAL");
         jPanel3.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 257, -1, -1));
 
-        jLabel15.setText("PEAR                                 57KAL");
+        jLabel15.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel15.setText("PEAR                               57KAL");
         jPanel3.add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 288, 167, -1));
 
-        jLabel16.setText("KIWI                                    41KAL");
+        jLabel16.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
+        jLabel16.setText("KIWI                                 41KAL");
         jPanel3.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 316, 167, -1));
 
         jPanel4.setFont(new java.awt.Font("Calisto MT", 3, 14)); // NOI18N
@@ -341,26 +352,37 @@ public class food extends javax.swing.JFrame {
 
         zanahorias.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
 
+        jLabel17.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel17.setText("LETTUCE                                        5 KAL ");
 
+        jLabel18.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel18.setText("ONION                                          46 KAL");
 
+        jLabel19.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel19.setText("CELERY                                           14 KAL");
 
+        jLabel20.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel20.setText("BROCOLI                                       31 KAL");
 
+        jLabel21.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel21.setText("GREEN BEANS                              30 KAL ");
 
+        jLabel22.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel22.setText("TOMATOES                                   36 KAL");
 
+        jLabel23.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel23.setText("PUMPKIN                                      30 KAL");
 
+        jLabel24.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel24.setText("CABBAGE                                    22 KAL");
 
+        jLabel25.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel25.setText("ASPARAGUS                                 27 KAL");
 
+        jLabel26.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel26.setText("BETROOT                                      46 KAL");
 
+        jLabel27.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel27.setText("CARROTS                                      53 KAL");
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -527,36 +549,47 @@ public class food extends javax.swing.JFrame {
         camaron.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jPanel5.add(camaron, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, -1, -1));
 
+        jLabel28.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel28.setText("OATS                              389 KAL");
         jPanel5.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 50, 180, -1));
 
+        jLabel29.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel29.setText("RICE                                130 KAL ");
         jPanel5.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 70, 170, -1));
 
+        jLabel30.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel30.setText("CORN FLAKES               357 KAL");
         jPanel5.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 90, 170, -1));
 
+        jLabel31.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel31.setText("BREAD                            247 KAL");
         jPanel5.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 120, 170, -1));
 
+        jLabel32.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel32.setText("QUINOA                         368 KAL");
         jPanel5.add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, 170, -1));
 
+        jLabel33.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel33.setText("TURKEY                          198 KAL ");
         jPanel5.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 170, 170, -1));
 
+        jLabel34.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel34.setText("PORK LOIN                      242 KAL");
         jPanel5.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, 180, -1));
 
+        jLabel35.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel35.setText("CHICKEN                        165 KAL");
         jPanel5.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, 170, -1));
 
+        jLabel36.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel36.setText("BEEF                                 250 KAL ");
         jPanel5.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, 170, -1));
 
+        jLabel37.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel37.setText("SHRIMP                            106 KAL ");
         jPanel5.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 170, -1));
 
+        jLabel38.setFont(new java.awt.Font("Calisto MT", 0, 12)); // NOI18N
         jLabel38.setText("FISH                                 208 KAL ");
         jPanel5.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 180, -1));
 
