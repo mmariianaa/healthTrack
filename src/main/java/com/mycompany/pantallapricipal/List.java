@@ -28,19 +28,25 @@ public class List extends javax.swing.JFrame {
 
         back = new javax.swing.JButton();
         underground = new javax.swing.JPanel();
+        backbutton = new javax.swing.JButton();
         izquierdo1 = new javax.swing.JPanel();
         izquierdo2 = new javax.swing.JPanel();
         derecho1 = new javax.swing.JPanel();
         derecho2 = new javax.swing.JPanel();
-        backbutton = new javax.swing.JButton();
         logo = new javax.swing.JLabel();
         E1 = new javax.swing.JPanel();
         e2 = new javax.swing.JLabel();
         C1 = new javax.swing.JPanel();
         c1 = new javax.swing.JLabel();
+        saltar = new javax.swing.JRadioButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        calcular = new javax.swing.JButton();
+        bici = new javax.swing.JRadioButton();
+        nadar = new javax.swing.JRadioButton();
+        jLabel1 = new javax.swing.JLabel();
         N1 = new javax.swing.JPanel();
         n1 = new javax.swing.JLabel();
-        man = new javax.swing.JLabel();
         gym = new javax.swing.JLabel();
 
         back.setText("jButton1");
@@ -48,6 +54,20 @@ public class List extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         underground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        backbutton.setBackground(new java.awt.Color(204, 204, 255));
+        backbutton.setText("back");
+        backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                backbuttonMouseClicked(evt);
+            }
+        });
+        backbutton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backbuttonActionPerformed(evt);
+            }
+        });
+        underground.add(backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, -1, -1));
 
         izquierdo1.setBackground(new java.awt.Color(13, 70, 113));
 
@@ -93,39 +113,22 @@ public class List extends javax.swing.JFrame {
         );
         derecho2Layout.setVerticalGroup(
             derecho2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 459, Short.MAX_VALUE)
+            .addGap(0, 463, Short.MAX_VALUE)
         );
-
-        backbutton.setBackground(new java.awt.Color(204, 204, 255));
-        backbutton.setText("back");
-        backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                backbuttonMouseClicked(evt);
-            }
-        });
-        backbutton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                backbuttonActionPerformed(evt);
-            }
-        });
 
         javax.swing.GroupLayout derecho1Layout = new javax.swing.GroupLayout(derecho1);
         derecho1.setLayout(derecho1Layout);
         derecho1Layout.setHorizontalGroup(
             derecho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(derecho1Layout.createSequentialGroup()
-                .addGap(0, 24, Short.MAX_VALUE)
-                .addGroup(derecho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(derecho2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(backbutton, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addGap(0, 45, Short.MAX_VALUE)
+                .addComponent(derecho2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         derecho1Layout.setVerticalGroup(
             derecho1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(derecho1Layout.createSequentialGroup()
                 .addComponent(derecho2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(backbutton)
-                .addContainerGap())
+                .addGap(35, 35, 35))
         );
 
         underground.add(derecho1, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 0, 100, 500));
@@ -186,6 +189,32 @@ public class List extends javax.swing.JFrame {
         );
 
         underground.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 110, -1));
+        underground.add(saltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, -1, -1));
+
+        jLabel2.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("SWIM");
+        underground.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, -1, -1));
+
+        jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText(" BIKE");
+        underground.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, -1, -1));
+
+        calcular.setText("calcular");
+        calcular.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                calcularMouseClicked(evt);
+            }
+        });
+        underground.add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 460, -1, -1));
+        underground.add(bici, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 330, 40, 20));
+        underground.add(nadar, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 470, -1, -1));
+
+        jLabel1.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel1.setText("JUMP");
+        underground.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 60, -1));
 
         N1.setBackground(new java.awt.Color(202, 240, 248));
 
@@ -210,10 +239,6 @@ public class List extends javax.swing.JFrame {
         );
 
         underground.add(N1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 370, 110, -1));
-
-        man.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/man.png"))); // NOI18N
-        man.setText("jLabel1");
-        underground.add(man, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 0, 440, 500));
 
         gym.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg"))); // NOI18N
         gym.setText("jLabel1");
@@ -247,6 +272,11 @@ public class List extends javax.swing.JFrame {
         dispose();
         //regreso del boton
     }//GEN-LAST:event_backbuttonMouseClicked
+
+    private void calcularMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calcularMouseClicked
+        // TODO add your handling code here:
+        //este es para calcular las calorias depediendo de la actividad 
+    }//GEN-LAST:event_calcularMouseClicked
 
     /**
      * @param args the command line arguments
@@ -289,16 +319,22 @@ public class List extends javax.swing.JFrame {
     private javax.swing.JPanel N1;
     private javax.swing.JButton back;
     private javax.swing.JButton backbutton;
+    private javax.swing.JRadioButton bici;
     private javax.swing.JLabel c1;
+    private javax.swing.JButton calcular;
     private javax.swing.JPanel derecho1;
     private javax.swing.JPanel derecho2;
     private javax.swing.JLabel e2;
     private javax.swing.JLabel gym;
     private javax.swing.JPanel izquierdo1;
     private javax.swing.JPanel izquierdo2;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel logo;
-    private javax.swing.JLabel man;
     private javax.swing.JLabel n1;
+    private javax.swing.JRadioButton nadar;
+    private javax.swing.JRadioButton saltar;
     private javax.swing.JPanel underground;
     // End of variables declaration//GEN-END:variables
 }

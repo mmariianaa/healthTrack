@@ -85,31 +85,33 @@ public class peticiones {
 }
     // esto es una peticion para otener un mensaje en la pantalla de la luna 
     public static String recomendaciondeluna() {
-    Random random = new Random();
+    Random randosm = new Random();
     List<Object[]> mensaje = new ArrayList<>();
 
     Connection conn = DB.conectar();
-    int num = random.nextInt(10) + 1;
+    int id = randosm.nextInt(10) + 1;
 
     if (conn != null) {
-        String query = "SELECT * FROM sueno WHERE comentario = ?";
+        String query = "SELECT * FROM sueno WHERE idsueno = ?";
 
         try (PreparedStatement stmt = conn.prepareStatement(query)) {
-            stmt.setInt(1, num);
+            stmt.setInt(1, id);
 
             ResultSet rs = stmt.executeQuery();
             /*while (rs.next()) {
+            
                 Object[] fila = new Object[] {
                     rs.getString("mensaje") // Asegúrate que el nombre de la columna sea "mensaje" y no "mensajes"
                 };
                 mensaje.add(fila);
             }*/
             if (rs.next()) {
-                return rs.getString("recomendacion");
+                return rs.getString("comentario");
             }
             System.out.println(mensaje);
         } catch (SQLException e) {
             System.out.println("Error al mostrar el mensaje");
+            System.out.println(e);
         }
     }
 
@@ -117,19 +119,8 @@ public class peticiones {
 }  
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    //Otra peticion
+
+    //Otra peticion para insertar usurios a la base de datos.
     public static boolean insertarUsuario(String nombre, String correo, String contrasena, int edad, double peso,String sexo, double altura) {
     
     Connection conn = DB.conectar();

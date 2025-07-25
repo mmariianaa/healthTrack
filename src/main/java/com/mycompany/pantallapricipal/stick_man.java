@@ -18,9 +18,7 @@ public class stick_man extends javax.swing.JFrame {
      */
     public stick_man() {
         initComponents();
-        var nuevo=peticiones.recomendaciondeluna();
-        System.out.println(nuevo);
-        mensaje2.setText(nuevo);// suponiendo que existe el método getTexto()
+        // suponiendo que existe el método getTexto()
         // Dentro del constructor o un método de tu JFrame
         boolean buenosHabitos = true; // o false, según los datos
         // Cambia el fondo del panel principal
@@ -77,8 +75,9 @@ public class stick_man extends javax.swing.JFrame {
         });
         jPanel1.add(change, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 60, -1, -1));
 
-        mensaje2.setText("jLabel2");
-        jPanel1.add(mensaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 250, -1, -1));
+        mensaje2.setFont(new java.awt.Font("Calisto MT", 3, 24)); // NOI18N
+        mensaje2.setForeground(new java.awt.Color(255, 255, 255));
+        jPanel1.add(mensaje2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, -1, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/lunal (1).png"))); // NOI18N
         jLabel1.setText("jLabel1");
@@ -122,7 +121,9 @@ public class stick_man extends javax.swing.JFrame {
 
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         // TODO add your handling code here:
-        JOptionPane.showMessageDialog(this, "PLIS INSERT YOUR AGE");
+        var nuevo=peticiones.recomendaciondeluna();
+        System.out.println(nuevo);
+        mensaje2.setText(nuevo);
     }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
