@@ -280,9 +280,14 @@ public class List extends javax.swing.JFrame {
 
         // TODO add your handling code here:
         //este es para calcular las calorias depediendo de la actividad 
-        
-        
-        
+         double pesoGuardado = personas.getPeso();
+
+        if (pesoGuardado > 60) {
+            JOptionPane.showMessageDialog(null, "🏋️‍♀️ Peso alto: " + pesoGuardado + " kg");
+        } else {
+            JOptionPane.showMessageDialog(null, "🎈 Peso dentro del rango: " + pesoGuardado + " kg");
+        }
+  
     }//GEN-LAST:event_calcularMouseClicked
 
     /**
