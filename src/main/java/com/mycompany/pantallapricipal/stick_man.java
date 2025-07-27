@@ -44,10 +44,11 @@ public class stick_man extends javax.swing.JFrame {
         change = new javax.swing.JButton();
         mensaje2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(170, 170, 170));
+        jPanel1.setBackground(new java.awt.Color(44, 62, 80));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         head.setBackground(new java.awt.Color(13, 70, 113));
@@ -62,9 +63,9 @@ public class stick_man extends javax.swing.JFrame {
                 nameMouseClicked(evt);
             }
         });
-        head.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 0, 190, 54));
+        head.add(name, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 0, 190, 54));
 
-        jPanel1.add(head, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 586, -1));
+        jPanel1.add(head, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, -1));
 
         change.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
         change.setText("change\n");
@@ -86,16 +87,17 @@ public class stick_man extends javax.swing.JFrame {
                 jLabel1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 60, 440, 490));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 440, 490));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/Pájaro con gorro en una colina (1).png"))); // NOI18N
+        jLabel2.setText("jLabel2");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, 170, 230));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,6 +167,7 @@ public class stick_man extends javax.swing.JFrame {
     private javax.swing.JButton change;
     private javax.swing.JPanel head;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel mensaje2;
     private javax.swing.JLabel name;

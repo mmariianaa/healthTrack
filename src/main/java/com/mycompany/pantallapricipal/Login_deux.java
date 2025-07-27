@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 
 public class Login_deux extends javax.swing.JFrame {
-
+   
    int xMouse, yMouse;
    
     public Login_deux() {
@@ -204,11 +204,13 @@ public class Login_deux extends javax.swing.JFrame {
 
     private void inicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicioActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_inicioActionPerformed
 
     private void inicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMouseClicked
         // TODO add your handling code here:
        // este espacio es para verificar la contrasena
+       
        String correo=texto1.getText();
        String password=new String(contrasenainicio.getPassword());
   

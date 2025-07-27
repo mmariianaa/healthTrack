@@ -5,7 +5,7 @@ import javax.swing.JOptionPane;
 
 
 public class Login_deux extends javax.swing.JFrame {
-
+   
    int xMouse, yMouse;
    
     public Login_deux() {
@@ -204,11 +204,44 @@ public class Login_deux extends javax.swing.JFrame {
 
     private void inicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inicioActionPerformed
         // TODO add your handling code here:
+        
     }//GEN-LAST:event_inicioActionPerformed
 
     private void inicioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_inicioMouseClicked
         // TODO add your handling code here:
        // este espacio es para verificar la contrasena
+       // Mostrar mensaje de carga
+    JOptionPane loading = new JOptionPane("Validando datos, por favor espere...",
+                                          JOptionPane.INFORMATION_MESSAGE,
+                                          JOptionPane.DEFAULT_OPTION, null, new Object[]{}, null);
+    final javax.swing.JDialog dialog = loading.createDialog("Cargando...");
+    dialog.setModal(false); // que no bloquee la ventana
+    dialog.setDefaultCloseOperation(javax.swing.JDialog.DO_NOTHING_ON_CLOSE);
+    dialog.setVisible(true);
+
+    // Hilo en segundo plano
+    new Thread(() -> {
+        String correo = texto1.getText();
+        String password = new String(contrasenainicio.getPassword());
+
+        boolean exito = peticiones.login(correo, password);
+
+        // Cerrar el mensaje de carga
+        dialog.dispose();
+
+        if (exito) {
+            // Cambiar pantalla en el hilo de Swing
+            javax.swing.SwingUtilities.invokeLater(() -> {
+                heart principal = new heart();
+                principal.setVisible(true);
+                dispose();
+            });
+        } else {
+            javax.swing.SwingUtilities.invokeLater(() -> {
+                JOptionPane.showMessageDialog(null, "Tus datos son incorrectos por favor verificar");
+            });
+        }
+    }).start();
        String correo=texto1.getText();
        String password=new String(contrasenainicio.getPassword());
   

@@ -176,5 +176,32 @@ public class peticiones {
 
     return false;
 }
+    // ESTA ES LA PETICION ES PARA TRAER EL PESO DE LA BASE DE DATOS
+    public static double traerpeso(String nombre, String correo, String contrasena,
+            int edad, double peso,String sexo,double altura
+    ) {
+    
+    Connection conn = DB.conectar();
+
+    if (conn != null) {
+        
+        String query = "SELECT * FROM usuario WHERE nombre = ? AND correo = ? AND "
+        + "contrasena = ? AND  edad = ? AND  peso = ? AND  sexo = ? AND  altura = ? ";
+ 
+        
+        try (PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setDouble(1,peso);
+        
+            ResultSet rs = stmt.executeQuery();
+
+
+        } catch (SQLException e) {
+            System.out.println("❌ Error al loguear");
+            e.printStackTrace();
+        }
+    }
+
+    return 0;
+}
 
 }

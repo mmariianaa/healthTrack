@@ -45,6 +45,7 @@ public class heart extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         panelGrafica = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
         panel7 = new javax.swing.JPanel();
         EJERCICIOS = new javax.swing.JLabel();
         panel9 = new javax.swing.JPanel();
@@ -210,30 +211,19 @@ public class heart extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        panel1.add(panel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 700, -1));
+        panel1.add(panel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 700, 50));
 
         panelGrafica.setBackground(new java.awt.Color(230, 255, 255));
         panelGrafica.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        panelGrafica.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
         logo.setText("jLabel9");
+        panelGrafica.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 35, 203, 227));
 
-        javax.swing.GroupLayout panelGraficaLayout = new javax.swing.GroupLayout(panelGrafica);
-        panelGrafica.setLayout(panelGraficaLayout);
-        panelGraficaLayout.setHorizontalGroup(
-            panelGraficaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelGraficaLayout.createSequentialGroup()
-                .addGap(61, 61, 61)
-                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 203, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(82, Short.MAX_VALUE))
-        );
-        panelGraficaLayout.setVerticalGroup(
-            panelGraficaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelGraficaLayout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(40, Short.MAX_VALUE))
-        );
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/𝙾𝚢𝚊𝚜𝚞𝚖𝚒 𝙿𝚞𝚗𝚙𝚞𝚗 (1).png"))); // NOI18N
+        jLabel9.setText("jLabel9");
+        panelGrafica.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 190, 280));
 
         panel1.add(panelGrafica, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 350, 310));
 
@@ -347,9 +337,9 @@ public class heart extends javax.swing.JFrame {
         panel11Layout.setHorizontalGroup(
             panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(panel11Layout.createSequentialGroup()
-                .addGap(316, 316, 316)
+                .addGap(356, 356, 356)
                 .addComponent(jLabel6)
-                .addContainerGap(315, Short.MAX_VALUE))
+                .addContainerGap(275, Short.MAX_VALUE))
         );
         panel11Layout.setVerticalGroup(
             panel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -544,6 +534,7 @@ public class heart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JLabel logo;
     private javax.swing.JPanel panel1;
