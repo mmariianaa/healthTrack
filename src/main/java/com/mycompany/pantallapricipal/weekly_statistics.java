@@ -109,6 +109,7 @@ public class weekly_statistics extends javax.swing.JFrame {
         jLabel49 = new javax.swing.JLabel();
         jPanel45 = new javax.swing.JPanel();
         jLabel55 = new javax.swing.JLabel();
+        filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 32767));
         jPanel46 = new javax.swing.JPanel();
         jLabel56 = new javax.swing.JLabel();
         jPanel47 = new javax.swing.JPanel();
@@ -1228,22 +1229,28 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jLabel55.setBackground(new java.awt.Color(0, 0, 0));
         jLabel55.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel55.setText("Steps:");
+        jLabel55.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
         jPanel45.setLayout(jPanel45Layout);
         jPanel45Layout.setHorizontalGroup(
             jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 225, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel45Layout.createSequentialGroup()
+                .addContainerGap(118, Short.MAX_VALUE)
+                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(110, 110, 110))
             .addGroup(jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel45Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
+                    .addGap(0, 53, Short.MAX_VALUE)
                     .addComponent(jLabel55)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+                    .addGap(0, 53, Short.MAX_VALUE)))
         );
         jPanel45Layout.setVerticalGroup(
             jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 37, Short.MAX_VALUE)
+            .addGroup(jPanel45Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(filler1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(25, Short.MAX_VALUE))
             .addGroup(jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel45Layout.createSequentialGroup()
                     .addGap(0, 10, Short.MAX_VALUE)
@@ -1251,137 +1258,129 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
-        jPanel3.add(jPanel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 310, -1, -1));
+        jPanel3.add(jPanel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 310, 230, -1));
 
         jPanel46.setBackground(new java.awt.Color(255, 255, 255));
         jPanel46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel56.setBackground(new java.awt.Color(0, 0, 0));
         jLabel56.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel56.setText("Steps:");
+        jLabel56.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
         jPanel46.setLayout(jPanel46Layout);
         jPanel46Layout.setHorizontalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel46Layout.createSequentialGroup()
-                .addGap(94, 94, 94)
+                .addGap(53, 53, 53)
                 .addComponent(jLabel56)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         jPanel46Layout.setVerticalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel46Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel56)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 265, 227, -1));
+        jPanel3.add(jPanel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 265, 230, 40));
 
         jPanel47.setBackground(new java.awt.Color(255, 255, 255));
         jPanel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel57.setBackground(new java.awt.Color(0, 0, 0));
         jLabel57.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel57.setText("Steps:");
+        jLabel57.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
         jPanel47.setLayout(jPanel47Layout);
         jPanel47Layout.setHorizontalGroup(
             jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 225, Short.MAX_VALUE)
-            .addGroup(jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel47Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
-                    .addComponent(jLabel57)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+            .addGroup(jPanel47Layout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel57)
+                .addContainerGap(56, Short.MAX_VALUE))
         );
         jPanel47Layout.setVerticalGroup(
             jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 37, Short.MAX_VALUE)
-            .addGroup(jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel47Layout.createSequentialGroup()
-                    .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel57)
-                    .addGap(0, 10, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel47Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel57)
+                .addContainerGap())
         );
 
-        jPanel3.add(jPanel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 355, -1, -1));
+        jPanel3.add(jPanel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 355, 230, 40));
 
         jPanel48.setBackground(new java.awt.Color(255, 255, 255));
         jPanel48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel58.setBackground(new java.awt.Color(0, 0, 0));
         jLabel58.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel58.setText("Steps:");
+        jLabel58.setText("  Calories Consumed:");
 
         javax.swing.GroupLayout jPanel48Layout = new javax.swing.GroupLayout(jPanel48);
         jPanel48.setLayout(jPanel48Layout);
         jPanel48Layout.setHorizontalGroup(
             jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 225, Short.MAX_VALUE)
-            .addGroup(jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel48Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
-                    .addComponent(jLabel58)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+            .addGroup(jPanel48Layout.createSequentialGroup()
+                .addGap(46, 46, 46)
+                .addComponent(jLabel58)
+                .addContainerGap(52, Short.MAX_VALUE))
         );
         jPanel48Layout.setVerticalGroup(
             jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 37, Short.MAX_VALUE)
-            .addGroup(jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel48Layout.createSequentialGroup()
-                    .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel58)
-                    .addGap(0, 10, Short.MAX_VALUE)))
+            .addGroup(jPanel48Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel58)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 220, -1, -1));
+        jPanel3.add(jPanel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 220, 230, -1));
 
         jPanel49.setBackground(new java.awt.Color(255, 255, 255));
         jPanel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel59.setBackground(new java.awt.Color(0, 0, 0));
         jLabel59.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel59.setText("Steps:");
+        jLabel59.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel49Layout = new javax.swing.GroupLayout(jPanel49);
         jPanel49.setLayout(jPanel49Layout);
         jPanel49Layout.setHorizontalGroup(
             jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel49Layout.createSequentialGroup()
-                .addGap(91, 91, 91)
+                .addGap(50, 50, 50)
                 .addComponent(jLabel59)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(56, Short.MAX_VALUE))
         );
         jPanel49Layout.setVerticalGroup(
             jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel49Layout.createSequentialGroup()
-                .addContainerGap(14, Short.MAX_VALUE)
+            .addGroup(jPanel49Layout.createSequentialGroup()
+                .addContainerGap()
                 .addComponent(jLabel59)
-                .addContainerGap())
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 400, 227, -1));
+        jPanel3.add(jPanel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 400, 230, -1));
 
         jPanel50.setBackground(new java.awt.Color(255, 255, 255));
         jPanel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel60.setBackground(new java.awt.Color(0, 0, 0));
         jLabel60.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel60.setText("Steps:");
+        jLabel60.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel50Layout = new javax.swing.GroupLayout(jPanel50);
         jPanel50.setLayout(jPanel50Layout);
         jPanel50Layout.setHorizontalGroup(
             jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 225, Short.MAX_VALUE)
+            .addGap(0, 228, Short.MAX_VALUE)
             .addGroup(jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel50Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
+                    .addGap(0, 53, Short.MAX_VALUE)
                     .addComponent(jLabel60)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+                    .addGap(0, 53, Short.MAX_VALUE)))
         );
         jPanel50Layout.setVerticalGroup(
             jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1393,55 +1392,51 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
-        jPanel3.add(jPanel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 445, -1, -1));
+        jPanel3.add(jPanel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 445, 230, -1));
 
         jPanel51.setBackground(new java.awt.Color(255, 255, 255));
         jPanel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel61.setBackground(new java.awt.Color(0, 0, 0));
         jLabel61.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel61.setText("Steps:");
+        jLabel61.setText("Calories Consumed :");
 
         javax.swing.GroupLayout jPanel51Layout = new javax.swing.GroupLayout(jPanel51);
         jPanel51.setLayout(jPanel51Layout);
         jPanel51Layout.setHorizontalGroup(
             jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 225, Short.MAX_VALUE)
-            .addGroup(jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel51Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
-                    .addComponent(jLabel61)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel51Layout.createSequentialGroup()
+                .addContainerGap(55, Short.MAX_VALUE)
+                .addComponent(jLabel61)
+                .addGap(47, 47, 47))
         );
         jPanel51Layout.setVerticalGroup(
             jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 37, Short.MAX_VALUE)
-            .addGroup(jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel51Layout.createSequentialGroup()
-                    .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel61)
-                    .addGap(0, 10, Short.MAX_VALUE)))
+            .addGroup(jPanel51Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel61)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 175, -1, -1));
+        jPanel3.add(jPanel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(273, 175, 230, -1));
 
         jPanel59.setBackground(new java.awt.Color(255, 255, 255));
         jPanel59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel69.setBackground(new java.awt.Color(0, 0, 0));
         jLabel69.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel69.setText("Distance:");
+        jLabel69.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
         jPanel59Layout.setHorizontalGroup(
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 246, Short.MAX_VALUE)
+            .addGap(0, 248, Short.MAX_VALUE)
             .addGroup(jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel59Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
+                    .addGap(0, 74, Short.MAX_VALUE)
                     .addComponent(jLabel69)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+                    .addGap(0, 73, Short.MAX_VALUE)))
         );
         jPanel59Layout.setVerticalGroup(
             jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1453,25 +1448,25 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
-        jPanel3.add(jPanel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 445, -1, -1));
+        jPanel3.add(jPanel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 445, 250, -1));
 
         jPanel60.setBackground(new java.awt.Color(255, 255, 255));
         jPanel60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel70.setBackground(new java.awt.Color(0, 0, 0));
         jLabel70.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel70.setText("Distance:");
+        jLabel70.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel60Layout = new javax.swing.GroupLayout(jPanel60);
         jPanel60.setLayout(jPanel60Layout);
         jPanel60Layout.setHorizontalGroup(
             jPanel60Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 246, Short.MAX_VALUE)
+            .addGap(0, 248, Short.MAX_VALUE)
             .addGroup(jPanel60Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel60Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
+                    .addGap(0, 74, Short.MAX_VALUE)
                     .addComponent(jLabel70)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+                    .addGap(0, 73, Short.MAX_VALUE)))
         );
         jPanel60Layout.setVerticalGroup(
             jPanel60Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1483,81 +1478,77 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
-        jPanel3.add(jPanel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 310, -1, -1));
+        jPanel3.add(jPanel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 310, 250, -1));
 
         jPanel61.setBackground(new java.awt.Color(255, 255, 255));
         jPanel61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel71.setBackground(new java.awt.Color(0, 0, 0));
         jLabel71.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel71.setText("Distance:");
+        jLabel71.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel61Layout = new javax.swing.GroupLayout(jPanel61);
         jPanel61.setLayout(jPanel61Layout);
         jPanel61Layout.setHorizontalGroup(
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 246, Short.MAX_VALUE)
-            .addGroup(jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel61Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
-                    .addComponent(jLabel71)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+            .addGroup(jPanel61Layout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addComponent(jLabel71)
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         jPanel61Layout.setVerticalGroup(
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 37, Short.MAX_VALUE)
-            .addGroup(jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel61Layout.createSequentialGroup()
-                    .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel71)
-                    .addGap(0, 10, Short.MAX_VALUE)))
+            .addGroup(jPanel61Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel71)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 175, -1, -1));
+        jPanel3.add(jPanel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 175, 250, -1));
 
         jPanel62.setBackground(new java.awt.Color(255, 255, 255));
         jPanel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel72.setBackground(new java.awt.Color(0, 0, 0));
         jLabel72.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel72.setText("Distance:");
+        jLabel72.setText("Calories Burned :");
 
         javax.swing.GroupLayout jPanel62Layout = new javax.swing.GroupLayout(jPanel62);
         jPanel62.setLayout(jPanel62Layout);
         jPanel62Layout.setHorizontalGroup(
             jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel62Layout.createSequentialGroup()
-                .addGap(94, 94, 94)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel62Layout.createSequentialGroup()
+                .addContainerGap(75, Short.MAX_VALUE)
                 .addComponent(jLabel72)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(68, 68, 68))
         );
         jPanel62Layout.setVerticalGroup(
             jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel62Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel72)
-                .addContainerGap(14, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 265, 248, -1));
+        jPanel3.add(jPanel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 265, 250, 40));
 
         jPanel63.setBackground(new java.awt.Color(255, 255, 255));
         jPanel63.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel73.setBackground(new java.awt.Color(0, 0, 0));
         jLabel73.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel73.setText("Distance:");
+        jLabel73.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
         jPanel63.setLayout(jPanel63Layout);
         jPanel63Layout.setHorizontalGroup(
             jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 246, Short.MAX_VALUE)
+            .addGap(0, 248, Short.MAX_VALUE)
             .addGroup(jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel63Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
+                    .addGap(0, 74, Short.MAX_VALUE)
                     .addComponent(jLabel73)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+                    .addGap(0, 73, Short.MAX_VALUE)))
         );
         jPanel63Layout.setVerticalGroup(
             jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1569,53 +1560,49 @@ public class weekly_statistics extends javax.swing.JFrame {
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
-        jPanel3.add(jPanel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 355, -1, -1));
+        jPanel3.add(jPanel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 355, 250, -1));
 
         jPanel64.setBackground(new java.awt.Color(255, 255, 255));
         jPanel64.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel74.setBackground(new java.awt.Color(0, 0, 0));
         jLabel74.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel74.setText("Distance:");
+        jLabel74.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
         jPanel64.setLayout(jPanel64Layout);
         jPanel64Layout.setHorizontalGroup(
             jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 246, Short.MAX_VALUE)
-            .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel64Layout.createSequentialGroup()
-                    .addGap(0, 96, Short.MAX_VALUE)
-                    .addComponent(jLabel74)
-                    .addGap(0, 95, Short.MAX_VALUE)))
+            .addGroup(jPanel64Layout.createSequentialGroup()
+                .addGap(73, 73, 73)
+                .addComponent(jLabel74)
+                .addContainerGap(74, Short.MAX_VALUE))
         );
         jPanel64Layout.setVerticalGroup(
             jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 37, Short.MAX_VALUE)
-            .addGroup(jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanel64Layout.createSequentialGroup()
-                    .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel74)
-                    .addGap(0, 10, Short.MAX_VALUE)))
+            .addGroup(jPanel64Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel74)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel3.add(jPanel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 220, -1, -1));
+        jPanel3.add(jPanel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 220, 250, -1));
 
         jPanel65.setBackground(new java.awt.Color(255, 255, 255));
         jPanel65.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         jLabel75.setBackground(new java.awt.Color(0, 0, 0));
         jLabel75.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel75.setText("Distance:");
+        jLabel75.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel65Layout = new javax.swing.GroupLayout(jPanel65);
         jPanel65.setLayout(jPanel65Layout);
         jPanel65Layout.setHorizontalGroup(
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel65Layout.createSequentialGroup()
-                .addGap(91, 91, 91)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel65Layout.createSequentialGroup()
+                .addContainerGap(76, Short.MAX_VALUE)
                 .addComponent(jLabel75)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(71, 71, 71))
         );
         jPanel65Layout.setVerticalGroup(
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1625,7 +1612,7 @@ public class weekly_statistics extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        jPanel3.add(jPanel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 400, 248, -1));
+        jPanel3.add(jPanel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 400, 250, -1));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1746,7 +1733,7 @@ public class weekly_statistics extends javax.swing.JFrame {
         yuyu.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
-
+    
     /**
      * @param args the command line arguments
      */
@@ -1781,10 +1768,11 @@ public class weekly_statistics extends javax.swing.JFrame {
             }
         });
     }
-
+     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel EJERCICIOS;
     private javax.swing.JLabel estadisticas;
+    private javax.swing.Box.Filler filler1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
@@ -1893,4 +1881,5 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JPanel panelrecomendacion;
     private javax.swing.JLabel recomndacion;
     // End of variables declaration//GEN-END:variables
+
 }
