@@ -6,6 +6,10 @@ package com.mycompany.pantallapricipal;
 import javax.swing.JOptionPane;
 import com.mycompany.pantallapricipal.miGrafica;
 import org.jfree.chart.ChartPanel;
+import org.jfree.chart.ChartFactory;
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.category.DefaultCategoryDataset;
 
 import org.jfree.chart.ChartPanel;
 
@@ -20,11 +24,31 @@ public class estadisticas extends javax.swing.JFrame {
      */
     public estadisticas() {
         initComponents();
-         miGrafica grafica = new miGrafica();
-        ChartPanel chartPanel = grafica.crearGrafica();
-        plana.setLayout(new java.awt.BorderLayout());
-        plana.add(chartPanel, java.awt.BorderLayout.CENTER);
-        plana.validate();
+        DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+        dataset.addValue(60, "Burned calories", "Monday"); //8 corresponde a los aciertos, "Rendimiento", es el nombre de la grafica y el numero de intentos de el examen 
+        dataset.addValue(40, "Burned calories", "Thuesday");
+        dataset.addValue(15, "Burned calories", "Wednesday");
+        dataset.addValue(30, "Burned calories", "Thursday");
+        dataset.addValue(60, "Burned calories", "Friday");
+        dataset.addValue(60, "Burned calories", "Saturnday");
+        dataset.addValue(60, "Burned calories", "Sunday");
+
+        // Crear la gráfica
+        JFreeChart grafica = ChartFactory.createBarChart(
+        "Your Week", // título
+        "Calories", // etiqueta eje X
+        "Minutes", // etiqueta eje Y
+        dataset // datos esto se puede reemplazar por otro array
+        );
+
+        // Crear un panel para la gráfica
+        ChartPanel chartPanel = new ChartPanel(grafica);
+        chartPanel.setPreferredSize(panelGrafica.getSize()); // Usa el tamaño del JPanel
+        // Insertar la gráfica en el JPanel
+        panelGrafica.setLayout(new java.awt.BorderLayout());
+        panelGrafica.add(chartPanel, java.awt.BorderLayout.CENTER);
+        panelGrafica.validate();
+    
     }
 
     /**
@@ -49,6 +73,7 @@ public class estadisticas extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         plana = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
+        panelGrafica = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -152,23 +177,38 @@ public class estadisticas extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
         jLabel7.setText("CHARTS");
 
+        javax.swing.GroupLayout panelGraficaLayout = new javax.swing.GroupLayout(panelGrafica);
+        panelGrafica.setLayout(panelGraficaLayout);
+        panelGraficaLayout.setHorizontalGroup(
+            panelGraficaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 580, Short.MAX_VALUE)
+        );
+        panelGraficaLayout.setVerticalGroup(
+            panelGraficaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 272, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout planaLayout = new javax.swing.GroupLayout(plana);
         plana.setLayout(planaLayout);
         planaLayout.setHorizontalGroup(
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(planaLayout.createSequentialGroup()
                 .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 611, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panelGrafica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 25, Short.MAX_VALUE))
         );
         planaLayout.setVerticalGroup(
             planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(planaLayout.createSequentialGroup()
                 .addGap(17, 17, 17)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(272, Short.MAX_VALUE))
+                .addGroup(planaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(panelGrafica, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
-        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 165, 700, 320));
+        underground.add(plana, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 175, 700, 310));
 
         getContentPane().add(underground, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, -1));
 
@@ -238,6 +278,7 @@ public class estadisticas extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JPanel kcal;
     private javax.swing.JPanel panel2;
+    private javax.swing.JPanel panelGrafica;
     private javax.swing.JPanel plana;
     private javax.swing.JPanel underground;
     private javax.swing.JPanel your_week;
