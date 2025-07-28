@@ -9,78 +9,70 @@ package com.mycompany.pantallapricipal;
  * @author holan
  */
 public class personas extends List{
-    private static String nombre;
-    private static String correo; 
-    private static String contrasena;
-    private static int edad;
-    private static double peso;
-    private static String sexo;
-    private static double altura;
+    private String nombre;
+    private String correo; 
+    private String contrasena;
+    private int edad;
+    private double peso;
+    private String sexo;
+    private double altura;
 
-    public static void setDatos(String nombre,String correo,String contrasena,int edad,double peso,String sexo,double altura) {
-        personas.nombre = nombre;
-        personas.correo=correo;
-        personas.contrasena=contrasena;
-        personas.edad = edad;
-        personas.peso = peso;
-        personas.sexo=sexo;
-        personas.altura=altura;
-    }
+    
 
-    public static String getNombre() {
+    public String getNombre() {
         return nombre;
     }
 
-    public static void setNombre(String nombre) {
-        personas.nombre = nombre;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public static String getCorreo() {
+    public String getCorreo() {
         return correo;
     }
 
-    public static void setCorreo(String correo) {
-        personas.correo = correo;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 
-    public static String getContrasena() {
+    public String getContrasena() {
         return contrasena;
     }
 
-    public static void setContrasena(String contrasena) {
-        personas.contrasena = contrasena;
+    public void setContrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
-    public static int getEdad() {
+    public int getEdad() {
         return edad;
     }
 
-    public static void setEdad(int edad) {
-        personas.edad = edad;
+    public void setEdad(int edad) {
+        this.edad = edad;
     }
 
-    public static double getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public static void setPeso(double peso) {
-        personas.peso = peso;
+    public void setPeso(double peso) {
+        this.peso = peso;
     }
 
-    public static String getSexo() {
+    public String getSexo() {
         return sexo;
     }
 
-    public static void setSexo(String sexo) {
-        personas.sexo = sexo;
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
     }
 
-    public static double getAltura() {
+    public double getAltura() {
         return altura;
     }
 
-    public static void setAltura(double altura) {
-        personas.altura = altura;
+    public void setAltura(double altura) {
+        this.altura = altura;
     }
     
 
