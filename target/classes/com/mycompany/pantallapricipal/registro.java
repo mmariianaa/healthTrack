@@ -262,9 +262,9 @@ public class registro extends javax.swing.JFrame {
         
         String sexo = "";
         if (hombre.isSelected()) {
-            sexo = "Hombre";
+            sexo = "hombre";
         } else if (mujer.isSelected()) {
-            sexo = "Mujer";
+            sexo = "mujer";
         }
         peticiones.insertarUsuario(
             nombre.getText(),
