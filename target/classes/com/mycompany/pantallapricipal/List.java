@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.pantallapricipal;
+import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
 
 /**
  *
@@ -15,6 +17,9 @@ public class List extends javax.swing.JFrame {
      */
     public List() {
         initComponents();
+        buttonGroup1.add(bici);
+        buttonGroup1.add(saltar);
+        buttonGroup1.add(nadar);
     }
 
     /**
@@ -27,7 +32,9 @@ public class List extends javax.swing.JFrame {
     private void initComponents() {
 
         back = new javax.swing.JButton();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         underground = new javax.swing.JPanel();
+        calcular = new javax.swing.JButton();
         backbutton = new javax.swing.JButton();
         izquierdo1 = new javax.swing.JPanel();
         izquierdo2 = new javax.swing.JPanel();
@@ -41,7 +48,6 @@ public class List extends javax.swing.JFrame {
         saltar = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        calcular = new javax.swing.JButton();
         bici = new javax.swing.JRadioButton();
         nadar = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
@@ -55,8 +61,19 @@ public class List extends javax.swing.JFrame {
 
         underground.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        calcular.setBackground(new java.awt.Color(204, 204, 255));
+        calcular.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        calcular.setText("CALCULATE");
+        calcular.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                calcularMouseClicked(evt);
+            }
+        });
+        underground.add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 450, -1, -1));
+
         backbutton.setBackground(new java.awt.Color(204, 204, 255));
-        backbutton.setText("back");
+        backbutton.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
+        backbutton.setText("BACK");
         backbutton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 backbuttonMouseClicked(evt);
@@ -67,7 +84,7 @@ public class List extends javax.swing.JFrame {
                 backbuttonActionPerformed(evt);
             }
         });
-        underground.add(backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, -1, -1));
+        underground.add(backbutton, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 460, 100, -1));
 
         izquierdo1.setBackground(new java.awt.Color(13, 70, 113));
 
@@ -200,14 +217,6 @@ public class List extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText(" BIKE");
         underground.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, -1, -1));
-
-        calcular.setText("calcular");
-        calcular.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                calcularMouseClicked(evt);
-            }
-        });
-        underground.add(calcular, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 460, -1, -1));
         underground.add(bici, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 330, 40, 20));
         underground.add(nadar, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 470, -1, -1));
 
@@ -242,7 +251,7 @@ public class List extends javax.swing.JFrame {
 
         gym.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg"))); // NOI18N
         gym.setText("jLabel1");
-        underground.add(gym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 540, 500));
+        underground.add(gym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 540, 500));
 
         getContentPane().add(underground, java.awt.BorderLayout.CENTER);
 
@@ -274,8 +283,102 @@ public class List extends javax.swing.JFrame {
     }//GEN-LAST:event_backbuttonMouseClicked
 
     private void calcularMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_calcularMouseClicked
+
         // TODO add your handling code here:
         //este es para calcular las calorias depediendo de la actividad 
+        var persona=Sesiones.getInstance().getPersona();
+        System.out.println(persona);
+        if (persona.getSexo()=="hombre") {
+            if (bici.isSelected()){
+                if (persona.getPeso() > 75) { // umbral para hombres
+                    double caloriasquemads=13;
+                    double calorias;
+                    calorias=caloriasquemads*60;
+                    JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    
+                } else {
+                    double caloriasquemads=11;
+                    double calorias;
+                    calorias=caloriasquemads*60;
+                    JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                }
+                
+            }else if (saltar.isSelected()){
+                    if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=15;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=12;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+            }else if (nadar.isSelected()){
+                if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=13;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=18;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+        if (persona.getSexo()=="mujer") {
+            
+            if (bici.isSelected()){
+                    if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=12.5;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=6.5;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+            }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+            if (saltar.isSelected()){
+                    if (persona.getPeso()> 75) { // umbral para hombres
+                        double caloriasquemads=15;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=13;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                   JOptionPane.showMessageDialog(null,"no sabemos que onda");  
+                }   
+            
+            if (nadar.isSelected()){
+                    if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=12;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=10;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+            
+        } 
     }//GEN-LAST:event_calcularMouseClicked
 
     /**
@@ -320,6 +423,7 @@ public class List extends javax.swing.JFrame {
     private javax.swing.JButton back;
     private javax.swing.JButton backbutton;
     private javax.swing.JRadioButton bici;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel c1;
     private javax.swing.JButton calcular;
     private javax.swing.JPanel derecho1;

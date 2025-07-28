@@ -151,7 +151,7 @@ public class peticiones {
 
     return false;
 }
-    public static boolean login(String correo, String password) {
+    public static personas login(String correo, String password) {
     
     Connection conn = DB.conectar();
 
@@ -165,8 +165,20 @@ public class peticiones {
             stmt.setString(2, password);
 
             ResultSet rs = stmt.executeQuery();
+            personas p=new personas();
+            if(rs.next()){
+                
+                
+                p.setNombre(rs.getString("nombre"));
+                p.setAltura(rs.getDouble("altura"));
+                p.setCorreo(rs.getString("correo"));
+                p.setContrasena(rs.getString("contrasena"));
+                p.setSexo(rs.getString("sexo"));
+                p.setPeso(rs.getDouble("peso"));
+                p.setEdad(rs.getInt("edad"));
+            }
 
-            return rs.next();
+            return p;
 
         } catch (SQLException e) {
             System.out.println("❌ Error al loguear");
@@ -174,7 +186,35 @@ public class peticiones {
         }
     }
 
-    return false;
+    return null;
+}
+    // ESTA ES LA PETICION ES PARA TRAER EL PESO DE LA BASE DE DATOS
+    public static double traerpeso(String nombre, String correo, String contrasena,
+            int edad, double peso,String sexo,double altura
+    ) {
+    
+    Connection conn = DB.conectar();
+
+    if (conn != null) {
+        
+        String query = "SELECT * FROM usuario WHERE nombre = ? AND correo = ? AND "
+        + "contrasena = ? AND  edad = ? AND  peso = ? AND  sexo = ? AND  altura = ? ";
+ 
+        
+        try (PreparedStatement stmt = conn.prepareStatement(query)) {
+            stmt.setDouble(1,peso);
+        
+            ResultSet rs = stmt.executeQuery();
+            
+
+
+        } catch (SQLException e) {
+            System.out.println("❌ Error al loguear");
+            e.printStackTrace();
+        }
+    }
+
+    return 0;
 }
 
 }

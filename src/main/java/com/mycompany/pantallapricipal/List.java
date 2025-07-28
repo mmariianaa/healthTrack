@@ -3,6 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.pantallapricipal;
+import javax.swing.JOptionPane;
+import javax.swing.JRadioButton;
 
 /**
  *
@@ -15,6 +17,9 @@ public class List extends javax.swing.JFrame {
      */
     public List() {
         initComponents();
+        buttonGroup1.add(bici);
+        buttonGroup1.add(saltar);
+        buttonGroup1.add(nadar);
     }
 
     /**
@@ -27,6 +32,7 @@ public class List extends javax.swing.JFrame {
     private void initComponents() {
 
         back = new javax.swing.JButton();
+        buttonGroup1 = new javax.swing.ButtonGroup();
         underground = new javax.swing.JPanel();
         calcular = new javax.swing.JButton();
         backbutton = new javax.swing.JButton();
@@ -245,7 +251,7 @@ public class List extends javax.swing.JFrame {
 
         gym.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/WhatsApp Image 2025-07-03 at 10.47.23 PM.jpeg"))); // NOI18N
         gym.setText("jLabel1");
-        underground.add(gym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 0, 540, 500));
+        underground.add(gym, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 540, 500));
 
         getContentPane().add(underground, java.awt.BorderLayout.CENTER);
 
@@ -280,14 +286,99 @@ public class List extends javax.swing.JFrame {
 
         // TODO add your handling code here:
         //este es para calcular las calorias depediendo de la actividad 
-         double pesoGuardado = personas.getPeso();
+        var persona=Sesiones.getInstance().getPersona();
+        System.out.println(persona);
+        if (persona.getSexo()=="hombre") {
+            if (bici.isSelected()){
+                if (persona.getPeso() > 75) { // umbral para hombres
+                    double caloriasquemads=13;
+                    double calorias;
+                    calorias=caloriasquemads*60;
+                    JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    
+                } else {
+                    double caloriasquemads=11;
+                    double calorias;
+                    calorias=caloriasquemads*60;
+                    JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                }
+                
+            }else if (saltar.isSelected()){
+                    if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=15;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
 
-        if (pesoGuardado > 60) {
-            JOptionPane.showMessageDialog(null, "🏋️‍♀️ Peso alto: " + pesoGuardado + " kg");
-        } else {
-            JOptionPane.showMessageDialog(null, "🎈 Peso dentro del rango: " + pesoGuardado + " kg");
-        }
-  
+                    } else {
+                        double caloriasquemads=12;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+            }else if (nadar.isSelected()){
+                if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=13;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=18;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+        if (persona.getSexo()=="mujer") {
+            
+            if (bici.isSelected()){
+                    if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=12.5;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=6.5;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+            }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+            if (saltar.isSelected()){
+                    if (persona.getPeso()> 75) { // umbral para hombres
+                        double caloriasquemads=15;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=13;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                   JOptionPane.showMessageDialog(null,"no sabemos que onda");  
+                }   
+            
+            if (nadar.isSelected()){
+                    if (persona.getPeso() > 75) { // umbral para hombres
+                        double caloriasquemads=12;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+
+                    } else {
+                        double caloriasquemads=10;
+                        double calorias;
+                        calorias=caloriasquemads*60;
+                        JOptionPane.showMessageDialog(null, "caloris quemaadas por saltar la cuerd son: " + calorias);
+                    }
+                }   JOptionPane.showMessageDialog(null,"no sabemos que onda");
+            
+        } 
     }//GEN-LAST:event_calcularMouseClicked
 
     /**
@@ -332,6 +423,7 @@ public class List extends javax.swing.JFrame {
     private javax.swing.JButton back;
     private javax.swing.JButton backbutton;
     private javax.swing.JRadioButton bici;
+    private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.JLabel c1;
     private javax.swing.JButton calcular;
     private javax.swing.JPanel derecho1;
