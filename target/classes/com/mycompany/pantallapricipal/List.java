@@ -6,6 +6,7 @@ package com.mycompany.pantallapricipal;
 import javax.swing.JOptionPane;
 import javax.swing.JRadioButton;
 
+import javax.swing.JOptionPane;
 /**
  *
  * @author usuario

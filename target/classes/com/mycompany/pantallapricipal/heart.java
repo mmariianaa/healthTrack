@@ -45,7 +45,6 @@ public class heart extends javax.swing.JFrame {
         jLabel5 = new javax.swing.JLabel();
         panelGrafica = new javax.swing.JPanel();
         logo = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
         panel7 = new javax.swing.JPanel();
         EJERCICIOS = new javax.swing.JLabel();
         panel9 = new javax.swing.JPanel();
@@ -220,10 +219,6 @@ public class heart extends javax.swing.JFrame {
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/logosinfondo.png"))); // NOI18N
         logo.setText("jLabel9");
         panelGrafica.add(logo, new org.netbeans.lib.awtextra.AbsoluteConstraints(62, 35, 203, 227));
-
-        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/𝙾𝚢𝚊𝚜𝚞𝚖𝚒 𝙿𝚞𝚗𝚙𝚞𝚗 (1).png"))); // NOI18N
-        jLabel9.setText("jLabel9");
-        panelGrafica.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 90, 190, 280));
 
         panel1.add(panelGrafica, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 350, 310));
 
@@ -534,7 +529,6 @@ public class heart extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JSpinner jSpinner1;
     private javax.swing.JLabel logo;
     private javax.swing.JPanel panel1;

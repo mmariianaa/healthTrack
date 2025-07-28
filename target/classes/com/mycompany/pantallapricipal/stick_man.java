@@ -44,7 +44,6 @@ public class stick_man extends javax.swing.JFrame {
         change = new javax.swing.JButton();
         mensaje2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -68,7 +67,6 @@ public class stick_man extends javax.swing.JFrame {
         jPanel1.add(head, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 600, -1));
 
         change.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
-        change.setText("change\n");
         change.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 changeActionPerformed(evt);
@@ -87,11 +85,7 @@ public class stick_man extends javax.swing.JFrame {
                 jLabel1MouseClicked(evt);
             }
         });
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 30, 440, 490));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/image/Pájaro con gorro en una colina (1).png"))); // NOI18N
-        jLabel2.setText("jLabel2");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 320, 170, 230));
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 30, 440, 490));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -167,7 +161,6 @@ public class stick_man extends javax.swing.JFrame {
     private javax.swing.JButton change;
     private javax.swing.JPanel head;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JLabel mensaje2;
     private javax.swing.JLabel name;
