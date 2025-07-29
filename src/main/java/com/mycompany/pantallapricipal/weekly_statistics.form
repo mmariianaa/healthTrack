@@ -1502,7 +1502,7 @@
                 <Container class="javax.swing.JPanel" name="panel13">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ef" green="c9" red="b1" type="rgb"/>
+                      <Color blue="f8" green="f6" red="de" type="rgb"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -1612,7 +1612,7 @@
                 <Container class="javax.swing.JPanel" name="panel15">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                      <Color blue="ff" green="ff" red="de" type="rgb"/>
+                      <Color blue="ef" green="c9" red="b1" type="rgb"/>
                     </Property>
                     <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
                       <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
@@ -1645,7 +1645,7 @@
                       </Events>
                       <Constraints>
                         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                          <AbsoluteConstraints x="10" y="10" width="226" height="56"/>
+                          <AbsoluteConstraints x="10" y="10" width="226" height="50"/>
                         </Constraint>
                       </Constraints>
                     </Component>
