@@ -214,7 +214,14 @@ public class Login_deux extends javax.swing.JFrame {
        String correo=texto1.getText();
        String password=new String(contrasenainicio.getPassword());
        personas user=peticiones.login(correo, password);
-       
+       if (correo.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "️ El campo de usuario está vacío", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
+       if (password.isEmpty()) {
+            JOptionPane.showMessageDialog(this, "️ El campo de contrasena está vacío", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            return;
+        }
         if(user !=null){
             Sesiones.getInstance().setPersona(user);
             heart principal=new heart();//se crea un nuevo 

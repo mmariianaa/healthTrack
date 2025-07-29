@@ -295,7 +295,6 @@ public class List extends javax.swing.JFrame {
         //este es para calcular las calorias depediendo de la actividad 
         // TODO add your handling code here:
         var persona = Sesiones.getInstance().getPersona();
-        String sexoPersona = persona.getSexo();
         System.out.println("Información de persona: " + persona.getNombre());
         System.out.println("Holis soy del sepso:"+persona.getSexo());
         System.out.println(persona.getPeso());
