@@ -3,19 +3,118 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package com.mycompany.pantallapricipal;
-
+import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.*;
+import java.sql.Date;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.*;
+import java.awt.GridLayout;
 /**
  *
  * @author Lenovo
  */
 public class weekly_statistics extends javax.swing.JFrame {
-
+     
     /**
      * Creates new form weekly_statistics
      */
     public weekly_statistics() {
         initComponents();
     }
+    private static final String URL = "jdbc:mysql://localhost:3306/healtrack";
+    private static final String USER = "root";
+    private static final String PASS = "";
+
+    private void mostrarCaloriasSemanales(Connection conn, int idUsuario) throws SQLException {
+    String sqlCalorias = """
+        SELECT fecha, calorias_consumidas, calorias_quemadas
+        FROM registro_diario_calorias
+        WHERE usuario_idusuario = ?
+          AND fecha BETWEEN DATE_SUB(CURDATE(), INTERVAL 6 DAY) AND CURDATE()
+        ORDER BY fecha
+    """;
+
+    try (PreparedStatement ps = conn.prepareStatement(sqlCalorias)) {
+        ps.setInt(1, idUsuario);
+        System.out.println("Ejecutando consulta para usuario: " + idUsuario);
+        System.out.println("Consulta SQL (param simulada): " + sqlCalorias.replace("?", String.valueOf(idUsuario)));
+
+        try (ResultSet rs = ps.executeQuery()) {
+            SimpleDateFormat sdf = new SimpleDateFormat("EEEE", Locale.US); // Para obtener el día en inglés
+
+            // Reiniciar todos los labels antes de procesar los datos
+            lblMondayConsumed.setText("Consumidas: 0");
+            lblMondayBurned.setText("Quemadas: 0");
+            lblTuesdayConsumed.setText("Consumidas: 0");
+            lblTuesdayBurned.setText("Quemadas: 0");
+            lblWednesdayConsumed.setText("Consumidas: 0");
+            lblWednesdayBurned.setText("Quemadas: 0");
+            lblThursdayConsumed.setText("Consumidas: 0");
+            lblThursdayBurned.setText("Quemadas: 0");
+            lblFridayConsumed.setText("Consumidas: 0");
+            lblFridayBurned.setText("Quemadas: 0");
+            lblSaturdayConsumed.setText("Consumidas: 0");
+            lblSaturdayBurned.setText("Quemadas: 0");
+            lblSundayConsumed.setText("Consumidas: 0");
+            lblSundayBurned.setText("Quemadas: 0");
+
+            boolean hasData = false;
+
+            while (rs.next()) {
+                hasData = true;
+                Date fecha = rs.getDate("fecha");
+                String dia = sdf.format(fecha).toLowerCase(); // ejemplo: monday
+                int consumidas = rs.getInt("calorias_consumidas");
+                int quemadas = rs.getInt("calorias_quemadas");
+
+                System.out.printf("Registro encontrado: %s - Consumidas: %d, Quemadas: %d%n",
+                        dia, consumidas, quemadas);
+
+                switch (dia) {
+                    case "monday":
+                        lblMondayConsumed.setText("Consumidas: " + consumidas);
+                        lblMondayBurned.setText("Quemadas: " + quemadas);
+                        break;
+                    case "tuesday":
+                        lblTuesdayConsumed.setText("Consumidas: " + consumidas);
+                        lblTuesdayBurned.setText("Quemadas: " + quemadas);
+                        break;
+                    case "wednesday":
+                        lblWednesdayConsumed.setText("Consumidas: " + consumidas);
+                        lblWednesdayBurned.setText("Quemadas: " + quemadas);
+                        break;
+                    case "thursday":
+                        lblThursdayConsumed.setText("Consumidas: " + consumidas);
+                        lblThursdayBurned.setText("Quemadas: " + quemadas);
+                        break;
+                    case "friday":
+                        lblFridayConsumed.setText("Consumidas: " + consumidas);
+                        lblFridayBurned.setText("Quemadas: " + quemadas);
+                        break;
+                    case "saturday":
+                        lblSaturdayConsumed.setText("Consumidas: " + consumidas);
+                        lblSaturdayBurned.setText("Quemadas: " + quemadas);
+                        break;
+                    case "sunday":
+                        lblSundayConsumed.setText("Consumidas: " + consumidas);
+                        lblSundayBurned.setText("Quemadas: " + quemadas);
+                        break;
+                    default:
+                        System.out.println("Día no reconocido: " + dia);
+                        break;
+                }
+            }
+
+            if (!hasData) {
+                System.out.println("No se encontraron registros para esta semana");
+                JOptionPane.showMessageDialog(this, "No hay datos de calorías para esta semana");
+            }
+        }
+    }
+}
+
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -108,34 +207,35 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel39 = new javax.swing.JPanel();
         jLabel49 = new javax.swing.JLabel();
         jPanel45 = new javax.swing.JPanel();
-        jLabel55 = new javax.swing.JLabel();
+        lblThursdayConsumed = new javax.swing.JLabel();
         filler1 = new javax.swing.Box.Filler(new java.awt.Dimension(0, 0), new java.awt.Dimension(0, 0), new java.awt.Dimension(32767, 32767));
         jPanel46 = new javax.swing.JPanel();
-        jLabel56 = new javax.swing.JLabel();
+        lblWednesdayConsumed = new javax.swing.JLabel();
         jPanel47 = new javax.swing.JPanel();
-        jLabel57 = new javax.swing.JLabel();
+        lblFridayConsumed = new javax.swing.JLabel();
         jPanel48 = new javax.swing.JPanel();
-        jLabel58 = new javax.swing.JLabel();
+        lblTuesdayConsumed = new javax.swing.JLabel();
         jPanel49 = new javax.swing.JPanel();
-        jLabel59 = new javax.swing.JLabel();
+        lblSaturdayConsumed = new javax.swing.JLabel();
         jPanel50 = new javax.swing.JPanel();
-        jLabel60 = new javax.swing.JLabel();
+        lblSundayConsumed = new javax.swing.JLabel();
         jPanel51 = new javax.swing.JPanel();
-        jLabel61 = new javax.swing.JLabel();
+        lblMondayConsumed = new javax.swing.JLabel();
         jPanel59 = new javax.swing.JPanel();
-        jLabel69 = new javax.swing.JLabel();
+        lblSundayBurned = new javax.swing.JLabel();
         jPanel60 = new javax.swing.JPanel();
-        jLabel70 = new javax.swing.JLabel();
+        lblThursdayBurned = new javax.swing.JLabel();
         jPanel61 = new javax.swing.JPanel();
-        jLabel71 = new javax.swing.JLabel();
+        lblMondayBurned = new javax.swing.JLabel();
         jPanel62 = new javax.swing.JPanel();
-        jLabel72 = new javax.swing.JLabel();
+        lblWednesdayBurned = new javax.swing.JLabel();
         jPanel63 = new javax.swing.JPanel();
-        jLabel73 = new javax.swing.JLabel();
+        lblFridayBurned = new javax.swing.JLabel();
         jPanel64 = new javax.swing.JPanel();
-        jLabel74 = new javax.swing.JLabel();
+        lblTuesdayBurned = new javax.swing.JLabel();
         jPanel65 = new javax.swing.JPanel();
-        jLabel75 = new javax.swing.JLabel();
+        lblSaturdayBurned = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         jFrame1.setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -1227,9 +1327,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel45.setBackground(new java.awt.Color(255, 255, 255));
         jPanel45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel55.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel55.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel55.setText("Calories Consumed:");
+        lblThursdayConsumed.setBackground(new java.awt.Color(0, 0, 0));
+        lblThursdayConsumed.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblThursdayConsumed.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel45Layout = new javax.swing.GroupLayout(jPanel45);
         jPanel45.setLayout(jPanel45Layout);
@@ -1242,7 +1342,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel45Layout.createSequentialGroup()
                     .addGap(0, 53, Short.MAX_VALUE)
-                    .addComponent(jLabel55)
+                    .addComponent(lblThursdayConsumed)
                     .addGap(0, 53, Short.MAX_VALUE)))
         );
         jPanel45Layout.setVerticalGroup(
@@ -1254,7 +1354,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel45Layout.createSequentialGroup()
                     .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel55)
+                    .addComponent(lblThursdayConsumed)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
@@ -1263,9 +1363,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel46.setBackground(new java.awt.Color(255, 255, 255));
         jPanel46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel56.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel56.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel56.setText("Calories Consumed:");
+        lblWednesdayConsumed.setBackground(new java.awt.Color(0, 0, 0));
+        lblWednesdayConsumed.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblWednesdayConsumed.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel46Layout = new javax.swing.GroupLayout(jPanel46);
         jPanel46.setLayout(jPanel46Layout);
@@ -1273,14 +1373,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel46Layout.createSequentialGroup()
                 .addGap(53, 53, 53)
-                .addComponent(jLabel56)
+                .addComponent(lblWednesdayConsumed)
                 .addContainerGap(53, Short.MAX_VALUE))
         );
         jPanel46Layout.setVerticalGroup(
             jPanel46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel46Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel56)
+                .addComponent(lblWednesdayConsumed)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1289,9 +1389,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel47.setBackground(new java.awt.Color(255, 255, 255));
         jPanel47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel57.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel57.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel57.setText("Calories Consumed:");
+        lblFridayConsumed.setBackground(new java.awt.Color(0, 0, 0));
+        lblFridayConsumed.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblFridayConsumed.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel47Layout = new javax.swing.GroupLayout(jPanel47);
         jPanel47.setLayout(jPanel47Layout);
@@ -1299,14 +1399,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel47Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(jLabel57)
+                .addComponent(lblFridayConsumed)
                 .addContainerGap(56, Short.MAX_VALUE))
         );
         jPanel47Layout.setVerticalGroup(
             jPanel47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel47Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel57)
+                .addComponent(lblFridayConsumed)
                 .addContainerGap())
         );
 
@@ -1315,9 +1415,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel48.setBackground(new java.awt.Color(255, 255, 255));
         jPanel48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel58.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel58.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel58.setText("  Calories Consumed:");
+        lblTuesdayConsumed.setBackground(new java.awt.Color(0, 0, 0));
+        lblTuesdayConsumed.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblTuesdayConsumed.setText("  Calories Consumed:");
 
         javax.swing.GroupLayout jPanel48Layout = new javax.swing.GroupLayout(jPanel48);
         jPanel48.setLayout(jPanel48Layout);
@@ -1325,14 +1425,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel48Layout.createSequentialGroup()
                 .addGap(46, 46, 46)
-                .addComponent(jLabel58)
+                .addComponent(lblTuesdayConsumed)
                 .addContainerGap(52, Short.MAX_VALUE))
         );
         jPanel48Layout.setVerticalGroup(
             jPanel48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel48Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel58)
+                .addComponent(lblTuesdayConsumed)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1341,9 +1441,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel49.setBackground(new java.awt.Color(255, 255, 255));
         jPanel49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel59.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel59.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel59.setText("Calories Consumed:");
+        lblSaturdayConsumed.setBackground(new java.awt.Color(0, 0, 0));
+        lblSaturdayConsumed.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblSaturdayConsumed.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel49Layout = new javax.swing.GroupLayout(jPanel49);
         jPanel49.setLayout(jPanel49Layout);
@@ -1351,14 +1451,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel49Layout.createSequentialGroup()
                 .addGap(50, 50, 50)
-                .addComponent(jLabel59)
+                .addComponent(lblSaturdayConsumed)
                 .addContainerGap(56, Short.MAX_VALUE))
         );
         jPanel49Layout.setVerticalGroup(
             jPanel49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel49Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel59)
+                .addComponent(lblSaturdayConsumed)
                 .addContainerGap(14, Short.MAX_VALUE))
         );
 
@@ -1367,9 +1467,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel50.setBackground(new java.awt.Color(255, 255, 255));
         jPanel50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel60.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel60.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel60.setText("Calories Consumed:");
+        lblSundayConsumed.setBackground(new java.awt.Color(0, 0, 0));
+        lblSundayConsumed.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblSundayConsumed.setText("Calories Consumed:");
 
         javax.swing.GroupLayout jPanel50Layout = new javax.swing.GroupLayout(jPanel50);
         jPanel50.setLayout(jPanel50Layout);
@@ -1379,7 +1479,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel50Layout.createSequentialGroup()
                     .addGap(0, 53, Short.MAX_VALUE)
-                    .addComponent(jLabel60)
+                    .addComponent(lblSundayConsumed)
                     .addGap(0, 53, Short.MAX_VALUE)))
         );
         jPanel50Layout.setVerticalGroup(
@@ -1388,7 +1488,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel50Layout.createSequentialGroup()
                     .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel60)
+                    .addComponent(lblSundayConsumed)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
@@ -1397,9 +1497,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel51.setBackground(new java.awt.Color(255, 255, 255));
         jPanel51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel61.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel61.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel61.setText("Calories Consumed :");
+        lblMondayConsumed.setBackground(new java.awt.Color(0, 0, 0));
+        lblMondayConsumed.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblMondayConsumed.setText("Calories Consumed :");
 
         javax.swing.GroupLayout jPanel51Layout = new javax.swing.GroupLayout(jPanel51);
         jPanel51.setLayout(jPanel51Layout);
@@ -1407,14 +1507,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel51Layout.createSequentialGroup()
                 .addContainerGap(55, Short.MAX_VALUE)
-                .addComponent(jLabel61)
+                .addComponent(lblMondayConsumed)
                 .addGap(47, 47, 47))
         );
         jPanel51Layout.setVerticalGroup(
             jPanel51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel51Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel61)
+                .addComponent(lblMondayConsumed)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1423,9 +1523,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel59.setBackground(new java.awt.Color(255, 255, 255));
         jPanel59.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel69.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel69.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel69.setText("Calories Burned:");
+        lblSundayBurned.setBackground(new java.awt.Color(0, 0, 0));
+        lblSundayBurned.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblSundayBurned.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel59Layout = new javax.swing.GroupLayout(jPanel59);
         jPanel59.setLayout(jPanel59Layout);
@@ -1435,7 +1535,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel59Layout.createSequentialGroup()
                     .addGap(0, 74, Short.MAX_VALUE)
-                    .addComponent(jLabel69)
+                    .addComponent(lblSundayBurned)
                     .addGap(0, 73, Short.MAX_VALUE)))
         );
         jPanel59Layout.setVerticalGroup(
@@ -1444,7 +1544,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel59Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel59Layout.createSequentialGroup()
                     .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel69)
+                    .addComponent(lblSundayBurned)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
@@ -1453,9 +1553,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel60.setBackground(new java.awt.Color(255, 255, 255));
         jPanel60.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel70.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel70.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel70.setText("Calories Burned:");
+        lblThursdayBurned.setBackground(new java.awt.Color(0, 0, 0));
+        lblThursdayBurned.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblThursdayBurned.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel60Layout = new javax.swing.GroupLayout(jPanel60);
         jPanel60.setLayout(jPanel60Layout);
@@ -1465,7 +1565,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel60Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel60Layout.createSequentialGroup()
                     .addGap(0, 74, Short.MAX_VALUE)
-                    .addComponent(jLabel70)
+                    .addComponent(lblThursdayBurned)
                     .addGap(0, 73, Short.MAX_VALUE)))
         );
         jPanel60Layout.setVerticalGroup(
@@ -1474,7 +1574,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel60Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel60Layout.createSequentialGroup()
                     .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel70)
+                    .addComponent(lblThursdayBurned)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
@@ -1483,9 +1583,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel61.setBackground(new java.awt.Color(255, 255, 255));
         jPanel61.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel71.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel71.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel71.setText("Calories Burned:");
+        lblMondayBurned.setBackground(new java.awt.Color(0, 0, 0));
+        lblMondayBurned.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblMondayBurned.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel61Layout = new javax.swing.GroupLayout(jPanel61);
         jPanel61.setLayout(jPanel61Layout);
@@ -1493,14 +1593,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel61Layout.createSequentialGroup()
                 .addGap(73, 73, 73)
-                .addComponent(jLabel71)
+                .addComponent(lblMondayBurned)
                 .addContainerGap(74, Short.MAX_VALUE))
         );
         jPanel61Layout.setVerticalGroup(
             jPanel61Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel61Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel71)
+                .addComponent(lblMondayBurned)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1509,9 +1609,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel62.setBackground(new java.awt.Color(255, 255, 255));
         jPanel62.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel72.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel72.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel72.setText("Calories Burned :");
+        lblWednesdayBurned.setBackground(new java.awt.Color(0, 0, 0));
+        lblWednesdayBurned.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblWednesdayBurned.setText("Calories Burned :");
 
         javax.swing.GroupLayout jPanel62Layout = new javax.swing.GroupLayout(jPanel62);
         jPanel62.setLayout(jPanel62Layout);
@@ -1519,14 +1619,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel62Layout.createSequentialGroup()
                 .addContainerGap(75, Short.MAX_VALUE)
-                .addComponent(jLabel72)
+                .addComponent(lblWednesdayBurned)
                 .addGap(68, 68, 68))
         );
         jPanel62Layout.setVerticalGroup(
             jPanel62Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel62Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel72)
+                .addComponent(lblWednesdayBurned)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1535,9 +1635,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel63.setBackground(new java.awt.Color(255, 255, 255));
         jPanel63.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel73.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel73.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel73.setText("Calories Burned:");
+        lblFridayBurned.setBackground(new java.awt.Color(0, 0, 0));
+        lblFridayBurned.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblFridayBurned.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel63Layout = new javax.swing.GroupLayout(jPanel63);
         jPanel63.setLayout(jPanel63Layout);
@@ -1547,7 +1647,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel63Layout.createSequentialGroup()
                     .addGap(0, 74, Short.MAX_VALUE)
-                    .addComponent(jLabel73)
+                    .addComponent(lblFridayBurned)
                     .addGap(0, 73, Short.MAX_VALUE)))
         );
         jPanel63Layout.setVerticalGroup(
@@ -1556,7 +1656,7 @@ public class weekly_statistics extends javax.swing.JFrame {
             .addGroup(jPanel63Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel63Layout.createSequentialGroup()
                     .addGap(0, 10, Short.MAX_VALUE)
-                    .addComponent(jLabel73)
+                    .addComponent(lblFridayBurned)
                     .addGap(0, 10, Short.MAX_VALUE)))
         );
 
@@ -1565,9 +1665,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel64.setBackground(new java.awt.Color(255, 255, 255));
         jPanel64.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel74.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel74.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel74.setText("Calories Burned:");
+        lblTuesdayBurned.setBackground(new java.awt.Color(0, 0, 0));
+        lblTuesdayBurned.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblTuesdayBurned.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel64Layout = new javax.swing.GroupLayout(jPanel64);
         jPanel64.setLayout(jPanel64Layout);
@@ -1575,14 +1675,14 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel64Layout.createSequentialGroup()
                 .addGap(73, 73, 73)
-                .addComponent(jLabel74)
+                .addComponent(lblTuesdayBurned)
                 .addContainerGap(74, Short.MAX_VALUE))
         );
         jPanel64Layout.setVerticalGroup(
             jPanel64Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel64Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jLabel74)
+                .addComponent(lblTuesdayBurned)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -1591,9 +1691,9 @@ public class weekly_statistics extends javax.swing.JFrame {
         jPanel65.setBackground(new java.awt.Color(255, 255, 255));
         jPanel65.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jLabel75.setBackground(new java.awt.Color(0, 0, 0));
-        jLabel75.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
-        jLabel75.setText("Calories Burned:");
+        lblSaturdayBurned.setBackground(new java.awt.Color(0, 0, 0));
+        lblSaturdayBurned.setFont(new java.awt.Font("Calisto MT", 0, 14)); // NOI18N
+        lblSaturdayBurned.setText("Calories Burned:");
 
         javax.swing.GroupLayout jPanel65Layout = new javax.swing.GroupLayout(jPanel65);
         jPanel65.setLayout(jPanel65Layout);
@@ -1601,18 +1701,29 @@ public class weekly_statistics extends javax.swing.JFrame {
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel65Layout.createSequentialGroup()
                 .addContainerGap(76, Short.MAX_VALUE)
-                .addComponent(jLabel75)
+                .addComponent(lblSaturdayBurned)
                 .addGap(71, 71, 71))
         );
         jPanel65Layout.setVerticalGroup(
             jPanel65Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel65Layout.createSequentialGroup()
                 .addContainerGap(14, Short.MAX_VALUE)
-                .addComponent(jLabel75)
+                .addComponent(lblSaturdayBurned)
                 .addContainerGap())
         );
 
         jPanel3.add(jPanel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(506, 400, 250, -1));
+
+        jButton1.setBackground(new java.awt.Color(51, 51, 255));
+        jButton1.setFont(new java.awt.Font("Calisto MT", 0, 13)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setText("ver estadisticas");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -1733,6 +1844,16 @@ public class weekly_statistics extends javax.swing.JFrame {
         yuyu.setVisible(true);
         dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+          try {
+        Connection conn = DriverManager.getConnection(URL, USER, PASS);
+        // Aquí deberías obtener el ID de usuario real, no 0
+        mostrarCaloriasSemanales(conn, 1); // Cambia 1 por el ID de usuario correcto
+    } catch (SQLException ex) {
+        JOptionPane.showMessageDialog(this, "Error al conectar con la base de datos: " + ex.getMessage());
+    }       
+    }//GEN-LAST:event_jButton1ActionPerformed
     
     /**
      * @param args the command line arguments
@@ -1773,6 +1894,7 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JLabel EJERCICIOS;
     private javax.swing.JLabel estadisticas;
     private javax.swing.Box.Filler filler1;
+    private javax.swing.JButton jButton1;
     private javax.swing.JCheckBoxMenuItem jCheckBoxMenuItem1;
     private javax.swing.JFrame jFrame1;
     private javax.swing.JLabel jLabel1;
@@ -1797,14 +1919,7 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
-    private javax.swing.JLabel jLabel56;
-    private javax.swing.JLabel jLabel57;
-    private javax.swing.JLabel jLabel58;
-    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel60;
-    private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
     private javax.swing.JLabel jLabel63;
     private javax.swing.JLabel jLabel64;
@@ -1812,14 +1927,7 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
-    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel70;
-    private javax.swing.JLabel jLabel71;
-    private javax.swing.JLabel jLabel72;
-    private javax.swing.JLabel jLabel73;
-    private javax.swing.JLabel jLabel74;
-    private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
@@ -1862,6 +1970,20 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel64;
     private javax.swing.JPanel jPanel65;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private javax.swing.JLabel lblFridayBurned;
+    private javax.swing.JLabel lblFridayConsumed;
+    private javax.swing.JLabel lblMondayBurned;
+    private javax.swing.JLabel lblMondayConsumed;
+    private javax.swing.JLabel lblSaturdayBurned;
+    private javax.swing.JLabel lblSaturdayConsumed;
+    private javax.swing.JLabel lblSundayBurned;
+    private javax.swing.JLabel lblSundayConsumed;
+    private javax.swing.JLabel lblThursdayBurned;
+    private javax.swing.JLabel lblThursdayConsumed;
+    private javax.swing.JLabel lblTuesdayBurned;
+    private javax.swing.JLabel lblTuesdayConsumed;
+    private javax.swing.JLabel lblWednesdayBurned;
+    private javax.swing.JLabel lblWednesdayConsumed;
     private javax.swing.JPanel panel1;
     private javax.swing.JPanel panel10;
     private javax.swing.JPanel panel11;
@@ -1881,5 +2003,7 @@ public class weekly_statistics extends javax.swing.JFrame {
     private javax.swing.JPanel panelrecomendacion;
     private javax.swing.JLabel recomndacion;
     // End of variables declaration//GEN-END:variables
-
+    private javax.swing.JButton btnActualizar;
+   
+    
 }

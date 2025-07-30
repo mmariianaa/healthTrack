@@ -214,24 +214,24 @@ public class List extends javax.swing.JFrame {
         );
 
         underground.add(C1, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 220, 110, -1));
-        underground.add(saltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 340, -1, -1));
+        underground.add(saltar, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 320, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("SWIM");
-        underground.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, -1, -1));
+        underground.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 470, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText(" BIKE");
-        underground.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 340, -1, -1));
-        underground.add(bici, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 340, 40, 20));
-        underground.add(nadar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 480, -1, -1));
+        underground.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 330, -1, -1));
+        underground.add(bici, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 330, 40, 20));
+        underground.add(nadar, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 470, -1, -1));
 
         jLabel1.setFont(new java.awt.Font("Calisto MT", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("JUMP");
-        underground.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 340, 60, -1));
+        underground.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 320, 60, -1));
 
         N1.setBackground(new java.awt.Color(202, 240, 248));
 
@@ -295,6 +295,7 @@ public class List extends javax.swing.JFrame {
         //este es para calcular las calorias depediendo de la actividad 
         // TODO add your handling code here:
         var persona = Sesiones.getInstance().getPersona();
+        String sexoPersona = persona.getSexo();
         System.out.println("Información de persona: " + persona.getNombre());
         System.out.println("Holis soy del sepso:"+persona.getSexo());
         System.out.println(persona.getPeso());
@@ -303,31 +304,31 @@ public class List extends javax.swing.JFrame {
                 if (persona.getPeso() > 75) {
                     double caloriasQuemadas = 13;
                     double calorias = caloriasQuemadas * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY RIDING A BIKE :" + calorias);
+                    JOptionPane.showMessageDialog(null, "Calorías quemadas por andar en bici: " + calorias);
                 } else {
                     double caloriasQuemadas = 11;
                     double calorias = caloriasQuemadas * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY RIDING A BIKE : " + calorias);
+                    JOptionPane.showMessageDialog(null, "Calorías quemadas por andar en bici: " + calorias);
                 }
             } else if (saltar.isSelected()) {
                 if (persona.getPeso() > 75) {
                     double caloriasQuemadas = 15;
                     double calorias = caloriasQuemadas * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING ROPE: " + calorias);
+                    JOptionPane.showMessageDialog(null, "Calorías quemadas por saltar la cuerda: " + calorias);
                 } else {
                     double caloriasQuemadas = 12;
                     double calorias = caloriasQuemadas * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING ROPE: " + calorias);
+                    JOptionPane.showMessageDialog(null, "Calorías quemadas por saltar la cuerda: " + calorias);
                 }
             } else if (nadar.isSelected()) {
                 if (persona.getPeso() > 75) {
                     double caloriasQuemadas = 13;
                     double calorias = caloriasQuemadas * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING SWIMMING: " + calorias);
+                    JOptionPane.showMessageDialog(null, "Calorías quemadas por nadar: " + calorias);
                 } else {
                     double caloriasQuemadas = 18;
                     double calorias = caloriasQuemadas * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING SWIMMING: " + calorias);
+                    JOptionPane.showMessageDialog(null, "Calorías quemadas por nadar: " + calorias);
                 }
             }
         } else if ("Mujer".equals(persona.getSexo())) {
@@ -338,33 +339,32 @@ public class List extends javax.swing.JFrame {
                     System.out.println("igual bien");
                     double caloriasquemads = 12.5;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY RIDING A BIKE :" + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por andar en bici " + calorias);
                 } else {
                     System.out.println("bien pero agarro el else");
                     double caloriasquemads = 6.5;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY RIDING A BIKE : : " + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por andar en bici : " + calorias);
                 }
             } else if (saltar.isSelected()) {
                 if (persona.getPeso() > 75) {
                     double caloriasquemads = 15;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING ROPE: " + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por saltar la cuerda son: " + calorias);
                 } else {
                     double caloriasquemads = 13;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING ROPE: " + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por saltar la cuerda son: " + calorias);
                 }
             } else if (nadar.isSelected()) {
                 if (persona.getPeso() > 75) {
                     double caloriasquemads = 12;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING SWIMMING:" + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por nadar  son: " + calorias);
                 } else {
-                    
                     double caloriasquemads = 10;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "CALORIES BURNED BY JUMPING SWIMMING:" + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por nadar son: " + calorias);
                 }
             }
         }
