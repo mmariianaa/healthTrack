@@ -928,7 +928,7 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jPanel3.add(panel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 2, 772, -1));
 
-        panel13.setBackground(new java.awt.Color(177, 201, 239));
+        panel13.setBackground(new java.awt.Color(222, 246, 248));
         panel13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panel13.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -998,7 +998,7 @@ public class weekly_statistics extends javax.swing.JFrame {
 
         jPanel3.add(panel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(258, 52, 272, -1));
 
-        panel15.setBackground(new java.awt.Color(222, 255, 255));
+        panel15.setBackground(new java.awt.Color(177, 201, 239));
         panel15.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         panel15.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1014,7 +1014,7 @@ public class weekly_statistics extends javax.swing.JFrame {
                 jLabel12MouseClicked(evt);
             }
         });
-        panel15.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 226, 56));
+        panel15.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 226, 50));
 
         jPanel3.add(panel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 240, 70));
 

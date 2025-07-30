@@ -1014,7 +1014,7 @@ public class weekly_statistics extends javax.swing.JFrame {
                 jLabel12MouseClicked(evt);
             }
         });
-        panel15.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 226, 56));
+        panel15.add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 226, 50));
 
         jPanel3.add(panel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 50, 240, 70));
 
