@@ -350,21 +350,21 @@ public class List extends javax.swing.JFrame {
                 if (persona.getPeso() > 75) {
                     double caloriasquemads = 15;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "caloris quemadas por saltar la cuerda son: " + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por saltar la cuerda son: " + calorias);
                 } else {
                     double caloriasquemads = 13;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "caloris quemadas por saltar la cuerda son: " + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por saltar la cuerda son: " + calorias);
                 }
             } else if (nadar.isSelected()) {
                 if (persona.getPeso() > 75) {
                     double caloriasquemads = 12;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "calorias quemadas por nadar la cuerd son: " + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por nadar  son: " + calorias);
                 } else {
                     double caloriasquemads = 10;
                     double calorias = caloriasquemads * 60;
-                    JOptionPane.showMessageDialog(null, "caloris quemadas por nadar son: " + calorias);
+                    JOptionPane.showMessageDialog(null, "calorias quemadas por nadar son: " + calorias);
                 }
             }
         }

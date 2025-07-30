@@ -2072,7 +2072,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
-                                  <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblThursdayConsumed" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2088,7 +2088,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
-                                  <Component id="jLabel55" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblThursdayConsumed" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2096,7 +2096,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel55">
+                    <Component class="javax.swing.JLabel" name="lblThursdayConsumed">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2141,7 +2141,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="53" max="-2" attributes="0"/>
-                              <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblWednesdayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="53" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2150,14 +2150,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel56" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblWednesdayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel56">
+                    <Component class="javax.swing.JLabel" name="lblWednesdayConsumed">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2192,7 +2192,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblFridayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="56" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2201,14 +2201,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
-                              <Component id="jLabel57" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblFridayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel57">
+                    <Component class="javax.swing.JLabel" name="lblFridayConsumed">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2243,7 +2243,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                              <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblTuesdayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="52" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2252,14 +2252,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel58" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblTuesdayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel58">
+                    <Component class="javax.swing.JLabel" name="lblTuesdayConsumed">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2294,7 +2294,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="50" max="-2" attributes="0"/>
-                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblSaturdayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="56" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2303,14 +2303,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel59" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblSaturdayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="14" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel59">
+                    <Component class="javax.swing.JLabel" name="lblSaturdayConsumed">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2347,7 +2347,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
-                                  <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSundayConsumed" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="53" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2359,7 +2359,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
-                                  <Component id="jLabel60" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSundayConsumed" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2367,7 +2367,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel60">
+                    <Component class="javax.swing.JLabel" name="lblSundayConsumed">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2402,7 +2402,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace pref="55" max="32767" attributes="0"/>
-                              <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblMondayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="47" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -2411,14 +2411,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel61" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblMondayConsumed" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel61">
+                    <Component class="javax.swing.JLabel" name="lblMondayConsumed">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2455,7 +2455,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
-                                  <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSundayBurned" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2467,7 +2467,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
-                                  <Component id="jLabel69" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblSundayBurned" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2475,7 +2475,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel69">
+                    <Component class="javax.swing.JLabel" name="lblSundayBurned">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2512,7 +2512,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
-                                  <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblThursdayBurned" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2524,7 +2524,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
-                                  <Component id="jLabel70" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblThursdayBurned" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2532,7 +2532,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel70">
+                    <Component class="javax.swing.JLabel" name="lblThursdayBurned">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2567,7 +2567,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                              <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblMondayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="74" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2576,14 +2576,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel71" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblMondayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel71">
+                    <Component class="javax.swing.JLabel" name="lblMondayBurned">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2618,7 +2618,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace pref="75" max="32767" attributes="0"/>
-                              <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblWednesdayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="68" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -2627,14 +2627,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel72" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblWednesdayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel72">
+                    <Component class="javax.swing.JLabel" name="lblWednesdayBurned">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2671,7 +2671,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="74" max="32767" attributes="0"/>
-                                  <Component id="jLabel73" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFridayBurned" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="73" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2683,7 +2683,7 @@
                           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
-                                  <Component id="jLabel73" min="-2" max="-2" attributes="0"/>
+                                  <Component id="lblFridayBurned" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace min="0" pref="10" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -2691,7 +2691,7 @@
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel73">
+                    <Component class="javax.swing.JLabel" name="lblFridayBurned">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2726,7 +2726,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="73" max="-2" attributes="0"/>
-                              <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblTuesdayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace pref="74" max="32767" attributes="0"/>
                           </Group>
                       </Group>
@@ -2735,14 +2735,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace max="-2" attributes="0"/>
-                              <Component id="jLabel74" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblTuesdayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel74">
+                    <Component class="javax.swing.JLabel" name="lblTuesdayBurned">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2777,7 +2777,7 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace pref="76" max="32767" attributes="0"/>
-                              <Component id="jLabel75" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblSaturdayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -2786,14 +2786,14 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace pref="14" max="32767" attributes="0"/>
-                              <Component id="jLabel75" min="-2" max="-2" attributes="0"/>
+                              <Component id="lblSaturdayBurned" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
                   </Layout>
                   <SubComponents>
-                    <Component class="javax.swing.JLabel" name="jLabel75">
+                    <Component class="javax.swing.JLabel" name="lblSaturdayBurned">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="0" green="0" red="0" type="rgb"/>
@@ -2806,6 +2806,28 @@
                     </Component>
                   </SubComponents>
                 </Container>
+                <Component class="javax.swing.JButton" name="jButton1">
+                  <Properties>
+                    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="ff" green="33" red="33" type="rgb"/>
+                    </Property>
+                    <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                      <Font name="Calisto MT" size="13" style="0"/>
+                    </Property>
+                    <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                      <Color blue="0" green="0" red="0" type="rgb"/>
+                    </Property>
+                    <Property name="text" type="java.lang.String" value="ver estadisticas"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButton1ActionPerformed"/>
+                  </Events>
+                  <Constraints>
+                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+                      <AbsoluteConstraints x="20" y="140" width="-1" height="-1"/>
+                    </Constraint>
+                  </Constraints>
+                </Component>
               </SubComponents>
             </Container>
           </SubComponents>
