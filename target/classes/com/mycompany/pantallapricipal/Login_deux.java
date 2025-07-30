@@ -215,11 +215,12 @@ public class Login_deux extends javax.swing.JFrame {
        String password=new String(contrasenainicio.getPassword());
        personas user=peticiones.login(correo, password);
        if (correo.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "️ El campo de usuario está vacío", "Advertencia", JOptionPane.WARNING_MESSAGE);
+ 
+           JOptionPane.showMessageDialog(this, "️ The user field is empty.", "WARNING", JOptionPane.WARNING_MESSAGE);
             return;
         }
        if (password.isEmpty()) {
-            JOptionPane.showMessageDialog(this, "️ El campo de contrasena está vacío", "Advertencia", JOptionPane.WARNING_MESSAGE);
+            JOptionPane.showMessageDialog(this, "️ The user field is empty.", "WARNING", JOptionPane.WARNING_MESSAGE);
             return;
         }
         if(user !=null){
@@ -228,7 +229,7 @@ public class Login_deux extends javax.swing.JFrame {
             principal.setVisible(true);//se crea desde arriba para que sea visible//
             dispose();//cerrar la ventana es necesario para hacer que la pantalla se minimice//
         }else{
-            JOptionPane.showMessageDialog(null, "Tus datos son incorrectos por favor verificar");
+            JOptionPane.showMessageDialog(null, "Your data is incorrect, please verify.");
         }                                 
     }//GEN-LAST:event_inicioMouseClicked
 
